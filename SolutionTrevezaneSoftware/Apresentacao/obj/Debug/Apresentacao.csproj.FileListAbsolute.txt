@@ -1,0 +1,256 @@
+c:\users\fabio\documents\visual studio 2012\Projects\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.dll
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.pdb
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.pdb
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCliente.resources
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFuncionario.resources
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMenuPrincipal.resources
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\Fabio\Desktop\Bkp\01\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.dll
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.pdb
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.pdb
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirCliente.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirFuncionario.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroCliente.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroFuncionario.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogo.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCliente.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFornecedor.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFuncionario.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMenuPrincipal.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmProduto.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioSenha.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware 01\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware 01\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\Bkp\SolutionTrevezaneSoftware 01\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\Texte Produto\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\Desktop\Texte Produto\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\Texte Produto\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Fabio\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\New System FHT\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\Desktop\New System FHT\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\New System FHT\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.dll
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.pdb
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.pdb
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirCliente.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirFuncionario.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirUsuarioSenha.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmBackup.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroCliente.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroFuncionario.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroUsuarioSenha.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogo.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCliente.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFuncionario.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmModelo.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMenuPrincipal.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarFuncionario.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuario.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioSenha.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogoOpcoes.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.pdb
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.pdb
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirCliente.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirFuncionario.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirUsuarioSenha.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmBackup.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroCliente.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroFuncionario.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroUsuarioSenha.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogo.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogoOpcoes.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCliente.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFuncionario.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmModelo.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCliente.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMenuPrincipal.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarFuncionario.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuario.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioSenha.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioCliente.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.cache
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.compiled
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroAgenda.resources
+C:\Users\Fabio\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCliente.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.dll
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.pdb
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.pdb
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAgenda.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirAgenda.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirCliente.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirFuncionario.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirUsuarioSenha.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmBackup.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroAgenda.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroCliente.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroFuncionario.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroUsuarioSenha.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogo.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogoOpcoes.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCliente.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFuncionario.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmModelo.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMenuPrincipal.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCliente.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarFuncionario.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuario.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioSenha.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioAgenda.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioCliente.resources
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.cache
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.compiled
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.dll
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.pdb
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.pdb
+C:\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAgenda.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirAgenda.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirCliente.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirFuncionario.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirUsuarioSenha.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmBackup.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroAgenda.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroCliente.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroFuncionario.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroUsuarioSenha.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogo.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogoOpcoes.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCliente.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFuncionario.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmModelo.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMenuPrincipal.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCliente.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarFuncionario.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuario.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioSenha.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioAgenda.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioCliente.resources
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.cache
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.compiled
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Aline\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMovimentoDiario.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.dll
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.pdb
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Negocio.pdb
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAgenda.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirAgenda.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirCliente.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirFuncionario.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirUsuarioSenha.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmBackup.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroAgenda.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroCliente.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroFuncionario.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroUsuarioSenha.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogo.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCaixaDialogoOpcoes.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCliente.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmFuncionario.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmModelo.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMenuPrincipal.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMovimentoDiario.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCliente.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarFuncionario.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuario.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioSenha.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioAgenda.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioCliente.resources
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.cache
+C:\Program Files (x86)\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\RdlCompile.compiled
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAgenda.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirAgenda.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmCadastroAgenda.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmMovimentoDiario.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioAgenda.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioCliente.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\AcessoDados.dll.config
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.CopyComplete
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCadastroUnico.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarTipoAtendimento.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarAtividadeCras.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarBeneficioGoverno.resources
+C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarProvidenciaCras.resources
