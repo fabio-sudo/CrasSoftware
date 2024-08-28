@@ -1133,6 +1133,16 @@ namespace Apresentacao.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tipoImg1 {
+            get {
+                object obj = ResourceManager.GetObject("tipoImg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UsuarioAzul {
             get {
                 object obj = ResourceManager.GetObject("UsuarioAzul", resourceCulture);

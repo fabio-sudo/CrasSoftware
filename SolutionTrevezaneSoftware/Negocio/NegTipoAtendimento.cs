@@ -1,11 +1,7 @@
 ﻿using ObjetoTransferencia;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AcessoDados;
 
 namespace Negocio
@@ -83,5 +79,81 @@ namespace Negocio
             }
         }
 
+
+        //Cadastro de Tipo de Atendimento
+        public Boolean CadastrarTipoAtendimento(TipoAtendimento tipoAtendimento)
+        {
+            try
+            {
+                sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@descricao", tipoAtendimento.descricaoTipo));
+              
+                string comando = " exec uspCadastrarTipo " +
+                   "@descricao";
+
+                object Resposta = sqlserver.ExecutarScalar(comando, System.Data.CommandType.Text);
+
+                if (Convert.ToInt16(Resposta) == 2)
+                {
+                    return false;
+                }
+                else
+                    return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception("Erro na camada de negócios - Cadastro. " + ex.Message);
+
+            }
+        }
+
+        //Exclusao de Tipo de Atendimento 
+        public Boolean ExcluirTipoAtendimento(TipoAtendimento tipoAtendimento)
+        {
+            try
+            {
+
+                sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@id", tipoAtendimento.idTipo));
+
+                string comando = "exec uspExcluirTipo @id";
+
+                object Resposta = sqlserver.ExecutarScalar(comando, System.Data.CommandType.Text);
+
+                if (Convert.ToInt16(Resposta) == 2)
+                {
+                    return false;//Vinculado a movimetno diario
+                }
+                else
+                    return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception("Não foi possível excluir os dados do Tipo. [Negócios]. Motivo: " + ex.Message);
+            }
+        }
+
+        //Alteração Tipo Atendimento
+        public Boolean AtualizarTipoAtendimento(TipoAtendimento tipoAtendimento)
+        {
+            try
+            {
+                sqlserver.LimparParametros();
+
+                sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@id", tipoAtendimento.idTipo));
+                sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@descricao", tipoAtendimento.descricaoTipo));
+             
+                string comando = "exec uspAlterarTipo @id, @descricao";
+
+                sqlserver.ExecutarScalar(comando, CommandType.Text);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception("Não foi possível atualizar os dados do Tipo. Motivo: " + ex.Message);
+            }
+        }
     }
 }

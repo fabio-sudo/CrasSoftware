@@ -1,14 +1,9 @@
 ﻿using Negocio;
 using ObjetoTransferencia;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Apresentacao
@@ -20,21 +15,15 @@ namespace Apresentacao
 
         NegTipoAtendimento nTipo = new NegTipoAtendimento();
         public TipoLista tipoLista;
-        public TipoLista tipoListaSelecionado;
         public TipoAtendimento tipoSelecionado;
         string strDescricao;
 
-        public FrmSelecionarTipoAtendimento([Optional] string descricaoTipo, [Optional] TipoLista Itemselecionado)
+        public FrmSelecionarTipoAtendimento([Optional] string descricaoTipo)
         {
+
             InitializeComponent();
 
-            if(Itemselecionado.Count > 0 )
-            {
-                tipoListaSelecionado = Itemselecionado;
-
-            }
-
-            if (descricaoTipo != String.Empty)
+            if (!string.IsNullOrEmpty(descricaoTipo))
             {
                 strDescricao = descricaoTipo;
             }
@@ -43,6 +32,7 @@ namespace Apresentacao
         //atualiza os valores no Data Grid
         private void AtualizarDataGrid()
         {
+
             this.dgvSelecionar.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
             if (this.tipoLista.Count > 0)
@@ -57,8 +47,8 @@ namespace Apresentacao
             int indice = 0;
             foreach (TipoAtendimento tipo in this.tipoLista)
             {
-                this.dgvSelecionar[1, indice].Value = tipo.idTipo;
-                this.dgvSelecionar[2, indice].Value = tipo.descricaoTipo;
+                this.dgvSelecionar[0, indice].Value = tipo.idTipo;
+                this.dgvSelecionar[1, indice].Value = tipo.descricaoTipo;
 
                 indice++;
             }
@@ -101,7 +91,7 @@ namespace Apresentacao
             DialogResult resposta;
             //Criando Caixa de dialogo
             FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("Confirmação",
-            " Deseja realmente sair da Seleção de Tipo de Atendimento?",
+            " Deseja realmente sair?",
             Properties.Resources.DialogQuestion,
             System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76))))),
             Color.White,
@@ -132,90 +122,71 @@ namespace Apresentacao
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            //DialogResult resultado;
+            DialogResult resultado;
 
-            //FrmCadastroCliente frmCliente = new FrmCadastroCliente();
-            //resultado = frmCliente.ShowDialog();
+            FrmAlterarCadastrarExcluirTipoAtendimento formulario = new FrmAlterarCadastrarExcluirTipoAtendimento("cadastrar");
+            resultado = formulario.ShowDialog();
 
-            //if (resultado == DialogResult.OK)
-            //{
+            if (resultado == DialogResult.OK)
+            {
 
-            //    btBuscar.PerformClick();
-            //}
+                btBuscar.PerformClick();
+            }
         }
 
         private void btAlterar_Click(object sender, EventArgs e)
         {
-        //    try
-        //    {
-        //        if (dgvCliente.RowCount > 0)
-        //        {
-        //            int indiceRegistroSelecionado = Convert.ToInt32(dgvCliente.CurrentRow.Cells[0].Value);
-        //            foreach (Cliente clie in clienteLista)
-        //            {
-        //                if (clie.codigoCliente == indiceRegistroSelecionado)
-        //                {
+            try
+            {
+                if (dgvSelecionar.RowCount > 0)
+                {
+                    int indiceRegistroSelecionado = Convert.ToInt32(dgvSelecionar.CurrentRow.Cells[0].Value);
+                    foreach (TipoAtendimento tipo in tipoLista)
+                    {
+                        if (tipo.idTipo == indiceRegistroSelecionado)
+                        {
 
-        //                    clienteSelecionado = clie;
-        //                    break;
-        //                }
+                            tipoSelecionado = tipo;
+                            break;
+                        }
 
-        //            }
+                    }
 
-        //            FrmAlterarExcluirCliente frmAlterarExcluirCliente = new FrmAlterarExcluirCliente(clienteSelecionado);
+                    FrmAlterarCadastrarExcluirTipoAtendimento frmAlterarExcluir = new FrmAlterarCadastrarExcluirTipoAtendimento("", tipoSelecionado);
 
-        //            DialogResult resposta;
+                    DialogResult resposta;
 
-        //            resposta = frmAlterarExcluirCliente.ShowDialog();
+                    resposta = frmAlterarExcluir.ShowDialog();
 
-        //            if (resposta == DialogResult.Yes)
-        //            {
-        //                //atualizar o gride quando o formulario voltar ao foco
-        //                btBuscar.PerformClick();
-        //            }
-        //        }
-        //    }
-        //    catch
-        //    {
-        //        //Criando Caixa de dialogo
-        //        FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("Erro",
-        //        "Erro ao selecionar o Cliente!",
-        //        Properties.Resources.DialogErro,
-        //        Color.White,
-        //        Color.Black,
-        //        "Ok", "",
-        //        false);
-        //        frmCaixa.ShowDialog();
+                    if (resposta == DialogResult.Yes)
+                    {
+                        //atualizar o gride quando o formulario voltar ao foco
+                        btBuscar.PerformClick();
+                    }
+                }
+            }
+            catch
+            {
+                //Criando Caixa de dialogo
+                FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("Erro",
+                "Erro ao selecionar item data grid!",
+                Properties.Resources.DialogErro,
+                Color.White,
+                Color.Black,
+                "Ok", "",
+                false);
+                frmCaixa.ShowDialog();
 
-        //        //Volata o focu para caixa de texto de busca de Funcionario
-        //        tbBuscarCliente.Focus();
-        //    }
+                //Volata o focu para caixa de texto de busca de Funcionario
+                tbBuscar.Focus();
+            }
 
-        }
-
-        private void btSelecionar_Click(object sender, EventArgs e)
-        {
-            //if (this.dgvCliente.Rows.Count > 0)
-            //{
-            //    int indiceRegistroSelecionado = Convert.ToInt32(dgvCliente.CurrentRow.Cells[0].Value);
-            //    foreach (Cliente clie in clienteLista)
-            //    {
-            //        if (clie.codigoCliente == indiceRegistroSelecionado)
-            //        {
-            //            clienteSelecionado = clie;
-            //            this.DialogResult = DialogResult.OK;
-            //            this.Close();
-            //            break;
-
-            //        }
-            //    }
-
-            //}
         }
 
         //-----------------------------Formulário
         private void FrmSelecionarTipoAtendimento_Load(object sender, EventArgs e)
         {
+
             if (strDescricao != String.Empty)
             {
                 tbBuscar.Text = strDescricao;
@@ -233,10 +204,7 @@ namespace Apresentacao
             {
                 btSair.PerformClick();
             }
-            if (e.KeyCode.Equals(Keys.F2) == true)
-            {
-                btSelecionar.PerformClick();
-            }
+ 
             if (e.KeyCode.Equals(Keys.F10) == true)
             {
                 btCadastrar.PerformClick();
@@ -247,10 +215,9 @@ namespace Apresentacao
             }
         }
 
-        //---------------------------Data Grid
         private void dgvSelecionar_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            btSelecionar.PerformClick();
+            btAlterar.PerformClick();
         }
     }
 }

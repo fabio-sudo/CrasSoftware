@@ -34,13 +34,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSelecionarTipoAtendimento));
             this.dgvSelecionar = new System.Windows.Forms.DataGridView();
-            this.selecionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btAlterar = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
-            this.btSelecionar = new System.Windows.Forms.Button();
             this.btBuscar = new System.Windows.Forms.Button();
             this.panelBuscar = new System.Windows.Forms.Panel();
             this.tbBuscar = new System.Windows.Forms.TextBox();
@@ -66,7 +64,6 @@
             this.dgvSelecionar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSelecionar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSelecionar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.selecionar,
             this.idTipo,
             this.descricaoTipo});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -85,16 +82,9 @@
             this.dgvSelecionar.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSelecionar.RowTemplate.Height = 24;
             this.dgvSelecionar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSelecionar.Size = new System.Drawing.Size(476, 229);
+            this.dgvSelecionar.Size = new System.Drawing.Size(496, 229);
             this.dgvSelecionar.TabIndex = 3;
             this.dgvSelecionar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionar_CellDoubleClick);
-            // 
-            // selecionar
-            // 
-            this.selecionar.HeaderText = "...";
-            this.selecionar.Name = "selecionar";
-            this.selecionar.ToolTipText = "Selecionar";
-            this.selecionar.Width = 30;
             // 
             // idTipo
             // 
@@ -108,7 +98,7 @@
             this.descricaoTipo.Name = "descricaoTipo";
             this.descricaoTipo.ReadOnly = true;
             this.descricaoTipo.ToolTipText = "Descrição tipo de atendimento";
-            this.descricaoTipo.Width = 300;
+            this.descricaoTipo.Width = 350;
             // 
             // btAlterar
             // 
@@ -117,7 +107,7 @@
             this.btAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btAlterar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btAlterar.Location = new System.Drawing.Point(287, 282);
+            this.btAlterar.Location = new System.Drawing.Point(113, 282);
             this.btAlterar.Margin = new System.Windows.Forms.Padding(2);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(98, 34);
@@ -133,7 +123,7 @@
             this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastrar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btCadastrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCadastrar.Location = new System.Drawing.Point(185, 282);
+            this.btCadastrar.Location = new System.Drawing.Point(11, 282);
             this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(98, 34);
@@ -149,7 +139,7 @@
             this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSair.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btSair.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSair.Location = new System.Drawing.Point(389, 282);
+            this.btSair.Location = new System.Drawing.Point(409, 282);
             this.btSair.Margin = new System.Windows.Forms.Padding(2);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(98, 34);
@@ -157,22 +147,6 @@
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
-            // 
-            // btSelecionar
-            // 
-            this.btSelecionar.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btSelecionar.FlatAppearance.BorderSize = 0;
-            this.btSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSelecionar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btSelecionar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSelecionar.Location = new System.Drawing.Point(11, 282);
-            this.btSelecionar.Margin = new System.Windows.Forms.Padding(2);
-            this.btSelecionar.Name = "btSelecionar";
-            this.btSelecionar.Size = new System.Drawing.Size(98, 34);
-            this.btSelecionar.TabIndex = 4;
-            this.btSelecionar.Text = "F2 Selecionar";
-            this.btSelecionar.UseVisualStyleBackColor = false;
-            this.btSelecionar.Click += new System.EventHandler(this.btSelecionar_Click);
             // 
             // btBuscar
             // 
@@ -230,12 +204,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(506, 337);
+            this.ClientSize = new System.Drawing.Size(519, 337);
             this.Controls.Add(this.dgvSelecionar);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.btSair);
-            this.Controls.Add(this.btSelecionar);
             this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.panelBuscar);
             this.Controls.Add(this.tbBuscar);
@@ -262,12 +235,10 @@
         private System.Windows.Forms.Button btAlterar;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Button btSair;
-        private System.Windows.Forms.Button btSelecionar;
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.Panel panelBuscar;
         private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.PictureBox pbBuscar;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn selecionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn idTipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoTipo;
     }

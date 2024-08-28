@@ -37,3 +37,15 @@ C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Negocio\bin\Debug\AcessoDados.d
 C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\bin\Debug\Negocio.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\bin\Debug\AcessoDados.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\bin\Debug\ObjetoTransferencia.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\bin\Debug\AcessoDados.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\bin\Debug\AcessoDados.dll.config
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Negocio\obj\Debug\Negocio.pdb

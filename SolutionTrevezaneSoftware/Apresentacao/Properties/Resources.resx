@@ -130,17 +130,14 @@
   <data name="GradeAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GradeAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CrediarioConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CrediarioConfig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Voltar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Voltar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Crediario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Crediario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ProdutoLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProdutoLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EntradaLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EntradaLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,14 +157,8 @@
   <data name="ProdutoLogoBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ProdutoLogoBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DialogErro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DialogErro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LancarBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LancarBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Senha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Senha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UsuarioLogoBranco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UsuarioLogoBranco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,17 +181,26 @@
   <data name="Venda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Venda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="situacaoFamiliarImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\situacaoFamiliarImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Calendario 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Calendario 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GeneroRosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GeneroRosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CorLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CorLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsuarioSenhaAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsuarioSenhaAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DialogOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DialogOK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -216,6 +216,12 @@
   </data>
   <data name="EstoqueIco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EstoqueIco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialogProcessando" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialogProcessando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlanoDeFundoLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlanoDeFundoLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EstoqueIcone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EstoqueIcone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,9 +265,6 @@
   <data name="TamanhoAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TamanhoAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgDefaut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgDefaut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Backup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Backup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -271,6 +274,9 @@
   <data name="UsuarioLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UsuarioLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fechar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ProdutoAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ProdutoAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -279,9 +285,6 @@
   </data>
   <data name="UsuarioAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UsuarioAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sair" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DialogQuestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DialogQuestion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,11 +316,11 @@
   <data name="CrediarioPendente1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CrediarioPendente1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fechar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Senha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Senha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Calendario Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Calendario Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GeneroAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeneroAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CrediarioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CrediarioPago.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,11 +337,14 @@
   <data name="CorLogoBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CorLogoBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DialogProcessando" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DialogProcessando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgDefaut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgDefaut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DialogExcluir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DialogExcluir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgCrediarioBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgCrediarioBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cadImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cadImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -346,11 +352,14 @@
   <data name="imgParcialBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgParcialBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CrediarioConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrediarioConfig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tamanho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tamanho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fornecedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fornecedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CaixaBranco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CaixaBranco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,26 +379,20 @@
   <data name="UsuarioSenha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UsuarioSenha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CorRosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CorRosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DialogErro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialogErro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Relatorios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Relatorios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PlanoDeFundoLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PlanoDeFundoLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgCrediarioBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgCrediarioBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="drop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\drop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fornecedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fornecedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GeneroAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GeneroAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Crediario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crediario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="situacaoIdentificadaImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\situacaoIdentificadaImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -417,6 +420,9 @@
   </data>
   <data name="FormaPagamentoIcone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FormaPagamentoIcone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FornecedorLogoBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FornecedorLogoBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TaxaRosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TaxaRosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -451,22 +457,19 @@
   <data name="DialogGrafico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DialogGrafico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UsuarioSenhaAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UsuarioSenhaAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CorRosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CorRosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calendario Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calendario Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tipoImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tipoImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProdutoLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProdutoLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FornecedorLogoBotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FornecedorLogoBotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CrediarioPendenteAviso" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CrediarioPendenteAviso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="situacaoFamiliarImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\situacaoFamiliarImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tipoImg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipoImg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

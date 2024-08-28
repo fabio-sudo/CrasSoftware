@@ -84,6 +84,12 @@
     <Compile Include="FrmAgenda.Designer.cs">
       <DependentUpon>FrmAgenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirTipoAtendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirTipoAtendimento.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirTipoAtendimento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAlterarExcluirAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </Compile>
     <EmbeddedResource Include="FrmAgenda.resx">
       <DependentUpon>FrmAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirTipoAtendimento.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirTipoAtendimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlterarExcluirAgenda.resx">
       <DependentUpon>FrmAlterarExcluirAgenda.cs</DependentUpon>
@@ -751,6 +760,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\situacaoFamiliarImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tipoImg1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
