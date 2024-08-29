@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agenda.cs" />
+    <Compile Include="Atividade.cs" />
+    <Compile Include="BeneficioGoverno.cs" />
+    <Compile Include="CadastroUnico.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

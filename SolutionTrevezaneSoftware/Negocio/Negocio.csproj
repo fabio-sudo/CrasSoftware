@@ -40,7 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NegAgenda.cs" />
+    <Compile Include="NegAtividade.cs" />
     <Compile Include="NegBackupBancoDeDados.cs" />
+    <Compile Include="NegBeneficioGoverno.cs" />
+    <Compile Include="NegCadastroUnico.cs" />
     <Compile Include="NegCliente.cs" />
     <Compile Include="NegFuncionario.cs" />
     <Compile Include="NegTipoAtendimento.cs" />

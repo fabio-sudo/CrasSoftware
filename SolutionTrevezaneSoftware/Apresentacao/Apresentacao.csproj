@@ -84,6 +84,24 @@
     <Compile Include="FrmAgenda.Designer.cs">
       <DependentUpon>FrmAgenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirAtividadeCras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirAtividadeCras.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirAtividadeCras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirBeneficioGoverno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirBeneficioGoverno.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirBeneficioGoverno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirCadastroUnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirCadastroUnico.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirCadastroUnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAlterarCadastrarExcluirTipoAtendimento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +286,15 @@
     </Compile>
     <EmbeddedResource Include="FrmAgenda.resx">
       <DependentUpon>FrmAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirAtividadeCras.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirAtividadeCras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirBeneficioGoverno.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirBeneficioGoverno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirCadastroUnico.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirCadastroUnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlterarCadastrarExcluirTipoAtendimento.resx">
       <DependentUpon>FrmAlterarCadastrarExcluirTipoAtendimento.cs</DependentUpon>

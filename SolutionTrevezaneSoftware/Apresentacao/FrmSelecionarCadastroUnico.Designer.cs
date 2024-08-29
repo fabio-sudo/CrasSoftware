@@ -39,7 +39,6 @@
             this.btAlterar = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
-            this.btSelecionar = new System.Windows.Forms.Button();
             this.dgvSelecionar = new System.Windows.Forms.DataGridView();
             this.idCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +61,7 @@
             this.btBuscar.TabIndex = 1;
             this.btBuscar.Text = "F5 Buscar";
             this.btBuscar.UseVisualStyleBackColor = false;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // panelBuscar
             // 
@@ -83,6 +83,9 @@
             this.tbBuscar.Size = new System.Drawing.Size(257, 19);
             this.tbBuscar.TabIndex = 0;
             this.tbBuscar.Text = "Digite a descrição ...";
+            this.tbBuscar.Enter += new System.EventHandler(this.tbBuscar_Enter);
+            this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
+            this.tbBuscar.Leave += new System.EventHandler(this.tbBuscar_Leave);
             // 
             // btAlterar
             // 
@@ -91,13 +94,14 @@
             this.btAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btAlterar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btAlterar.Location = new System.Drawing.Point(258, 282);
+            this.btAlterar.Location = new System.Drawing.Point(113, 282);
             this.btAlterar.Margin = new System.Windows.Forms.Padding(2);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(98, 34);
             this.btAlterar.TabIndex = 6;
             this.btAlterar.Text = "F4 Alterar";
             this.btAlterar.UseVisualStyleBackColor = false;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // btCadastrar
             // 
@@ -106,13 +110,14 @@
             this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastrar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btCadastrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCadastrar.Location = new System.Drawing.Point(156, 282);
+            this.btCadastrar.Location = new System.Drawing.Point(11, 282);
             this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(98, 34);
             this.btCadastrar.TabIndex = 5;
             this.btCadastrar.Text = "F10 Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // btSair
             // 
@@ -128,21 +133,7 @@
             this.btSair.TabIndex = 7;
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
-            // 
-            // btSelecionar
-            // 
-            this.btSelecionar.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btSelecionar.FlatAppearance.BorderSize = 0;
-            this.btSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSelecionar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btSelecionar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSelecionar.Location = new System.Drawing.Point(11, 282);
-            this.btSelecionar.Margin = new System.Windows.Forms.Padding(2);
-            this.btSelecionar.Name = "btSelecionar";
-            this.btSelecionar.Size = new System.Drawing.Size(98, 34);
-            this.btSelecionar.TabIndex = 4;
-            this.btSelecionar.Text = "F2 Selecionar";
-            this.btSelecionar.UseVisualStyleBackColor = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
             // dgvSelecionar
             // 
@@ -182,6 +173,7 @@
             this.dgvSelecionar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSelecionar.Size = new System.Drawing.Size(447, 229);
             this.dgvSelecionar.TabIndex = 3;
+            this.dgvSelecionar.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionar_CellContentDoubleClick);
             // 
             // idCadastro
             // 
@@ -218,7 +210,6 @@
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.btSair);
-            this.Controls.Add(this.btSelecionar);
             this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.panelBuscar);
             this.Controls.Add(this.tbBuscar);
@@ -230,6 +221,8 @@
             this.Name = "FrmSelecionarCadastroUnico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Unico";
+            this.Load += new System.EventHandler(this.FrmSelecionarCadastroUnico_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmSelecionarCadastroUnico_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelecionar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
             this.ResumeLayout(false);
@@ -246,7 +239,6 @@
         private System.Windows.Forms.Button btAlterar;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Button btSair;
-        private System.Windows.Forms.Button btSelecionar;
         private System.Windows.Forms.DataGridView dgvSelecionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCadastro;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoCadastro;

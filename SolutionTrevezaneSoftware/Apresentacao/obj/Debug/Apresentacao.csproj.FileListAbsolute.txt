@@ -307,3 +307,5 @@ C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\D
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirTipoAtendimento.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirCadastroUnico.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirAtividadeCras.resources
