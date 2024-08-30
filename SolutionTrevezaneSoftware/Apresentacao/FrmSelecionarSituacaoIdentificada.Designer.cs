@@ -42,7 +42,6 @@
             this.panelBuscar = new System.Windows.Forms.Panel();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.pbBuscar = new System.Windows.Forms.PictureBox();
-            this.selecionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelecionar)).BeginInit();
@@ -66,7 +65,6 @@
             this.dgvSelecionar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSelecionar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSelecionar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.selecionar,
             this.idSituacaoIdentificada,
             this.descricaoSituacaoIdentificada});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -87,6 +85,7 @@
             this.dgvSelecionar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSelecionar.Size = new System.Drawing.Size(476, 229);
             this.dgvSelecionar.TabIndex = 3;
+            this.dgvSelecionar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionar_CellDoubleClick);
             // 
             // btAlterar
             // 
@@ -102,6 +101,7 @@
             this.btAlterar.TabIndex = 6;
             this.btAlterar.Text = "F4 Alterar";
             this.btAlterar.UseVisualStyleBackColor = false;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // btCadastrar
             // 
@@ -117,6 +117,7 @@
             this.btCadastrar.TabIndex = 5;
             this.btCadastrar.Text = "F10 Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // btSair
             // 
@@ -132,6 +133,7 @@
             this.btSair.TabIndex = 7;
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
             // btSelecionar
             // 
@@ -162,6 +164,7 @@
             this.btBuscar.TabIndex = 1;
             this.btBuscar.Text = "F5 Buscar";
             this.btBuscar.UseVisualStyleBackColor = false;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // panelBuscar
             // 
@@ -183,6 +186,9 @@
             this.tbBuscar.Size = new System.Drawing.Size(257, 19);
             this.tbBuscar.TabIndex = 0;
             this.tbBuscar.Text = "Digite a descrição ...";
+            this.tbBuscar.Enter += new System.EventHandler(this.tbBuscar_Enter);
+            this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
+            this.tbBuscar.Leave += new System.EventHandler(this.tbBuscar_Leave);
             // 
             // pbBuscar
             // 
@@ -194,13 +200,6 @@
             this.pbBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscar.TabIndex = 66;
             this.pbBuscar.TabStop = false;
-            // 
-            // selecionar
-            // 
-            this.selecionar.HeaderText = "...";
-            this.selecionar.Name = "selecionar";
-            this.selecionar.ToolTipText = "Selecionar";
-            this.selecionar.Width = 30;
             // 
             // idSituacaoIdentificada
             // 
@@ -214,7 +213,7 @@
             this.descricaoSituacaoIdentificada.Name = "descricaoSituacaoIdentificada";
             this.descricaoSituacaoIdentificada.ReadOnly = true;
             this.descricaoSituacaoIdentificada.ToolTipText = "Descrição situação identificada";
-            this.descricaoSituacaoIdentificada.Width = 300;
+            this.descricaoSituacaoIdentificada.Width = 330;
             // 
             // FrmSelecionarSituacaoIdentificada
             // 
@@ -230,10 +229,11 @@
             this.Controls.Add(this.panelBuscar);
             this.Controls.Add(this.tbBuscar);
             this.Controls.Add(this.pbBuscar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSelecionarSituacaoIdentificada";
             this.Text = "Situação Identificada";
+            this.Load += new System.EventHandler(this.FrmSelecionarSituacaoIdentificada_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmSelecionarSituacaoIdentificada_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelecionar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
             this.ResumeLayout(false);
@@ -252,7 +252,6 @@
         private System.Windows.Forms.Panel panelBuscar;
         private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.PictureBox pbBuscar;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn selecionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSituacaoIdentificada;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoSituacaoIdentificada;
     }

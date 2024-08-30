@@ -1,18 +1,24 @@
 ﻿using Negocio;
 using ObjetoTransferencia;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Apresentacao
 {
-    public partial class FrmAlterarCadastrarExcluirBeneficioGoverno : FrmModelo
+    public partial class FrmAlterarCadastrarExcluirSituacaoIdentificada : FrmModelo
     {
         string modeloFormulario;
-        BeneficioGoverno beneficio;
-        private NegBeneficioGoverno nBeneficio = new NegBeneficioGoverno();
-        public FrmAlterarCadastrarExcluirBeneficioGoverno(string strFormulario, [Optional] BeneficioGoverno obj)
+        SituacaoIdentificada situacaoIdentificada;
+        private NegSituacaoIdentificada nSituacao = new NegSituacaoIdentificada();
+        public FrmAlterarCadastrarExcluirSituacaoIdentificada(string strFormulario, [Optional] SituacaoIdentificada objSituacao)
         {
             InitializeComponent();
 
@@ -22,20 +28,19 @@ namespace Apresentacao
                 modeloFormulario = strFormulario;
             }
 
-            if (obj != null)
+            if (objSituacao != null)
             {
                 //Objeto
-                beneficio = obj;
+                situacaoIdentificada = objSituacao;
             }
         }
-
 
         //Método Designer formulário
         public void metodoConstrutor()
         {
             if (modeloFormulario == "cadastrar")
             {
-                this.Text = "Cadastrar Beneficio do Governo";
+                this.Text = "Cadastrar Situação Identificada";
                 tbId.Visible = false;
                 lbCodigo.Visible = false;
                 this.btCadastrar.BackColor = System.Drawing.Color.Turquoise;
@@ -45,15 +50,15 @@ namespace Apresentacao
             }
             else
             {
-                this.Text = "Alterar e Excluir Beneficio do Governo";
+                this.Text = "Alterar e Excluir Situação Identificada";
                 this.btCadastrar.BackColor = System.Drawing.Color.DeepSkyBlue;
                 this.btCadastrar.Text = "F5 Alterar";
                 btExcluir.Visible = true;
                 tbId.Visible = true;
                 lbCodigo.Visible = true;
 
-                tbId.Text = beneficio.idBeneficioGoverno.ToString();
-                tbDescricao.Text = beneficio.descricaoBeneficioGoverno;
+                tbId.Text = situacaoIdentificada.idSituacaoIdentificada.ToString();
+                tbDescricao.Text = situacaoIdentificada.descricaoSituacaoIdentificada;
             }
 
 
@@ -99,33 +104,10 @@ namespace Apresentacao
             tbDescricao.Text = string.Empty;
         }
 
-        //-------------------------------------Formulário
-        private void FrmAlterarCadastrarExcluirBeneficioGoverno_Load(object sender, EventArgs e)
+        //----------------------------------Formulário
+        private void tbDescricao_Leave(object sender, EventArgs e)
         {
-            metodoConstrutor();
-        }
-
-        private void FrmAlterarCadastrarExcluirBeneficioGoverno_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode.Equals(Keys.F5) == true)
-            {
-                btCadastrar.PerformClick();
-            }
-            if (e.KeyCode.Equals(Keys.Escape) == true)
-            {
-                btSair.PerformClick();
-            }
-            if (e.KeyCode.Equals(Keys.F10) == true)
-            {
-                btCadastrar.PerformClick();
-            }
-            if (e.KeyCode.Equals(Keys.F2) == true)
-            {
-                if (btExcluir.Visible == true)
-                {
-                    btExcluir.PerformClick();
-                }
-            }
+            metodoEp(tbDescricao);
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -154,12 +136,12 @@ namespace Apresentacao
             {
                 if (modeloFormulario == "cadastrar")//Cadastrar
                 {
-                    BeneficioGoverno cadBeneficio = new BeneficioGoverno();
+                    SituacaoIdentificada cadSituacao = new SituacaoIdentificada();
 
                     //tipoAtendimento.idTipo = int.Parse(tbId.Text);
-                    cadBeneficio.descricaoBeneficioGoverno = tbDescricao.Text;
+                    cadSituacao.descricaoSituacaoIdentificada = tbDescricao.Text;
 
-                    if (nBeneficio.CadastrarBeneficioGoverno(cadBeneficio) == true)
+                    if (nSituacao.CadastrarSituacao(cadSituacao) == true)
                     {
                         DialogResult resposta;
                         //Criando Caixa de dialogo
@@ -212,13 +194,13 @@ namespace Apresentacao
                         resposta = frmCaixa.ShowDialog();
                         if (resposta == DialogResult.Yes)
                         {
-                            BeneficioGoverno altBeneficio= new BeneficioGoverno();
+                            SituacaoIdentificada altSituacao = new SituacaoIdentificada();
 
-                            altBeneficio.idBeneficioGoverno = int.Parse(tbId.Text);
-                            altBeneficio.descricaoBeneficioGoverno = tbDescricao.Text;
+                            altSituacao.idSituacaoIdentificada = int.Parse(tbId.Text);
+                            altSituacao.descricaoSituacaoIdentificada = tbDescricao.Text;
 
                             //Realizando o Cadastro
-                            if (nBeneficio.AtualizarBeneficioGoverno(altBeneficio) == true)
+                            if (nSituacao.AtualizarSituacao(altSituacao) == true)
                             {
 
                                 //Criando Caixa de dialogo
@@ -274,7 +256,7 @@ namespace Apresentacao
             resposta = frmCaixa.ShowDialog();
             if (resposta == DialogResult.Yes)
             {
-                if (nBeneficio.ExcluirBeneficioGoverno(beneficio) == true)
+                if (nSituacao.ExcluirSituacao(situacaoIdentificada) == true)
                 {
                     //Criando Caixa de dialogo
                     frmCaixa = new FrmCaixaDialogo("Exclusão",
@@ -309,9 +291,33 @@ namespace Apresentacao
             }
         }
 
-        private void tbDescricao_Leave(object sender, EventArgs e)
+        private void FrmAlterarCadastrarExcluirSituacaoIdentificada_Load(object sender, EventArgs e)
         {
-            metodoEp(tbDescricao);
+            metodoConstrutor();
         }
+
+        private void FrmAlterarCadastrarExcluirSituacaoIdentificada_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.Equals(Keys.F5) == true)
+            {
+                btCadastrar.PerformClick();
+            }
+            if (e.KeyCode.Equals(Keys.Escape) == true)
+            {
+                btSair.PerformClick();
+            }
+            if (e.KeyCode.Equals(Keys.F10) == true)
+            {
+                btCadastrar.PerformClick();
+            }
+            if (e.KeyCode.Equals(Keys.F2) == true)
+            {
+                if (btExcluir.Visible == true)
+                {
+                    btExcluir.PerformClick();
+                }
+            }
+        }
+
     }
 }

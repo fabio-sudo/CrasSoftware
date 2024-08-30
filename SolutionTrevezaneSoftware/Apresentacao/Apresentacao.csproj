@@ -102,6 +102,18 @@
     <Compile Include="FrmAlterarCadastrarExcluirCadastroUnico.Designer.cs">
       <DependentUpon>FrmAlterarCadastrarExcluirCadastroUnico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirProvidenciaCras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirProvidenciaCras.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirProvidenciaCras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirSituacaoIdentificada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirSituacaoIdentificada.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirSituacaoIdentificada.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAlterarCadastrarExcluirTipoAtendimento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlterarCadastrarExcluirCadastroUnico.resx">
       <DependentUpon>FrmAlterarCadastrarExcluirCadastroUnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirProvidenciaCras.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirProvidenciaCras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirSituacaoIdentificada.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirSituacaoIdentificada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlterarCadastrarExcluirTipoAtendimento.resx">
       <DependentUpon>FrmAlterarCadastrarExcluirTipoAtendimento.cs</DependentUpon>

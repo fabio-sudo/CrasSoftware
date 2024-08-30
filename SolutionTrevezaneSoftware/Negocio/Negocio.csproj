@@ -46,6 +46,8 @@
     <Compile Include="NegCadastroUnico.cs" />
     <Compile Include="NegCliente.cs" />
     <Compile Include="NegFuncionario.cs" />
+    <Compile Include="NegProvidencia.cs" />
+    <Compile Include="NegSituacaoIdentificada.cs" />
     <Compile Include="NegTipoAtendimento.cs" />
     <Compile Include="NegUsuarioSenha.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,6 +1,6 @@
 ﻿namespace Apresentacao
 {
-    partial class FrmAlterarCadastrarExcluirBeneficioGoverno
+    partial class FrmAlterarCadastrarExcluirSituacaoIdentificada
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAlterarCadastrarExcluirBeneficioGoverno));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAlterarCadastrarExcluirSituacaoIdentificada));
             this.btSair = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.btSair.Margin = new System.Windows.Forms.Padding(2);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(98, 34);
-            this.btSair.TabIndex = 6;
+            this.btSair.TabIndex = 83;
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
@@ -70,7 +70,7 @@
             this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(98, 34);
-            this.btCadastrar.TabIndex = 4;
+            this.btCadastrar.TabIndex = 81;
             this.btCadastrar.Text = "F10 Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
             this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
@@ -86,7 +86,7 @@
             this.btExcluir.Margin = new System.Windows.Forms.Padding(2);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(98, 34);
-            this.btExcluir.TabIndex = 5;
+            this.btExcluir.TabIndex = 82;
             this.btExcluir.Text = "F2 Excluir";
             this.btExcluir.UseVisualStyleBackColor = false;
             this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
@@ -99,7 +99,7 @@
             this.tbId.Margin = new System.Windows.Forms.Padding(2);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(50, 23);
-            this.tbId.TabIndex = 1;
+            this.tbId.TabIndex = 78;
             // 
             // lbCodigo
             // 
@@ -109,7 +109,7 @@
             this.lbCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCodigo.Name = "lbCodigo";
             this.lbCodigo.Size = new System.Drawing.Size(21, 17);
-            this.lbCodigo.TabIndex = 0;
+            this.lbCodigo.TabIndex = 77;
             this.lbCodigo.Text = "ID";
             // 
             // tbDescricao
@@ -118,17 +118,16 @@
             this.tbDescricao.Location = new System.Drawing.Point(86, 61);
             this.tbDescricao.Name = "tbDescricao";
             this.tbDescricao.Size = new System.Drawing.Size(258, 23);
-            this.tbDescricao.TabIndex = 3;
-            this.tbDescricao.Leave += new System.EventHandler(this.tbDescricao_Leave);
+            this.tbDescricao.TabIndex = 80;
             // 
             // pbImg
             // 
-            this.pbImg.Image = global::Apresentacao.Properties.Resources.beneficioGovernoImg;
+            this.pbImg.Image = global::Apresentacao.Properties.Resources.situacaoIdentificadaImg;
             this.pbImg.Location = new System.Drawing.Point(12, 12);
             this.pbImg.Name = "pbImg";
             this.pbImg.Size = new System.Drawing.Size(39, 42);
             this.pbImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbImg.TabIndex = 76;
+            this.pbImg.TabIndex = 84;
             this.pbImg.TabStop = false;
             // 
             // lbDescricao
@@ -138,18 +137,18 @@
             this.lbDescricao.Location = new System.Drawing.Point(9, 67);
             this.lbDescricao.Name = "lbDescricao";
             this.lbDescricao.Size = new System.Drawing.Size(71, 17);
-            this.lbDescricao.TabIndex = 2;
+            this.lbDescricao.TabIndex = 79;
             this.lbDescricao.Text = "Descrição";
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // FrmAlterarCadastrarExcluirBeneficioGoverno
+            // FrmAlterarCadastrarExcluirSituacaoIdentificada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 208);
+            this.ClientSize = new System.Drawing.Size(369, 207);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.btExcluir);
@@ -159,10 +158,10 @@
             this.Controls.Add(this.pbImg);
             this.Controls.Add(this.lbDescricao);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmAlterarCadastrarExcluirBeneficioGoverno";
-            this.Text = "Beneficio do Governo";
-            this.Load += new System.EventHandler(this.FrmAlterarCadastrarExcluirBeneficioGoverno_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmAlterarCadastrarExcluirBeneficioGoverno_KeyDown);
+            this.Name = "FrmAlterarCadastrarExcluirSituacaoIdentificada";
+            this.Text = "Situação Identificada";
+            this.Load += new System.EventHandler(this.FrmAlterarCadastrarExcluirSituacaoIdentificada_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmAlterarCadastrarExcluirSituacaoIdentificada_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace Apresentacao
 {
-    partial class FrmAlterarCadastrarExcluirBeneficioGoverno
+    partial class FrmAlterarCadastrarExcluirProvidenciaCras
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAlterarCadastrarExcluirBeneficioGoverno));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAlterarCadastrarExcluirProvidenciaCras));
             this.btSair = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
@@ -123,12 +123,12 @@
             // 
             // pbImg
             // 
-            this.pbImg.Image = global::Apresentacao.Properties.Resources.beneficioGovernoImg;
+            this.pbImg.Image = global::Apresentacao.Properties.Resources.providenciaImg;
             this.pbImg.Location = new System.Drawing.Point(12, 12);
             this.pbImg.Name = "pbImg";
             this.pbImg.Size = new System.Drawing.Size(39, 42);
             this.pbImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbImg.TabIndex = 76;
+            this.pbImg.TabIndex = 84;
             this.pbImg.TabStop = false;
             // 
             // lbDescricao
@@ -145,11 +145,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // FrmAlterarCadastrarExcluirBeneficioGoverno
+            // FrmAlterarCadastrarExcluirProvidenciaCras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 208);
+            this.ClientSize = new System.Drawing.Size(373, 210);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.btExcluir);
@@ -159,10 +159,10 @@
             this.Controls.Add(this.pbImg);
             this.Controls.Add(this.lbDescricao);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmAlterarCadastrarExcluirBeneficioGoverno";
-            this.Text = "Beneficio do Governo";
-            this.Load += new System.EventHandler(this.FrmAlterarCadastrarExcluirBeneficioGoverno_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmAlterarCadastrarExcluirBeneficioGoverno_KeyDown);
+            this.Name = "FrmAlterarCadastrarExcluirProvidenciaCras";
+            this.Text = "Providência Cras";
+            this.Load += new System.EventHandler(this.FrmAlterarCadastrarExcluirProvidenciaCras_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmAlterarCadastrarExcluirProvidenciaCras_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
