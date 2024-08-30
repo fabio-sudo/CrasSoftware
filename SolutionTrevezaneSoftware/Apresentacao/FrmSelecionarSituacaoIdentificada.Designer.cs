@@ -34,16 +34,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSelecionarSituacaoIdentificada));
             this.dgvSelecionar = new System.Windows.Forms.DataGridView();
+            this.idSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btAlterar = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
-            this.btSelecionar = new System.Windows.Forms.Button();
             this.btBuscar = new System.Windows.Forms.Button();
             this.panelBuscar = new System.Windows.Forms.Panel();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.pbBuscar = new System.Windows.Forms.PictureBox();
-            this.idSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricaoSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelecionar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +86,20 @@
             this.dgvSelecionar.TabIndex = 3;
             this.dgvSelecionar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionar_CellDoubleClick);
             // 
+            // idSituacaoIdentificada
+            // 
+            this.idSituacaoIdentificada.HeaderText = "ID";
+            this.idSituacaoIdentificada.Name = "idSituacaoIdentificada";
+            this.idSituacaoIdentificada.ReadOnly = true;
+            // 
+            // descricaoSituacaoIdentificada
+            // 
+            this.descricaoSituacaoIdentificada.HeaderText = "Descrição";
+            this.descricaoSituacaoIdentificada.Name = "descricaoSituacaoIdentificada";
+            this.descricaoSituacaoIdentificada.ReadOnly = true;
+            this.descricaoSituacaoIdentificada.ToolTipText = "Descrição situação identificada";
+            this.descricaoSituacaoIdentificada.Width = 330;
+            // 
             // btAlterar
             // 
             this.btAlterar.BackColor = System.Drawing.Color.DeepPink;
@@ -94,7 +107,7 @@
             this.btAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btAlterar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btAlterar.Location = new System.Drawing.Point(287, 282);
+            this.btAlterar.Location = new System.Drawing.Point(113, 282);
             this.btAlterar.Margin = new System.Windows.Forms.Padding(2);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(98, 34);
@@ -110,7 +123,7 @@
             this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastrar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btCadastrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCadastrar.Location = new System.Drawing.Point(185, 282);
+            this.btCadastrar.Location = new System.Drawing.Point(11, 282);
             this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(98, 34);
@@ -134,21 +147,6 @@
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
-            // 
-            // btSelecionar
-            // 
-            this.btSelecionar.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btSelecionar.FlatAppearance.BorderSize = 0;
-            this.btSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSelecionar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btSelecionar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSelecionar.Location = new System.Drawing.Point(11, 282);
-            this.btSelecionar.Margin = new System.Windows.Forms.Padding(2);
-            this.btSelecionar.Name = "btSelecionar";
-            this.btSelecionar.Size = new System.Drawing.Size(98, 34);
-            this.btSelecionar.TabIndex = 4;
-            this.btSelecionar.Text = "F2 Selecionar";
-            this.btSelecionar.UseVisualStyleBackColor = false;
             // 
             // btBuscar
             // 
@@ -201,20 +199,6 @@
             this.pbBuscar.TabIndex = 66;
             this.pbBuscar.TabStop = false;
             // 
-            // idSituacaoIdentificada
-            // 
-            this.idSituacaoIdentificada.HeaderText = "ID";
-            this.idSituacaoIdentificada.Name = "idSituacaoIdentificada";
-            this.idSituacaoIdentificada.ReadOnly = true;
-            // 
-            // descricaoSituacaoIdentificada
-            // 
-            this.descricaoSituacaoIdentificada.HeaderText = "Descrição";
-            this.descricaoSituacaoIdentificada.Name = "descricaoSituacaoIdentificada";
-            this.descricaoSituacaoIdentificada.ReadOnly = true;
-            this.descricaoSituacaoIdentificada.ToolTipText = "Descrição situação identificada";
-            this.descricaoSituacaoIdentificada.Width = 330;
-            // 
             // FrmSelecionarSituacaoIdentificada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,7 +208,6 @@
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.btSair);
-            this.Controls.Add(this.btSelecionar);
             this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.panelBuscar);
             this.Controls.Add(this.tbBuscar);
@@ -247,7 +230,6 @@
         private System.Windows.Forms.Button btAlterar;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Button btSair;
-        private System.Windows.Forms.Button btSelecionar;
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.Panel panelBuscar;
         private System.Windows.Forms.TextBox tbBuscar;

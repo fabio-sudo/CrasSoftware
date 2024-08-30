@@ -50,7 +50,7 @@
             this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSair.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btSair.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSair.Location = new System.Drawing.Point(246, 151);
+            this.btSair.Location = new System.Drawing.Point(304, 151);
             this.btSair.Margin = new System.Windows.Forms.Padding(2);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(98, 34);
@@ -117,7 +117,7 @@
             this.tbDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.tbDescricao.Location = new System.Drawing.Point(86, 61);
             this.tbDescricao.Name = "tbDescricao";
-            this.tbDescricao.Size = new System.Drawing.Size(258, 23);
+            this.tbDescricao.Size = new System.Drawing.Size(316, 23);
             this.tbDescricao.TabIndex = 80;
             // 
             // pbImg
@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 207);
+            this.ClientSize = new System.Drawing.Size(420, 202);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.btExcluir);
