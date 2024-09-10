@@ -102,11 +102,23 @@
     <Compile Include="FrmAlterarCadastrarExcluirCadastroUnico.Designer.cs">
       <DependentUpon>FrmAlterarCadastrarExcluirCadastroUnico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirEspecificacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirEspecificacao.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirEspecificacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAlterarCadastrarExcluirProvidenciaCras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAlterarCadastrarExcluirProvidenciaCras.Designer.cs">
       <DependentUpon>FrmAlterarCadastrarExcluirProvidenciaCras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirSituacaoFamiliar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastrarExcluirSituacaoFamiliar.Designer.cs">
+      <DependentUpon>FrmAlterarCadastrarExcluirSituacaoFamiliar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAlterarCadastrarExcluirSituacaoIdentificada.cs">
       <SubType>Form</SubType>
@@ -240,6 +252,12 @@
     <Compile Include="FrmSelecionarCliente.Designer.cs">
       <DependentUpon>FrmSelecionarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSelecionarEspecificacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelecionarEspecificacao.Designer.cs">
+      <DependentUpon>FrmSelecionarEspecificacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSelecionarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,8 +326,14 @@
     <EmbeddedResource Include="FrmAlterarCadastrarExcluirCadastroUnico.resx">
       <DependentUpon>FrmAlterarCadastrarExcluirCadastroUnico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirEspecificacao.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirEspecificacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAlterarCadastrarExcluirProvidenciaCras.resx">
       <DependentUpon>FrmAlterarCadastrarExcluirProvidenciaCras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastrarExcluirSituacaoFamiliar.resx">
+      <DependentUpon>FrmAlterarCadastrarExcluirSituacaoFamiliar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlterarCadastrarExcluirSituacaoIdentificada.resx">
       <DependentUpon>FrmAlterarCadastrarExcluirSituacaoIdentificada.cs</DependentUpon>
@@ -376,6 +400,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSelecionarCliente.resx">
       <DependentUpon>FrmSelecionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelecionarEspecificacao.resx">
+      <DependentUpon>FrmSelecionarEspecificacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSelecionarFuncionario.resx">
       <DependentUpon>FrmSelecionarFuncionario.cs</DependentUpon>
@@ -808,6 +835,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tipoImg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Especificacao.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -44,9 +44,11 @@
     <Compile Include="BeneficioGoverno.cs" />
     <Compile Include="CadastroUnico.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Especificacao.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providencia.cs" />
+    <Compile Include="SituacaoFamiliar.cs" />
     <Compile Include="SituacaoIdentificada.cs" />
     <Compile Include="TipoAtendimento.cs" />
     <Compile Include="UsuarioSenha.cs" />

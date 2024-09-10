@@ -87,6 +87,7 @@ namespace Negocio
         {
             try
             {
+                sqlserver.LimparParametros();
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@descricao", beneficio.descricaoBeneficioGoverno));
 
                 string comando = " exec uspCadastrarBeneficioGoverno " +
@@ -115,7 +116,7 @@ namespace Negocio
         {
             try
             {
-
+                sqlserver.LimparParametros();
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@id", beneficio.idBeneficioGoverno));
 
                 string comando = "exec uspExcluirBeneficioGoverno @id";

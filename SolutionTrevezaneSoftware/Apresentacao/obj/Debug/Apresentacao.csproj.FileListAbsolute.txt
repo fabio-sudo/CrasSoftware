@@ -312,3 +312,6 @@ C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\D
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirBeneficioGoverno.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirProvidenciaCras.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirSituacaoIdentificada.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirSituacaoFamiliar.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirEspecificacao.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarEspecificacao.resources

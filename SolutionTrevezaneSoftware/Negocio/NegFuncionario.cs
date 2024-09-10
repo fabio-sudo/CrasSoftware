@@ -19,6 +19,7 @@ namespace Negocio
         {
             try
             {
+                sqlserver.LimparParametros();
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@nome", funcionario.nomeFuncionario));
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@sobrenome", funcionario.sobrenomeFuncionario));
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@dataNascimento", funcionario.dataNascimentoFuncionario));
@@ -63,7 +64,7 @@ namespace Negocio
         {
             try
             {
-
+                sqlserver.LimparParametros();
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@codigo", funcionario.codigoFuncionario));
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@nome", funcionario.nomeFuncionario));
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@sobrenome", funcionario.sobrenomeFuncionario));
@@ -103,7 +104,7 @@ namespace Negocio
         {
             try
             {
-
+                sqlserver.LimparParametros();
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@codigo", funcionario.codigoFuncionario));
 
                 string comando = "exec uspExcluirFuncionario @codigo";

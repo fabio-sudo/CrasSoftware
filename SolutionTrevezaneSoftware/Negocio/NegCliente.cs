@@ -68,6 +68,7 @@ namespace Negocio
         {
             try
             {
+                sqlserver.LimparParametros();
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@codigo", cliente.codigoCliente));
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@prontuario", cliente.prontuarioCliente));
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@nis", cliente.nisCliente));
@@ -107,6 +108,7 @@ namespace Negocio
         public Boolean ExcluirCliente(Cliente cliente) {
             try {
 
+                sqlserver.LimparParametros();
                 sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@codigo", cliente.codigoCliente));
            
                 string comando = "exec uspExcluirCliente @codigo";

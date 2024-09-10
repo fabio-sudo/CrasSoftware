@@ -88,7 +88,8 @@ namespace Negocio
     {
         try
         {
-            sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@descricao", Situacao.descricaoSituacaoIdentificada));
+                sqlserver.LimparParametros();
+                sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@descricao", Situacao.descricaoSituacaoIdentificada));
 
             string comando = " exec uspCadastrarSituacaoIdentificada " +
                "@descricao";
@@ -116,8 +117,8 @@ namespace Negocio
     {
         try
         {
-
-            sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@id", Situacao.idSituacaoIdentificada));
+                sqlserver.LimparParametros();
+                sqlserver.AdicionarParametro(new System.Data.SqlClient.SqlParameter("@id", Situacao.idSituacaoIdentificada));
 
             string comando = "exec uspExcluirSituacaoIdentificada @id";
 

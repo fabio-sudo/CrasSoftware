@@ -153,6 +153,7 @@ namespace Apresentacao
 
         private void FrmSelecionarSituacaoIdentificada_Load(object sender, EventArgs e)
         {
+            
             if (strDescricao != String.Empty)
             {
                 tbBuscar.Text = strDescricao;

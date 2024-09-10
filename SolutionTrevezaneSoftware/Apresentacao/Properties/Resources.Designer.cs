@@ -793,6 +793,16 @@ namespace Apresentacao.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_Especificacao {
+            get {
+                object obj = ResourceManager.GetObject("img_Especificacao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imgCrediarioBotao {
             get {
                 object obj = ResourceManager.GetObject("imgCrediarioBotao", resourceCulture);
