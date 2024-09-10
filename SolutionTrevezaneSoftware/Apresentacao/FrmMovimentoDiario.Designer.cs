@@ -99,7 +99,7 @@
             this.selecao = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelBuscar = new System.Windows.Forms.Panel();
+            this.panelTipo = new System.Windows.Forms.Panel();
             this.tbBuscarTipo = new System.Windows.Forms.TextBox();
             this.dgvProvidencia = new System.Windows.Forms.DataGridView();
             this.selecionarProvidencia = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -114,9 +114,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbSituacaoIdentificada = new System.Windows.Forms.TextBox();
             this.dgvBeneficioGoverno = new System.Windows.Forms.DataGridView();
+            this.selecionarBeneficioGoverno = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.idBeneficioGoverno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoBeneficioGoverno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbBeneficioGoverno = new System.Windows.Forms.TextBox();
             this.dgvCad = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tbCad = new System.Windows.Forms.TextBox();
             this.dgvSituacaoFamiliar = new System.Windows.Forms.DataGridView();
@@ -126,9 +132,17 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tbSituacaoFamiliar = new System.Windows.Forms.TextBox();
             this.dgvAtividade = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tbAtividadeCras = new System.Windows.Forms.TextBox();
             this.dgvEspecificacaoAtendimento = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeEspecificacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.encaminhamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.tbEspecificacaoAtendimento = new System.Windows.Forms.TextBox();
             this.pbSelecionarEspecificacaoAtendimento = new System.Windows.Forms.PictureBox();
@@ -159,20 +173,6 @@
             this.pbFuncionario = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.selecionarBeneficioGoverno = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.idBeneficioGoverno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricaoBeneficioGoverno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeEspecificacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.encaminhamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbObservacao = new System.Windows.Forms.TextBox();
             this.lbObservacao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudCriancas)).BeginInit();
@@ -227,7 +227,7 @@
             this.btBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.btBuscarFuncionario.Name = "btBuscarFuncionario";
             this.btBuscarFuncionario.Size = new System.Drawing.Size(61, 34);
-            this.btBuscarFuncionario.TabIndex = 209;
+            this.btBuscarFuncionario.TabIndex = 1;
             this.btBuscarFuncionario.Text = "Buscar";
             this.btBuscarFuncionario.UseVisualStyleBackColor = false;
             // 
@@ -238,7 +238,7 @@
             this.panelBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.panelBuscarFuncionario.Name = "panelBuscarFuncionario";
             this.panelBuscarFuncionario.Size = new System.Drawing.Size(242, 2);
-            this.panelBuscarFuncionario.TabIndex = 210;
+            this.panelBuscarFuncionario.TabIndex = 48;
             // 
             // tbBuscarFuncionario
             // 
@@ -249,7 +249,7 @@
             this.tbBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.tbBuscarFuncionario.Name = "tbBuscarFuncionario";
             this.tbBuscarFuncionario.Size = new System.Drawing.Size(212, 16);
-            this.tbBuscarFuncionario.TabIndex = 208;
+            this.tbBuscarFuncionario.TabIndex = 0;
             this.tbBuscarFuncionario.Text = "Digite o nome do funcionário ...";
             this.tbBuscarFuncionario.Enter += new System.EventHandler(this.tbBuscarFuncionario_Enter);
             this.tbBuscarFuncionario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscarFuncionario_KeyPress);
@@ -264,7 +264,7 @@
             this.lbDataAtendimento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDataAtendimento.Name = "lbDataAtendimento";
             this.lbDataAtendimento.Size = new System.Drawing.Size(130, 16);
-            this.lbDataAtendimento.TabIndex = 212;
+            this.lbDataAtendimento.TabIndex = 49;
             this.lbDataAtendimento.Text = "Data Atendimento";
             // 
             // dtpDiaSemana
@@ -279,7 +279,7 @@
             this.dtpDiaSemana.Margin = new System.Windows.Forms.Padding(2);
             this.dtpDiaSemana.Name = "dtpDiaSemana";
             this.dtpDiaSemana.Size = new System.Drawing.Size(124, 26);
-            this.dtpDiaSemana.TabIndex = 213;
+            this.dtpDiaSemana.TabIndex = 50;
             // 
             // tbProntuario
             // 
@@ -288,7 +288,7 @@
             this.tbProntuario.Margin = new System.Windows.Forms.Padding(2);
             this.tbProntuario.Name = "tbProntuario";
             this.tbProntuario.Size = new System.Drawing.Size(82, 23);
-            this.tbProntuario.TabIndex = 219;
+            this.tbProntuario.TabIndex = 5;
             // 
             // lbProntuario
             // 
@@ -300,7 +300,7 @@
             this.lbProntuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbProntuario.Name = "lbProntuario";
             this.lbProntuario.Size = new System.Drawing.Size(84, 17);
-            this.lbProntuario.TabIndex = 218;
+            this.lbProntuario.TabIndex = 4;
             this.lbProntuario.Text = "Prontuário";
             // 
             // tbNome
@@ -310,7 +310,7 @@
             this.tbNome.Margin = new System.Windows.Forms.Padding(2);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(304, 23);
-            this.tbNome.TabIndex = 221;
+            this.tbNome.TabIndex = 7;
             // 
             // lbNome
             // 
@@ -322,7 +322,7 @@
             this.lbNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(121, 17);
-            this.lbNome.TabIndex = 220;
+            this.lbNome.TabIndex = 6;
             this.lbNome.Text = "Nome Completo";
             // 
             // nudCriancas
@@ -331,7 +331,7 @@
             this.nudCriancas.Location = new System.Drawing.Point(406, 85);
             this.nudCriancas.Name = "nudCriancas";
             this.nudCriancas.Size = new System.Drawing.Size(80, 23);
-            this.nudCriancas.TabIndex = 222;
+            this.nudCriancas.TabIndex = 9;
             this.nudCriancas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbCriancas
@@ -344,7 +344,7 @@
             this.lbCriancas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCriancas.Name = "lbCriancas";
             this.lbCriancas.Size = new System.Drawing.Size(56, 13);
-            this.lbCriancas.TabIndex = 223;
+            this.lbCriancas.TabIndex = 8;
             this.lbCriancas.Text = "Crianças";
             // 
             // lbAdolescente
@@ -357,7 +357,7 @@
             this.lbAdolescente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAdolescente.Name = "lbAdolescente";
             this.lbAdolescente.Size = new System.Drawing.Size(83, 13);
-            this.lbAdolescente.TabIndex = 225;
+            this.lbAdolescente.TabIndex = 10;
             this.lbAdolescente.Text = "Adolescentes";
             // 
             // nudAdolescente
@@ -366,7 +366,7 @@
             this.nudAdolescente.Location = new System.Drawing.Point(492, 85);
             this.nudAdolescente.Name = "nudAdolescente";
             this.nudAdolescente.Size = new System.Drawing.Size(80, 23);
-            this.nudAdolescente.TabIndex = 224;
+            this.nudAdolescente.TabIndex = 11;
             this.nudAdolescente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbIdoso
@@ -379,7 +379,7 @@
             this.lbIdoso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbIdoso.Name = "lbIdoso";
             this.lbIdoso.Size = new System.Drawing.Size(44, 13);
-            this.lbIdoso.TabIndex = 227;
+            this.lbIdoso.TabIndex = 12;
             this.lbIdoso.Text = "Idosos";
             // 
             // nudIdoso
@@ -388,7 +388,7 @@
             this.nudIdoso.Location = new System.Drawing.Point(578, 85);
             this.nudIdoso.Name = "nudIdoso";
             this.nudIdoso.Size = new System.Drawing.Size(80, 23);
-            this.nudIdoso.TabIndex = 226;
+            this.nudIdoso.TabIndex = 13;
             this.nudIdoso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btCadastrar
@@ -403,7 +403,7 @@
             this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(98, 34);
-            this.btCadastrar.TabIndex = 229;
+            this.btCadastrar.TabIndex = 44;
             this.btCadastrar.Text = "F10 Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
             // 
@@ -418,7 +418,7 @@
             this.btSair.Margin = new System.Windows.Forms.Padding(2);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(98, 34);
-            this.btSair.TabIndex = 230;
+            this.btSair.TabIndex = 46;
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
@@ -435,7 +435,7 @@
             this.btPreencher.Margin = new System.Windows.Forms.Padding(2);
             this.btPreencher.Name = "btPreencher";
             this.btPreencher.Size = new System.Drawing.Size(98, 34);
-            this.btPreencher.TabIndex = 231;
+            this.btPreencher.TabIndex = 45;
             this.btPreencher.Text = "F5 Preencher";
             this.btPreencher.UseVisualStyleBackColor = false;
             // 
@@ -447,7 +447,7 @@
             this.cbVisita.Location = new System.Drawing.Point(696, 85);
             this.cbVisita.Name = "cbVisita";
             this.cbVisita.Size = new System.Drawing.Size(70, 23);
-            this.cbVisita.TabIndex = 253;
+            this.cbVisita.TabIndex = 14;
             this.cbVisita.Text = "Visita";
             this.cbVisita.UseVisualStyleBackColor = true;
             // 
@@ -514,7 +514,7 @@
             this.gbRMA.Location = new System.Drawing.Point(874, 603);
             this.gbRMA.Name = "gbRMA";
             this.gbRMA.Size = new System.Drawing.Size(276, 126);
-            this.gbRMA.TabIndex = 256;
+            this.gbRMA.TabIndex = 38;
             this.gbRMA.TabStop = false;
             this.gbRMA.Text = "RMA";
             // 
@@ -606,7 +606,7 @@
             this.btCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btCliente.Name = "btCliente";
             this.btCliente.Size = new System.Drawing.Size(61, 34);
-            this.btCliente.TabIndex = 267;
+            this.btCliente.TabIndex = 3;
             this.btCliente.Text = "Buscar";
             this.btCliente.UseVisualStyleBackColor = false;
             // 
@@ -617,7 +617,7 @@
             this.panelCliente.Margin = new System.Windows.Forms.Padding(2);
             this.panelCliente.Name = "panelCliente";
             this.panelCliente.Size = new System.Drawing.Size(242, 2);
-            this.panelCliente.TabIndex = 268;
+            this.panelCliente.TabIndex = 47;
             // 
             // tbCliente
             // 
@@ -628,7 +628,7 @@
             this.tbCliente.Margin = new System.Windows.Forms.Padding(2);
             this.tbCliente.Name = "tbCliente";
             this.tbCliente.Size = new System.Drawing.Size(212, 16);
-            this.tbCliente.TabIndex = 266;
+            this.tbCliente.TabIndex = 2;
             this.tbCliente.Text = "Digite o nome do cliente ...";
             this.tbCliente.Enter += new System.EventHandler(this.tbCliente_Enter);
             this.tbCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCliente_KeyPress);
@@ -672,7 +672,7 @@
             this.dgvSelecionarTipo.RowTemplate.Height = 24;
             this.dgvSelecionarTipo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSelecionarTipo.Size = new System.Drawing.Size(277, 291);
-            this.dgvSelecionarTipo.TabIndex = 273;
+            this.dgvSelecionarTipo.TabIndex = 18;
             // 
             // selecao
             // 
@@ -700,14 +700,14 @@
             this.descricaoTipo.ToolTipText = "Descrição tipo de atendimento";
             this.descricaoTipo.Width = 250;
             // 
-            // panelBuscar
+            // panelTipo
             // 
-            this.panelBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelBuscar.Location = new System.Drawing.Point(12, 160);
-            this.panelBuscar.Margin = new System.Windows.Forms.Padding(2);
-            this.panelBuscar.Name = "panelBuscar";
-            this.panelBuscar.Size = new System.Drawing.Size(229, 2);
-            this.panelBuscar.TabIndex = 272;
+            this.panelTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelTipo.Location = new System.Drawing.Point(12, 160);
+            this.panelTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTipo.Name = "panelTipo";
+            this.panelTipo.Size = new System.Drawing.Size(229, 2);
+            this.panelTipo.TabIndex = 17;
             // 
             // tbBuscarTipo
             // 
@@ -718,8 +718,11 @@
             this.tbBuscarTipo.Margin = new System.Windows.Forms.Padding(2);
             this.tbBuscarTipo.Name = "tbBuscarTipo";
             this.tbBuscarTipo.Size = new System.Drawing.Size(199, 19);
-            this.tbBuscarTipo.TabIndex = 270;
+            this.tbBuscarTipo.TabIndex = 16;
             this.tbBuscarTipo.Text = "Tipo de Atendimento ...";
+            this.tbBuscarTipo.Enter += new System.EventHandler(this.tbBuscarTipo_Enter);
+            this.tbBuscarTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscarTipo_KeyPress);
+            this.tbBuscarTipo.Leave += new System.EventHandler(this.tbBuscarTipo_Leave);
             // 
             // dgvProvidencia
             // 
@@ -759,7 +762,7 @@
             this.dgvProvidencia.RowTemplate.Height = 24;
             this.dgvProvidencia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProvidencia.Size = new System.Drawing.Size(277, 291);
-            this.dgvProvidencia.TabIndex = 279;
+            this.dgvProvidencia.TabIndex = 21;
             // 
             // selecionarProvidencia
             // 
@@ -794,7 +797,7 @@
             this.panelProvidencia.Margin = new System.Windows.Forms.Padding(2);
             this.panelProvidencia.Name = "panelProvidencia";
             this.panelProvidencia.Size = new System.Drawing.Size(229, 2);
-            this.panelProvidencia.TabIndex = 278;
+            this.panelProvidencia.TabIndex = 20;
             // 
             // tbProvidencia
             // 
@@ -805,7 +808,7 @@
             this.tbProvidencia.Margin = new System.Windows.Forms.Padding(2);
             this.tbProvidencia.Name = "tbProvidencia";
             this.tbProvidencia.Size = new System.Drawing.Size(199, 19);
-            this.tbProvidencia.TabIndex = 277;
+            this.tbProvidencia.TabIndex = 19;
             this.tbProvidencia.Text = "Providência CRAS ...";
             // 
             // dgvSituacaoIdentificada
@@ -846,7 +849,7 @@
             this.dgvSituacaoIdentificada.RowTemplate.Height = 24;
             this.dgvSituacaoIdentificada.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSituacaoIdentificada.Size = new System.Drawing.Size(277, 291);
-            this.dgvSituacaoIdentificada.TabIndex = 285;
+            this.dgvSituacaoIdentificada.TabIndex = 24;
             // 
             // selecionarSituacaoIdentificada
             // 
@@ -881,7 +884,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(229, 2);
-            this.panel1.TabIndex = 284;
+            this.panel1.TabIndex = 23;
             // 
             // tbSituacaoIdentificada
             // 
@@ -892,7 +895,7 @@
             this.tbSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
             this.tbSituacaoIdentificada.Name = "tbSituacaoIdentificada";
             this.tbSituacaoIdentificada.Size = new System.Drawing.Size(199, 19);
-            this.tbSituacaoIdentificada.TabIndex = 283;
+            this.tbSituacaoIdentificada.TabIndex = 22;
             this.tbSituacaoIdentificada.Text = "Situação Identificada ...";
             // 
             // dgvBeneficioGoverno
@@ -933,7 +936,33 @@
             this.dgvBeneficioGoverno.RowTemplate.Height = 24;
             this.dgvBeneficioGoverno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBeneficioGoverno.Size = new System.Drawing.Size(277, 291);
-            this.dgvBeneficioGoverno.TabIndex = 291;
+            this.dgvBeneficioGoverno.TabIndex = 27;
+            // 
+            // selecionarBeneficioGoverno
+            // 
+            this.selecionarBeneficioGoverno.DataPropertyName = "selecionarBeneficioGoverno";
+            this.selecionarBeneficioGoverno.HeaderText = "...";
+            this.selecionarBeneficioGoverno.Name = "selecionarBeneficioGoverno";
+            this.selecionarBeneficioGoverno.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.selecionarBeneficioGoverno.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.selecionarBeneficioGoverno.Width = 30;
+            // 
+            // idBeneficioGoverno
+            // 
+            this.idBeneficioGoverno.DataPropertyName = "idBeneficioGoverno";
+            this.idBeneficioGoverno.HeaderText = "ID";
+            this.idBeneficioGoverno.Name = "idBeneficioGoverno";
+            this.idBeneficioGoverno.ReadOnly = true;
+            this.idBeneficioGoverno.Visible = false;
+            // 
+            // descricaoBeneficioGoverno
+            // 
+            this.descricaoBeneficioGoverno.DataPropertyName = "descricaoBeneficioGoverno";
+            this.descricaoBeneficioGoverno.HeaderText = "Descrição";
+            this.descricaoBeneficioGoverno.Name = "descricaoBeneficioGoverno";
+            this.descricaoBeneficioGoverno.ReadOnly = true;
+            this.descricaoBeneficioGoverno.ToolTipText = "Descrição tipo de atendimento";
+            this.descricaoBeneficioGoverno.Width = 230;
             // 
             // panel2
             // 
@@ -942,7 +971,7 @@
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(229, 2);
-            this.panel2.TabIndex = 290;
+            this.panel2.TabIndex = 26;
             // 
             // tbBeneficioGoverno
             // 
@@ -953,7 +982,7 @@
             this.tbBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
             this.tbBeneficioGoverno.Name = "tbBeneficioGoverno";
             this.tbBeneficioGoverno.Size = new System.Drawing.Size(199, 19);
-            this.tbBeneficioGoverno.TabIndex = 289;
+            this.tbBeneficioGoverno.TabIndex = 25;
             this.tbBeneficioGoverno.Text = "Benefício do Governo ...";
             // 
             // dgvCad
@@ -994,7 +1023,33 @@
             this.dgvCad.RowTemplate.Height = 24;
             this.dgvCad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCad.Size = new System.Drawing.Size(277, 229);
-            this.dgvCad.TabIndex = 297;
+            this.dgvCad.TabIndex = 30;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "selecionarCad";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "...";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewCheckBoxColumn1.Width = 30;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "idCad";
+            this.dataGridViewTextBoxColumn3.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "descricaoCad";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.ToolTipText = "Descrição tipo de atendimento";
+            this.dataGridViewTextBoxColumn4.Width = 230;
             // 
             // panel3
             // 
@@ -1003,7 +1058,7 @@
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(229, 2);
-            this.panel3.TabIndex = 296;
+            this.panel3.TabIndex = 29;
             // 
             // tbCad
             // 
@@ -1014,7 +1069,7 @@
             this.tbCad.Margin = new System.Windows.Forms.Padding(2);
             this.tbCad.Name = "tbCad";
             this.tbCad.Size = new System.Drawing.Size(199, 19);
-            this.tbCad.TabIndex = 295;
+            this.tbCad.TabIndex = 28;
             this.tbCad.Text = "Cadastro Único ...";
             // 
             // dgvSituacaoFamiliar
@@ -1055,7 +1110,7 @@
             this.dgvSituacaoFamiliar.RowTemplate.Height = 24;
             this.dgvSituacaoFamiliar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSituacaoFamiliar.Size = new System.Drawing.Size(277, 229);
-            this.dgvSituacaoFamiliar.TabIndex = 303;
+            this.dgvSituacaoFamiliar.TabIndex = 33;
             // 
             // dataGridViewCheckBoxColumn2
             // 
@@ -1090,7 +1145,7 @@
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(229, 2);
-            this.panel4.TabIndex = 302;
+            this.panel4.TabIndex = 32;
             // 
             // tbSituacaoFamiliar
             // 
@@ -1101,7 +1156,7 @@
             this.tbSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
             this.tbSituacaoFamiliar.Name = "tbSituacaoFamiliar";
             this.tbSituacaoFamiliar.Size = new System.Drawing.Size(199, 19);
-            this.tbSituacaoFamiliar.TabIndex = 301;
+            this.tbSituacaoFamiliar.TabIndex = 31;
             this.tbSituacaoFamiliar.Text = "Situação Familiar ...";
             // 
             // dgvAtividade
@@ -1142,7 +1197,33 @@
             this.dgvAtividade.RowTemplate.Height = 24;
             this.dgvAtividade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAtividade.Size = new System.Drawing.Size(277, 229);
-            this.dgvAtividade.TabIndex = 309;
+            this.dgvAtividade.TabIndex = 35;
+            // 
+            // dataGridViewCheckBoxColumn3
+            // 
+            this.dataGridViewCheckBoxColumn3.DataPropertyName = "selecionarSituacaoFamiliar";
+            this.dataGridViewCheckBoxColumn3.HeaderText = "...";
+            this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
+            this.dataGridViewCheckBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCheckBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewCheckBoxColumn3.Width = 30;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "idSituacaoFamiliar";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "descricaoSituacaoFamiliar";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.ToolTipText = "Descrição tipo de atendimento";
+            this.dataGridViewTextBoxColumn6.Width = 230;
             // 
             // panel5
             // 
@@ -1151,7 +1232,7 @@
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(229, 2);
-            this.panel5.TabIndex = 308;
+            this.panel5.TabIndex = 36;
             // 
             // tbAtividadeCras
             // 
@@ -1162,7 +1243,7 @@
             this.tbAtividadeCras.Margin = new System.Windows.Forms.Padding(2);
             this.tbAtividadeCras.Name = "tbAtividadeCras";
             this.tbAtividadeCras.Size = new System.Drawing.Size(199, 19);
-            this.tbAtividadeCras.TabIndex = 307;
+            this.tbAtividadeCras.TabIndex = 34;
             this.tbAtividadeCras.Text = "Ativiadade no CRAS ...";
             // 
             // dgvEspecificacaoAtendimento
@@ -1206,7 +1287,47 @@
             this.dgvEspecificacaoAtendimento.RowTemplate.Height = 24;
             this.dgvEspecificacaoAtendimento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEspecificacaoAtendimento.Size = new System.Drawing.Size(369, 562);
-            this.dgvEspecificacaoAtendimento.TabIndex = 315;
+            this.dgvEspecificacaoAtendimento.TabIndex = 41;
+            // 
+            // dataGridViewCheckBoxColumn4
+            // 
+            this.dataGridViewCheckBoxColumn4.DataPropertyName = "selecionarEspecificacaoAtendimento";
+            this.dataGridViewCheckBoxColumn4.HeaderText = "...";
+            this.dataGridViewCheckBoxColumn4.Name = "dataGridViewCheckBoxColumn4";
+            this.dataGridViewCheckBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCheckBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewCheckBoxColumn4.Width = 20;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "idEspecificacaoAtendimento";
+            this.dataGridViewTextBoxColumn7.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // quantidadeEspecificacao
+            // 
+            this.quantidadeEspecificacao.HeaderText = "Qtd";
+            this.quantidadeEspecificacao.Name = "quantidadeEspecificacao";
+            this.quantidadeEspecificacao.Width = 30;
+            // 
+            // encaminhamento
+            // 
+            this.encaminhamento.HeaderText = "Enc";
+            this.encaminhamento.Name = "encaminhamento";
+            this.encaminhamento.ReadOnly = true;
+            this.encaminhamento.ToolTipText = "Tipo de Encaminhamento";
+            this.encaminhamento.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "descricaoEspecificacaoAtendimento";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.ToolTipText = "Descrição tipo de atendimento";
+            this.dataGridViewTextBoxColumn8.Width = 210;
             // 
             // panel6
             // 
@@ -1215,7 +1336,7 @@
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(298, 2);
-            this.panel6.TabIndex = 314;
+            this.panel6.TabIndex = 40;
             // 
             // tbEspecificacaoAtendimento
             // 
@@ -1226,7 +1347,7 @@
             this.tbEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(2);
             this.tbEspecificacaoAtendimento.Name = "tbEspecificacaoAtendimento";
             this.tbEspecificacaoAtendimento.Size = new System.Drawing.Size(268, 19);
-            this.tbEspecificacaoAtendimento.TabIndex = 313;
+            this.tbEspecificacaoAtendimento.TabIndex = 39;
             this.tbEspecificacaoAtendimento.Text = "Especificação do Atendimento ...";
             // 
             // pbSelecionarEspecificacaoAtendimento
@@ -1530,7 +1651,7 @@
             this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1518, 3);
-            this.panel7.TabIndex = 319;
+            this.panel7.TabIndex = 15;
             // 
             // groupBox1
             // 
@@ -1544,127 +1665,9 @@
             this.groupBox1.Location = new System.Drawing.Point(874, 474);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(276, 123);
-            this.groupBox1.TabIndex = 257;
+            this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Realizações";
-            // 
-            // selecionarBeneficioGoverno
-            // 
-            this.selecionarBeneficioGoverno.DataPropertyName = "selecionarBeneficioGoverno";
-            this.selecionarBeneficioGoverno.HeaderText = "...";
-            this.selecionarBeneficioGoverno.Name = "selecionarBeneficioGoverno";
-            this.selecionarBeneficioGoverno.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.selecionarBeneficioGoverno.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.selecionarBeneficioGoverno.Width = 30;
-            // 
-            // idBeneficioGoverno
-            // 
-            this.idBeneficioGoverno.DataPropertyName = "idBeneficioGoverno";
-            this.idBeneficioGoverno.HeaderText = "ID";
-            this.idBeneficioGoverno.Name = "idBeneficioGoverno";
-            this.idBeneficioGoverno.ReadOnly = true;
-            this.idBeneficioGoverno.Visible = false;
-            // 
-            // descricaoBeneficioGoverno
-            // 
-            this.descricaoBeneficioGoverno.DataPropertyName = "descricaoBeneficioGoverno";
-            this.descricaoBeneficioGoverno.HeaderText = "Descrição";
-            this.descricaoBeneficioGoverno.Name = "descricaoBeneficioGoverno";
-            this.descricaoBeneficioGoverno.ReadOnly = true;
-            this.descricaoBeneficioGoverno.ToolTipText = "Descrição tipo de atendimento";
-            this.descricaoBeneficioGoverno.Width = 230;
-            // 
-            // dataGridViewCheckBoxColumn3
-            // 
-            this.dataGridViewCheckBoxColumn3.DataPropertyName = "selecionarSituacaoFamiliar";
-            this.dataGridViewCheckBoxColumn3.HeaderText = "...";
-            this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
-            this.dataGridViewCheckBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCheckBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewCheckBoxColumn3.Width = 30;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "idSituacaoFamiliar";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "descricaoSituacaoFamiliar";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Descrição";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.ToolTipText = "Descrição tipo de atendimento";
-            this.dataGridViewTextBoxColumn6.Width = 230;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "selecionarCad";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "...";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewCheckBoxColumn1.Width = 30;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "idCad";
-            this.dataGridViewTextBoxColumn3.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "descricaoCad";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Descrição";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.ToolTipText = "Descrição tipo de atendimento";
-            this.dataGridViewTextBoxColumn4.Width = 230;
-            // 
-            // dataGridViewCheckBoxColumn4
-            // 
-            this.dataGridViewCheckBoxColumn4.DataPropertyName = "selecionarEspecificacaoAtendimento";
-            this.dataGridViewCheckBoxColumn4.HeaderText = "...";
-            this.dataGridViewCheckBoxColumn4.Name = "dataGridViewCheckBoxColumn4";
-            this.dataGridViewCheckBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCheckBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewCheckBoxColumn4.Width = 20;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "idEspecificacaoAtendimento";
-            this.dataGridViewTextBoxColumn7.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Visible = false;
-            // 
-            // quantidadeEspecificacao
-            // 
-            this.quantidadeEspecificacao.HeaderText = "Qtd";
-            this.quantidadeEspecificacao.Name = "quantidadeEspecificacao";
-            this.quantidadeEspecificacao.Width = 30;
-            // 
-            // encaminhamento
-            // 
-            this.encaminhamento.HeaderText = "Enc";
-            this.encaminhamento.Name = "encaminhamento";
-            this.encaminhamento.ReadOnly = true;
-            this.encaminhamento.ToolTipText = "Tipo de Encaminhamento";
-            this.encaminhamento.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "descricaoEspecificacaoAtendimento";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Descrição";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.ToolTipText = "Descrição tipo de atendimento";
-            this.dataGridViewTextBoxColumn8.Width = 210;
             // 
             // tbObservacao
             // 
@@ -1672,7 +1675,7 @@
             this.tbObservacao.Multiline = true;
             this.tbObservacao.Name = "tbObservacao";
             this.tbObservacao.Size = new System.Drawing.Size(582, 103);
-            this.tbObservacao.TabIndex = 320;
+            this.tbObservacao.TabIndex = 43;
             // 
             // lbObservacao
             // 
@@ -1682,7 +1685,7 @@
             this.lbObservacao.Location = new System.Drawing.Point(899, 92);
             this.lbObservacao.Name = "lbObservacao";
             this.lbObservacao.Size = new System.Drawing.Size(43, 16);
-            this.lbObservacao.TabIndex = 321;
+            this.lbObservacao.TabIndex = 42;
             this.lbObservacao.Text = "Obs.:";
             // 
             // FrmMovimentoDiario
@@ -1743,7 +1746,7 @@
             this.Controls.Add(this.pbAdicionarTipo);
             this.Controls.Add(this.pbBuscarTipo);
             this.Controls.Add(this.dgvSelecionarTipo);
-            this.Controls.Add(this.panelBuscar);
+            this.Controls.Add(this.panelTipo);
             this.Controls.Add(this.tbBuscarTipo);
             this.Controls.Add(this.pbTipo);
             this.Controls.Add(this.btCliente);
@@ -1773,7 +1776,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMovimentoDiario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Movimento Diário";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FrmMovimentoDiario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCriancas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAdolescente)).EndInit();
@@ -1860,7 +1863,7 @@
         private System.Windows.Forms.CheckBox cbRmaAuxilioNatalidade;
         private System.Windows.Forms.CheckBox cbRmaEncaminhadoCreas;
         private System.Windows.Forms.DataGridView dgvSelecionarTipo;
-        private System.Windows.Forms.Panel panelBuscar;
+        private System.Windows.Forms.Panel panelTipo;
         private System.Windows.Forms.TextBox tbBuscarTipo;
         private System.Windows.Forms.PictureBox pbTipo;
         private System.Windows.Forms.PictureBox pbBuscarTipo;

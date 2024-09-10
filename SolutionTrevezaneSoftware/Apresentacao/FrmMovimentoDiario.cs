@@ -517,5 +517,33 @@ namespace Apresentacao
             pbCliente.Image = Properties.Resources.ClienteRosa;
             panelCliente.BackColor = Color.DeepPink;
         }
+
+        //-----------------------------------------------------------------------------Caixa de Texto Tipo de Atendimento
+        private void tbBuscarTipo_Enter(object sender, EventArgs e)
+        {
+            tbBuscarTipo.Clear();
+            panelTipo.BackColor = Color.DeepPink;
+
+        }
+
+        private void tbBuscarTipo_Leave(object sender, EventArgs e)
+        {
+            if (tbBuscarTipo.Text == "")
+            {
+                tbBuscarTipo.Text = "Tipo de Atendimento ...";
+                panelTipo.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbBuscarTipo.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+        }
+
+        private void tbBuscarTipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                pbBuscarTipo_Click(null, e);
+                e.Handled = true;
+            }
+        }
     }
 }
