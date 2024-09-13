@@ -37,8 +37,9 @@ namespace Negocio
 
                 Situacao.idSituacaoIdentificada = Convert.ToInt32(registro[0]);
                 Situacao.descricaoSituacaoIdentificada = registro[1].ToString();
+                Situacao.selecionado = false;
 
-                Situacaos.Add(Situacao);
+                    Situacaos.Add(Situacao);
             }
 
             return Situacaos;

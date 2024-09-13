@@ -36,6 +36,7 @@ namespace Negocio
 
                     providencia.idProvidencia = Convert.ToInt32(registro[0]);
                     providencia.descricaoProvidencia = registro[1].ToString();
+                    providencia.selecionado = false;
 
                     providencias.Add(providencia);
                 }

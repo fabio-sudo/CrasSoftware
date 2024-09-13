@@ -99,6 +99,7 @@ namespace Apresentacao
             tbBuscarCliente.Clear();
             pbCliente.Image = Properties.Resources.ClienteRosa;
             panelBuscarCliente.BackColor = Color.DeepPink;
+            if (strCliente != String.Empty) { tbBuscarCliente.Text = strCliente; }
         }
 
         //------------------------------------Botões

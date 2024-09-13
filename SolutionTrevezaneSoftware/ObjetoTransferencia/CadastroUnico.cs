@@ -10,6 +10,8 @@ namespace ObjetoTransferencia
     {
         public int idCadastroUnico { get; set; }
         public string descricaoCadastroUnico { get; set; }
+
+        public bool selecionado { get; set; }
     }
 
     public class CadastroUnicoLista : List<CadastroUnico> { }

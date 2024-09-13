@@ -10,6 +10,8 @@ namespace ObjetoTransferencia
     {
         public int idBeneficioGoverno { get; set; }
         public string descricaoBeneficioGoverno { get; set; }
+
+        public bool selecionado { get; set; }
     }
 
     public class BeneficioGovernoLista : List<BeneficioGoverno> { }

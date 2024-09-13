@@ -36,6 +36,7 @@ namespace Negocio
 
                     beneficio.idBeneficioGoverno = Convert.ToInt32(registro[0]);
                     beneficio.descricaoBeneficioGoverno = registro[1].ToString();
+                    beneficio.selecionado = false;
 
                     beneficios.Add(beneficio);
                 }

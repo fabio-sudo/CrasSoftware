@@ -37,6 +37,7 @@ namespace Negocio
 
                     atividade.idAtividade = Convert.ToInt32(registro[0]);
                     atividade.descricaoAtividade = registro[1].ToString();
+                    atividade.selecionado = false; 
 
                     atividades.Add(atividade);
                 }

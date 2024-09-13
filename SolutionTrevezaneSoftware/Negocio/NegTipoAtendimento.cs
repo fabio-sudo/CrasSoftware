@@ -34,6 +34,7 @@ namespace Negocio
 
                     tipo.idTipo = Convert.ToInt32(registro[0]);
                     tipo.descricaoTipo = registro[1].ToString();
+                    tipo.selecionado = false;
 
                     tipos.Add(tipo);
                 }

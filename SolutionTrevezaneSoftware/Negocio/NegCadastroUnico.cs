@@ -36,6 +36,7 @@ namespace Negocio
 
                     cad.idCadastroUnico = Convert.ToInt32(registro[0]);
                     cad.descricaoCadastroUnico = registro[1].ToString();
+                    cad.selecionado = false;
 
                     cads.Add(cad);
                 }

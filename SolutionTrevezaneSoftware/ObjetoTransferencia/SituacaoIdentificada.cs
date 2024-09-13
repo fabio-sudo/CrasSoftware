@@ -10,6 +10,8 @@ namespace ObjetoTransferencia
     {
         public int idSituacaoIdentificada { get; set; }
         public string descricaoSituacaoIdentificada { get; set; }
+
+        public bool selecionado { get; set; }
     }
 
     public class SituacaoIdentificadaLista : List<SituacaoIdentificada> { }

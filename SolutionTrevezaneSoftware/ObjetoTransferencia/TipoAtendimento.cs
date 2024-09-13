@@ -11,6 +11,8 @@ namespace ObjetoTransferencia
 
         public int idTipo { get; set; }
         public string descricaoTipo { get; set; }
+       
+        public bool selecionado { get; set; }
 
     }
 

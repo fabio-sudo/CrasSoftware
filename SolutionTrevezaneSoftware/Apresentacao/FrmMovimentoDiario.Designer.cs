@@ -111,31 +111,31 @@
             this.selecionarSituacaoIdentificada = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoSituacaoIdentificada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSituacaoIdentificada = new System.Windows.Forms.Panel();
             this.tbSituacaoIdentificada = new System.Windows.Forms.TextBox();
             this.dgvBeneficioGoverno = new System.Windows.Forms.DataGridView();
             this.selecionarBeneficioGoverno = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idBeneficioGoverno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoBeneficioGoverno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelBeneficioGoverno = new System.Windows.Forms.Panel();
             this.tbBeneficioGoverno = new System.Windows.Forms.TextBox();
             this.dgvCad = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelCad = new System.Windows.Forms.Panel();
             this.tbCad = new System.Windows.Forms.TextBox();
             this.dgvSituacaoFamiliar = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.painelSituacaoFamiliar = new System.Windows.Forms.Panel();
             this.tbSituacaoFamiliar = new System.Windows.Forms.TextBox();
             this.dgvAtividade = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelAtividade = new System.Windows.Forms.Panel();
             this.tbAtividadeCras = new System.Windows.Forms.TextBox();
             this.dgvEspecificacaoAtendimento = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -143,7 +143,7 @@
             this.quantidadeEspecificacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.encaminhamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelEspecificacao = new System.Windows.Forms.Panel();
             this.tbEspecificacaoAtendimento = new System.Windows.Forms.TextBox();
             this.pbSelecionarEspecificacaoAtendimento = new System.Windows.Forms.PictureBox();
             this.pbBuscarEspecificacaoAtendimento = new System.Windows.Forms.PictureBox();
@@ -230,6 +230,7 @@
             this.btBuscarFuncionario.TabIndex = 1;
             this.btBuscarFuncionario.Text = "Buscar";
             this.btBuscarFuncionario.UseVisualStyleBackColor = false;
+            this.btBuscarFuncionario.Click += new System.EventHandler(this.btBuscarFuncionario_Click);
             // 
             // panelBuscarFuncionario
             // 
@@ -609,6 +610,7 @@
             this.btCliente.TabIndex = 3;
             this.btCliente.Text = "Buscar";
             this.btCliente.UseVisualStyleBackColor = false;
+            this.btCliente.Click += new System.EventHandler(this.btCliente_Click);
             // 
             // panelCliente
             // 
@@ -673,6 +675,8 @@
             this.dgvSelecionarTipo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSelecionarTipo.Size = new System.Drawing.Size(277, 291);
             this.dgvSelecionarTipo.TabIndex = 18;
+            this.dgvSelecionarTipo.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionarTipo_CellValueChanged);
+            this.dgvSelecionarTipo.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvSelecionarTipo_CurrentCellDirtyStateChanged);
             // 
             // selecao
             // 
@@ -763,6 +767,8 @@
             this.dgvProvidencia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProvidencia.Size = new System.Drawing.Size(277, 291);
             this.dgvProvidencia.TabIndex = 21;
+            this.dgvProvidencia.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProvidencia_CellValueChanged);
+            this.dgvProvidencia.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvProvidencia_CurrentCellDirtyStateChanged);
             // 
             // selecionarProvidencia
             // 
@@ -810,6 +816,9 @@
             this.tbProvidencia.Size = new System.Drawing.Size(199, 19);
             this.tbProvidencia.TabIndex = 19;
             this.tbProvidencia.Text = "Providência CRAS ...";
+            this.tbProvidencia.Enter += new System.EventHandler(this.tbProvidencia_Enter);
+            this.tbProvidencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbProvidencia_KeyPress);
+            this.tbProvidencia.Leave += new System.EventHandler(this.tbProvidencia_Leave);
             // 
             // dgvSituacaoIdentificada
             // 
@@ -850,6 +859,8 @@
             this.dgvSituacaoIdentificada.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSituacaoIdentificada.Size = new System.Drawing.Size(277, 291);
             this.dgvSituacaoIdentificada.TabIndex = 24;
+            this.dgvSituacaoIdentificada.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSituacaoIdentificada_CellValueChanged);
+            this.dgvSituacaoIdentificada.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvSituacaoIdentificada_CurrentCellDirtyStateChanged);
             // 
             // selecionarSituacaoIdentificada
             // 
@@ -877,14 +888,14 @@
             this.descricaoSituacaoIdentificada.ToolTipText = "Descrição tipo de atendimento";
             this.descricaoSituacaoIdentificada.Width = 250;
             // 
-            // panel1
+            // panelSituacaoIdentificada
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel1.Location = new System.Drawing.Point(586, 160);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(229, 2);
-            this.panel1.TabIndex = 23;
+            this.panelSituacaoIdentificada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelSituacaoIdentificada.Location = new System.Drawing.Point(586, 160);
+            this.panelSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
+            this.panelSituacaoIdentificada.Name = "panelSituacaoIdentificada";
+            this.panelSituacaoIdentificada.Size = new System.Drawing.Size(229, 2);
+            this.panelSituacaoIdentificada.TabIndex = 23;
             // 
             // tbSituacaoIdentificada
             // 
@@ -897,6 +908,9 @@
             this.tbSituacaoIdentificada.Size = new System.Drawing.Size(199, 19);
             this.tbSituacaoIdentificada.TabIndex = 22;
             this.tbSituacaoIdentificada.Text = "Situação Identificada ...";
+            this.tbSituacaoIdentificada.Enter += new System.EventHandler(this.tbSituacaoIdentificada_Enter);
+            this.tbSituacaoIdentificada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSituacaoIdentificada_KeyPress);
+            this.tbSituacaoIdentificada.Leave += new System.EventHandler(this.tbSituacaoIdentificada_Leave);
             // 
             // dgvBeneficioGoverno
             // 
@@ -937,6 +951,8 @@
             this.dgvBeneficioGoverno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBeneficioGoverno.Size = new System.Drawing.Size(277, 291);
             this.dgvBeneficioGoverno.TabIndex = 27;
+            this.dgvBeneficioGoverno.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBeneficioGoverno_CellValueChanged);
+            this.dgvBeneficioGoverno.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvBeneficioGoverno_CurrentCellDirtyStateChanged);
             // 
             // selecionarBeneficioGoverno
             // 
@@ -964,14 +980,14 @@
             this.descricaoBeneficioGoverno.ToolTipText = "Descrição tipo de atendimento";
             this.descricaoBeneficioGoverno.Width = 230;
             // 
-            // panel2
+            // panelBeneficioGoverno
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel2.Location = new System.Drawing.Point(873, 160);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(229, 2);
-            this.panel2.TabIndex = 26;
+            this.panelBeneficioGoverno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelBeneficioGoverno.Location = new System.Drawing.Point(873, 160);
+            this.panelBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBeneficioGoverno.Name = "panelBeneficioGoverno";
+            this.panelBeneficioGoverno.Size = new System.Drawing.Size(229, 2);
+            this.panelBeneficioGoverno.TabIndex = 26;
             // 
             // tbBeneficioGoverno
             // 
@@ -984,6 +1000,9 @@
             this.tbBeneficioGoverno.Size = new System.Drawing.Size(199, 19);
             this.tbBeneficioGoverno.TabIndex = 25;
             this.tbBeneficioGoverno.Text = "Benefício do Governo ...";
+            this.tbBeneficioGoverno.Enter += new System.EventHandler(this.tbBeneficioGoverno_Enter);
+            this.tbBeneficioGoverno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBeneficioGoverno_KeyPress);
+            this.tbBeneficioGoverno.Leave += new System.EventHandler(this.tbBeneficioGoverno_Leave);
             // 
             // dgvCad
             // 
@@ -1051,14 +1070,14 @@
             this.dataGridViewTextBoxColumn4.ToolTipText = "Descrição tipo de atendimento";
             this.dataGridViewTextBoxColumn4.Width = 230;
             // 
-            // panel3
+            // panelCad
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel3.Location = new System.Drawing.Point(12, 493);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(229, 2);
-            this.panel3.TabIndex = 29;
+            this.panelCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelCad.Location = new System.Drawing.Point(12, 493);
+            this.panelCad.Margin = new System.Windows.Forms.Padding(2);
+            this.panelCad.Name = "panelCad";
+            this.panelCad.Size = new System.Drawing.Size(229, 2);
+            this.panelCad.TabIndex = 29;
             // 
             // tbCad
             // 
@@ -1071,6 +1090,9 @@
             this.tbCad.Size = new System.Drawing.Size(199, 19);
             this.tbCad.TabIndex = 28;
             this.tbCad.Text = "Cadastro Único ...";
+            this.tbCad.Enter += new System.EventHandler(this.tbCad_Enter);
+            this.tbCad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCad_KeyPress);
+            this.tbCad.Leave += new System.EventHandler(this.tbCad_Leave);
             // 
             // dgvSituacaoFamiliar
             // 
@@ -1138,14 +1160,14 @@
             this.dataGridViewTextBoxColumn2.ToolTipText = "Descrição tipo de atendimento";
             this.dataGridViewTextBoxColumn2.Width = 300;
             // 
-            // panel4
+            // painelSituacaoFamiliar
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel4.Location = new System.Drawing.Point(299, 493);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(229, 2);
-            this.panel4.TabIndex = 32;
+            this.painelSituacaoFamiliar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.painelSituacaoFamiliar.Location = new System.Drawing.Point(299, 493);
+            this.painelSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
+            this.painelSituacaoFamiliar.Name = "painelSituacaoFamiliar";
+            this.painelSituacaoFamiliar.Size = new System.Drawing.Size(229, 2);
+            this.painelSituacaoFamiliar.TabIndex = 32;
             // 
             // tbSituacaoFamiliar
             // 
@@ -1158,6 +1180,9 @@
             this.tbSituacaoFamiliar.Size = new System.Drawing.Size(199, 19);
             this.tbSituacaoFamiliar.TabIndex = 31;
             this.tbSituacaoFamiliar.Text = "Situação Familiar ...";
+            this.tbSituacaoFamiliar.Enter += new System.EventHandler(this.tbSituacaoFamiliar_Enter);
+            this.tbSituacaoFamiliar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSituacaoFamiliar_KeyPress);
+            this.tbSituacaoFamiliar.Leave += new System.EventHandler(this.tbSituacaoFamiliar_Leave);
             // 
             // dgvAtividade
             // 
@@ -1225,14 +1250,14 @@
             this.dataGridViewTextBoxColumn6.ToolTipText = "Descrição tipo de atendimento";
             this.dataGridViewTextBoxColumn6.Width = 230;
             // 
-            // panel5
+            // panelAtividade
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel5.Location = new System.Drawing.Point(586, 493);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(229, 2);
-            this.panel5.TabIndex = 36;
+            this.panelAtividade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelAtividade.Location = new System.Drawing.Point(586, 493);
+            this.panelAtividade.Margin = new System.Windows.Forms.Padding(2);
+            this.panelAtividade.Name = "panelAtividade";
+            this.panelAtividade.Size = new System.Drawing.Size(229, 2);
+            this.panelAtividade.TabIndex = 36;
             // 
             // tbAtividadeCras
             // 
@@ -1245,6 +1270,9 @@
             this.tbAtividadeCras.Size = new System.Drawing.Size(199, 19);
             this.tbAtividadeCras.TabIndex = 34;
             this.tbAtividadeCras.Text = "Ativiadade no CRAS ...";
+            this.tbAtividadeCras.Enter += new System.EventHandler(this.tbAtividadeCras_Enter);
+            this.tbAtividadeCras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbAtividadeCras_KeyPress);
+            this.tbAtividadeCras.Leave += new System.EventHandler(this.tbAtividadeCras_Leave);
             // 
             // dgvEspecificacaoAtendimento
             // 
@@ -1329,14 +1357,14 @@
             this.dataGridViewTextBoxColumn8.ToolTipText = "Descrição tipo de atendimento";
             this.dataGridViewTextBoxColumn8.Width = 210;
             // 
-            // panel6
+            // panelEspecificacao
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel6.Location = new System.Drawing.Point(1161, 160);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(298, 2);
-            this.panel6.TabIndex = 40;
+            this.panelEspecificacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelEspecificacao.Location = new System.Drawing.Point(1161, 160);
+            this.panelEspecificacao.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEspecificacao.Name = "panelEspecificacao";
+            this.panelEspecificacao.Size = new System.Drawing.Size(298, 2);
+            this.panelEspecificacao.TabIndex = 40;
             // 
             // tbEspecificacaoAtendimento
             // 
@@ -1349,6 +1377,9 @@
             this.tbEspecificacaoAtendimento.Size = new System.Drawing.Size(268, 19);
             this.tbEspecificacaoAtendimento.TabIndex = 39;
             this.tbEspecificacaoAtendimento.Text = "Especificação do Atendimento ...";
+            this.tbEspecificacaoAtendimento.Enter += new System.EventHandler(this.tbEspecificacaoAtendimento_Enter);
+            this.tbEspecificacaoAtendimento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEspecificacaoAtendimento_KeyPress);
+            this.tbEspecificacaoAtendimento.Leave += new System.EventHandler(this.tbEspecificacaoAtendimento_Leave);
             // 
             // pbSelecionarEspecificacaoAtendimento
             // 
@@ -1676,6 +1707,7 @@
             this.tbObservacao.Name = "tbObservacao";
             this.tbObservacao.Size = new System.Drawing.Size(582, 103);
             this.tbObservacao.TabIndex = 43;
+            this.tbObservacao.Text = " ";
             // 
             // lbObservacao
             // 
@@ -1704,37 +1736,37 @@
             this.Controls.Add(this.pbBuscarEspecificacaoAtendimento);
             this.Controls.Add(this.cbVisita);
             this.Controls.Add(this.dgvEspecificacaoAtendimento);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panelEspecificacao);
             this.Controls.Add(this.tbEspecificacaoAtendimento);
             this.Controls.Add(this.pbEspecificacaoAtendimento);
             this.Controls.Add(this.pbAdicionarAtividadeCras);
             this.Controls.Add(this.pbBuscarAtividadeCras);
             this.Controls.Add(this.dgvAtividade);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panelAtividade);
             this.Controls.Add(this.tbAtividadeCras);
             this.Controls.Add(this.pbAtividadeCras);
             this.Controls.Add(this.pbAdicionarSituacaoFamiliar);
             this.Controls.Add(this.pbBuscarSituacaoFamiliar);
             this.Controls.Add(this.dgvSituacaoFamiliar);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.painelSituacaoFamiliar);
             this.Controls.Add(this.tbSituacaoFamiliar);
             this.Controls.Add(this.pbSituacaoFamiliar);
             this.Controls.Add(this.pbAdicionarCad);
             this.Controls.Add(this.pbBuscarCad);
             this.Controls.Add(this.dgvCad);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelCad);
             this.Controls.Add(this.tbCad);
             this.Controls.Add(this.pbCad);
             this.Controls.Add(this.pbAdicionarBeneficioGoverno);
             this.Controls.Add(this.pbBuscarBeneficioGoverno);
             this.Controls.Add(this.dgvBeneficioGoverno);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelBeneficioGoverno);
             this.Controls.Add(this.tbBeneficioGoverno);
             this.Controls.Add(this.pbBeneficioGoverno);
             this.Controls.Add(this.pbAdicionarSituacaoIdentificada);
             this.Controls.Add(this.pbBuscarSituacaoIdentificada);
             this.Controls.Add(this.dgvSituacaoIdentificada);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelSituacaoIdentificada);
             this.Controls.Add(this.tbSituacaoIdentificada);
             this.Controls.Add(this.pbSituacaoIdentificada);
             this.Controls.Add(this.pbAdicionarProvidencia);
@@ -1877,37 +1909,37 @@
         private System.Windows.Forms.PictureBox pbAdicionarSituacaoIdentificada;
         private System.Windows.Forms.PictureBox pbBuscarSituacaoIdentificada;
         private System.Windows.Forms.DataGridView dgvSituacaoIdentificada;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelSituacaoIdentificada;
         private System.Windows.Forms.TextBox tbSituacaoIdentificada;
         private System.Windows.Forms.PictureBox pbSituacaoIdentificada;
         private System.Windows.Forms.PictureBox pbAdicionarBeneficioGoverno;
         private System.Windows.Forms.PictureBox pbBuscarBeneficioGoverno;
         private System.Windows.Forms.DataGridView dgvBeneficioGoverno;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelBeneficioGoverno;
         private System.Windows.Forms.TextBox tbBeneficioGoverno;
         private System.Windows.Forms.PictureBox pbBeneficioGoverno;
         private System.Windows.Forms.PictureBox pbAdicionarCad;
         private System.Windows.Forms.PictureBox pbBuscarCad;
         private System.Windows.Forms.DataGridView dgvCad;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelCad;
         private System.Windows.Forms.TextBox tbCad;
         private System.Windows.Forms.PictureBox pbCad;
         private System.Windows.Forms.PictureBox pbAdicionarSituacaoFamiliar;
         private System.Windows.Forms.PictureBox pbBuscarSituacaoFamiliar;
         private System.Windows.Forms.DataGridView dgvSituacaoFamiliar;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel painelSituacaoFamiliar;
         private System.Windows.Forms.TextBox tbSituacaoFamiliar;
         private System.Windows.Forms.PictureBox pbSituacaoFamiliar;
         private System.Windows.Forms.PictureBox pbAdicionarAtividadeCras;
         private System.Windows.Forms.PictureBox pbBuscarAtividadeCras;
         private System.Windows.Forms.DataGridView dgvAtividade;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelAtividade;
         private System.Windows.Forms.TextBox tbAtividadeCras;
         private System.Windows.Forms.PictureBox pbAtividadeCras;
         private System.Windows.Forms.PictureBox pbSelecionarEspecificacaoAtendimento;
         private System.Windows.Forms.PictureBox pbBuscarEspecificacaoAtendimento;
         private System.Windows.Forms.DataGridView dgvEspecificacaoAtendimento;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panelEspecificacao;
         private System.Windows.Forms.TextBox tbEspecificacaoAtendimento;
         private System.Windows.Forms.PictureBox pbEspecificacaoAtendimento;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;

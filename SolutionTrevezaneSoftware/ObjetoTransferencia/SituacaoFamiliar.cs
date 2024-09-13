@@ -10,6 +10,8 @@ namespace ObjetoTransferencia
     {
         public int idSituacaoFamiliar { get; set; }
         public string descricaoSituacaoFamiliar { get; set; }
+
+        public bool selecionado { get; set; }
     }
 
     public class SituacaoFamilizarLista : List<SituacaoFamiliar> { }

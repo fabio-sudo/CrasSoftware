@@ -33,6 +33,7 @@ namespace Negocio
 
                     Situacao.idSituacaoFamiliar = Convert.ToInt32(registro[0]);
                     Situacao.descricaoSituacaoFamiliar = registro[1].ToString();
+                    Situacao.selecionado = false;
 
                     Situacaos.Add(Situacao);
                 }

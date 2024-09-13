@@ -1,15 +1,13 @@
 ﻿using Negocio;
 using ObjetoTransferencia;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+using System.Security.Policy;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Apresentacao
 {
@@ -20,7 +18,12 @@ namespace Apresentacao
         Funcionario funcionarioLogado;
         Funcionario objFuncionario = new Funcionario();
 
+        //Cliente
+        string strCliente;
+        Cliente clienteSelecionado = new Cliente();
+
         //--------------------Grides
+        #region DeclaraçãoObjetosGrides
         NegTipoAtendimento nTipo = new NegTipoAtendimento();
         public TipoLista tipoLista;
         public TipoAtendimento tipoSelecionado;
@@ -53,6 +56,8 @@ namespace Apresentacao
         public AtividadeLista atividadeLista;
         public Atividade atividade;
 
+        #endregion
+
         public FrmMovimentoDiario([Optional] string nomeFuncionario)
         {
             InitializeComponent();
@@ -64,34 +69,43 @@ namespace Apresentacao
         }
 
         //----------------------------------------------------------Construtor
-        private void metodoConstrutor()
+        private void metodoConstrutor(EventArgs e)
         {
-
-            funcionarioLogado = FrmMenuPrincipal.userLogado;
-            if (funcionarioLogado.nomeFuncionario == "Josi" || funcionarioLogado.nomeFuncionario == "JOSI")
-            { return; }
-            else
+            try
             {
-                objFuncionario = funcionarioLogado;
-                tbBuscarFuncionario.Text = objFuncionario.nomeFuncionario;
+                funcionarioLogado = FrmMenuPrincipal.userLogado;
+                if (funcionarioLogado.nomeFuncionario == "Josi" || funcionarioLogado.nomeFuncionario == "JOSI")
+                { return; }
+                else
+                {
+                    objFuncionario = funcionarioLogado;
+                    tbBuscarFuncionario.Text = objFuncionario.nomeFuncionario;
+                }
 
+                pbBuscarProvidencia_Click(null, e);
+                pbBuscarTipo_Click(null, e);
+                pbBuscarSituacaoIdentificada_Click(null, e);
+                pbBuscarBeneficioGoverno_Click(null, e);
+                pbBuscarCad_Click(null, e);
+                pbBuscarSituacaoFamiliar_Click(null, e);
+                pbBuscarEspecificacaoAtendimento_Click(null, e);
+                pbBuscarAtividadeCras_Click(null, e);
 
             }
-
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
-
-
         //--------------------------------------------------------Preencher Grid
+        #region AtualizaGrides
         //atualiza os valores no Data Grid Tipo
-        private void AtualizarDataGridTipo()
+        private void AtualizarDataGridTipo(TipoLista lista)
         {
 
             this.dgvSelecionarTipo.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.tipoLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvSelecionarTipo.Rows.Add(this.tipoLista.Count);
+                this.dgvSelecionarTipo.Rows.Add(lista.Count);
             }
             else
             {
@@ -99,8 +113,9 @@ namespace Apresentacao
             }
 
             int indice = 0;
-            foreach (TipoAtendimento tipo in this.tipoLista)
+            foreach (TipoAtendimento tipo in lista)
             {
+                this.dgvSelecionarTipo[0, indice].Value = tipo.selecionado;
                 this.dgvSelecionarTipo[1, indice].Value = tipo.idTipo;
                 this.dgvSelecionarTipo[2, indice].Value = tipo.descricaoTipo;
 
@@ -112,14 +127,14 @@ namespace Apresentacao
         }
 
         //atualiza os valores no Data Grid Providencia
-        private void AtualizarDataGridProvidencia()
+        private void AtualizarDataGridProvidencia(ProvidenciaLista lista)
         {
 
             this.dgvProvidencia.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.providenciaLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvProvidencia.Rows.Add(this.providenciaLista.Count);
+                this.dgvProvidencia.Rows.Add(lista.Count);
             }
             else
             {
@@ -127,8 +142,9 @@ namespace Apresentacao
             }
 
             int indice = 0;
-            foreach (Providencia prov in this.providenciaLista)
+            foreach (Providencia prov in lista)
             {
+                this.dgvProvidencia[0, indice].Value = prov.selecionado;
                 this.dgvProvidencia[1, indice].Value = prov.idProvidencia;
                 this.dgvProvidencia[2, indice].Value = prov.descricaoProvidencia;
 
@@ -140,14 +156,14 @@ namespace Apresentacao
         }
 
         //atualiza os valores no Data Grid Situação Identificada
-        private void AtualizarDataGridSituacaoIdentificada()
+        private void AtualizarDataGridSituacaoIdentificada(SituacaoIdentificadaLista lista)
         {
 
             this.dgvSituacaoIdentificada.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.situacaoLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvSituacaoIdentificada.Rows.Add(this.situacaoLista.Count);
+                this.dgvSituacaoIdentificada.Rows.Add(lista.Count);
             }
             else
             {
@@ -155,8 +171,9 @@ namespace Apresentacao
             }
 
             int indice = 0;
-            foreach (SituacaoIdentificada sit in this.situacaoLista)
+            foreach (SituacaoIdentificada sit in lista)
             {
+                this.dgvSituacaoIdentificada[0, indice].Value = sit.selecionado;
                 this.dgvSituacaoIdentificada[1, indice].Value = sit.idSituacaoIdentificada;
                 this.dgvSituacaoIdentificada[2, indice].Value = sit.descricaoSituacaoIdentificada;
 
@@ -168,14 +185,14 @@ namespace Apresentacao
         }
 
         //atualiza os valores no Data Grid Benefício do Governo
-        private void AtualizarDataGridBeneficioGoverno()
+        private void AtualizarDataGridBeneficioGoverno(BeneficioGovernoLista lista)
         {
 
             this.dgvBeneficioGoverno.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.beneficioLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvBeneficioGoverno.Rows.Add(this.beneficioLista.Count);
+                this.dgvBeneficioGoverno.Rows.Add(lista.Count);
             }
             else
             {
@@ -183,8 +200,9 @@ namespace Apresentacao
             }
 
             int indice = 0;
-            foreach (BeneficioGoverno ben in this.beneficioLista)
+            foreach (BeneficioGoverno ben in lista)
             {
+                this.dgvBeneficioGoverno[0, indice].Value = ben.selecionado;
                 this.dgvBeneficioGoverno[1, indice].Value = ben.idBeneficioGoverno;
                 this.dgvBeneficioGoverno[2, indice].Value = ben.descricaoBeneficioGoverno;
 
@@ -196,14 +214,14 @@ namespace Apresentacao
         }
 
         //atualiza os valores no Data Grid Cadástro Único
-        private void AtualizarDataGridCad()
+        private void AtualizarDataGridCad(CadastroUnicoLista lista)
         {
 
             this.dgvCad.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.cadastroUnicoLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvCad.Rows.Add(this.cadastroUnicoLista.Count);
+                this.dgvCad.Rows.Add(lista.Count);
             }
             else
             {
@@ -211,8 +229,9 @@ namespace Apresentacao
             }
 
             int indice = 0;
-            foreach (CadastroUnico cad in this.cadastroUnicoLista)
+            foreach (CadastroUnico cad in lista)
             {
+                this.dgvCad[0, indice].Value = cad.selecionado;
                 this.dgvCad[1, indice].Value = cad.idCadastroUnico;
                 this.dgvCad[2, indice].Value = cad.descricaoCadastroUnico;
 
@@ -224,14 +243,14 @@ namespace Apresentacao
         }
 
         //atualiza os valores no Data Grid Situação Familiar
-        private void AtualizarDataGridSituacaoFamiliar()
+        private void AtualizarDataGridSituacaoFamiliar(SituacaoFamilizarLista lista)
         {
 
             this.dgvSituacaoFamiliar.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.situacaoFamiliarLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvSituacaoFamiliar.Rows.Add(this.situacaoFamiliarLista.Count);
+                this.dgvSituacaoFamiliar.Rows.Add(lista.Count);
             }
             else
             {
@@ -239,8 +258,9 @@ namespace Apresentacao
             }
 
             int indice = 0;
-            foreach (SituacaoFamiliar sit in this.situacaoFamiliarLista)
+            foreach (SituacaoFamiliar sit in lista)
             {
+                this.dgvSituacaoFamiliar[0, indice].Value = sit.selecionado;
                 this.dgvSituacaoFamiliar[1, indice].Value = sit.idSituacaoFamiliar;
                 this.dgvSituacaoFamiliar[2, indice].Value = sit.descricaoSituacaoFamiliar;
 
@@ -252,14 +272,14 @@ namespace Apresentacao
         }
 
         //atualiza os valores no Data Grid Atividade CRAS Grupos
-        private void AtualizarDataGridAtividade()
+        private void AtualizarDataGridAtividade(AtividadeLista lista)
         {
 
             this.dgvAtividade.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.atividadeLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvAtividade.Rows.Add(this.atividadeLista.Count);
+                this.dgvAtividade.Rows.Add(lista.Count);
             }
             else
             {
@@ -267,8 +287,9 @@ namespace Apresentacao
             }
 
             int indice = 0;
-            foreach (Atividade atv in this.atividadeLista)
+            foreach (Atividade atv in lista)
             {
+                this.dgvAtividade[0, indice].Value = atv.selecionado;
                 this.dgvAtividade[1, indice].Value = atv.idAtividade;
                 this.dgvAtividade[2, indice].Value = atv.descricaoAtividade;
 
@@ -280,13 +301,14 @@ namespace Apresentacao
         }
 
         //atualiza os valores no Data Grid Especificação do Atendimento
-        private void AtualizarDataGridEspecificacao() {
+        private void AtualizarDataGridEspecificacao(EspecificacaoLista lista)
+        {
 
             this.dgvEspecificacaoAtendimento.Rows.Clear(); // Limpa todos os registros atuais no grid de funcionários.
 
-            if (this.especificacaoLista.Count > 0)
+            if (lista.Count > 0)
             {
-                this.dgvEspecificacaoAtendimento.Rows.Add(this.especificacaoLista.Count);
+                this.dgvEspecificacaoAtendimento.Rows.Add(lista.Count);
             }
             else
             {
@@ -296,8 +318,9 @@ namespace Apresentacao
             this.dgvEspecificacaoAtendimento.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             int indice = 0;
-            foreach (Especificacao esp in this.especificacaoLista)
+            foreach (Especificacao esp in lista)
             {
+                this.dgvEspecificacaoAtendimento[0, indice].Value = esp.selecionado;
                 this.dgvEspecificacaoAtendimento[1, indice].Value = esp.idEspecificacao;
                 this.dgvEspecificacaoAtendimento[2, indice].Value = 1;
                 this.dgvEspecificacaoAtendimento[3, indice].Value = esp.encaminhamentoEspecificacao;
@@ -311,13 +334,70 @@ namespace Apresentacao
 
         }
 
+        #endregion
 
-        //---------------------------------------------------------Formulário
+        //---------------------------------------------------------Botões
         private void btSair_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void btBuscarFuncionario_Click(object sender, EventArgs e)
+        {
+            strFuncionario = tbBuscarFuncionario.Text;
+
+
+            if (tbBuscarFuncionario.Text.Equals("Digite o nome do funcionário ...") || tbBuscarFuncionario.Text == string.Empty)
+            {
+                strFuncionario = "";
+            }
+
+            
+            FrmSelecionarFuncionario frmFuncionario = new FrmSelecionarFuncionario(strFuncionario);
+            DialogResult result = frmFuncionario.ShowDialog();
+           
+            if(result == DialogResult.OK)
+            {
+                funcionarioLogado = frmFuncionario.FuncionarioSelecionado;
+                if(funcionarioLogado.nomeFuncionario != string.Empty)
+                {
+
+                    tbBuscarFuncionario.Text = funcionarioLogado.nomeFuncionario;
+                }
+            }
+
+
+
+        }
+
+        private void btCliente_Click(object sender, EventArgs e)
+        {
+            strCliente= tbCliente.Text;
+
+
+            if (tbCliente.Text.Equals("Digite o nome do cliente ...") || tbCliente.Text == string.Empty)
+            {
+                strCliente = "";
+            }
+
+
+            FrmSelecionarCliente frmCliente = new FrmSelecionarCliente(strCliente);
+            DialogResult result = frmCliente.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                clienteSelecionado = frmCliente.clienteSelecionado;
+                if (clienteSelecionado.nomeCliente != string.Empty)
+                {
+                    tbCliente.Text = clienteSelecionado.nomeCliente;
+                    tbProntuario.Text = clienteSelecionado.prontuarioCliente;
+                    tbNome.Text = clienteSelecionado.nomeCliente;
+                    nudCriancas.Focus();
+                }
+            }
+        }
+
+        //---------------------------------------------------------Formulário
         private void FrmMovimentoDiario_Load(object sender, EventArgs e)
         {
             pbBuscarProvidencia_Click(null, e);
@@ -328,10 +408,57 @@ namespace Apresentacao
             pbBuscarSituacaoFamiliar_Click(null, e);
             pbBuscarEspecificacaoAtendimento_Click(null, e);
             pbBuscarAtividadeCras_Click(null, e);
+
+            //Caso funcionário logado estiver preenchido o focu vai para próxima caixa de texto
+            if(funcionarioLogado != null)
+            {
+                tbCliente.Focus();
+            }
         }
 
 
         //---------------------------------------------------------Botões de Busca dos Grid
+
+        #region BotõesGride
+        //Tipo
+        private void pbBuscarTipo_Click(object sender, EventArgs e)
+        {
+            string str = tbBuscarTipo.Text;
+
+            if (tbBuscarTipo.Text.Equals("Tipo de Atendimento ...") || tbBuscarTipo.Text == string.Empty)
+            {
+                str = "";
+            }
+
+            // Verifica se a lista tipoLista tem itens
+            if (tipoLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = tipoLista.Where(t => t.descricaoTipo.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    TipoLista listaFiltrada = new TipoLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridTipo(listaFiltrada);
+                    tbBuscarTipo.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum tipo de atendimento encontrado.", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    tbBuscarTipo.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+                // Caso a lista esteja vazia, busca na fonte original
+                this.tipoLista = nTipo.BuscarTipoPorNome(str);
+                AtualizarDataGridTipo(tipoLista);
+            }
+        }
+
         //Providencia
         private void pbBuscarProvidencia_Click(object sender, EventArgs e)
         {
@@ -343,23 +470,34 @@ namespace Apresentacao
                 str = "";
             }
 
-            this.providenciaLista = nProvidencia.BuscarProvidenciaPorNome(str);
-            AtualizarDataGridProvidencia();
-        }
-        
-        //Tipo
-        private void pbBuscarTipo_Click(object sender, EventArgs e)
-        {
-            string str;
-            str = tbBuscarTipo.Text;
-
-            if (tbBuscarTipo.Text.Equals("Tipo de Atendimento ...") || tbBuscarTipo.Text == string.Empty)
+            // Verifica se a lista tipoLista tem itens
+            if (providenciaLista != null)
             {
-                str = "";
-            }
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = providenciaLista.Where(t => t.descricaoProvidencia.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
 
-            this.tipoLista = nTipo.BuscarTipoPorNome(str);
-            AtualizarDataGridTipo();
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    ProvidenciaLista listaFiltrada = new ProvidenciaLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridProvidencia(listaFiltrada);
+                    tbProvidencia.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma providência encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbProvidencia.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+
+                this.providenciaLista = nProvidencia.BuscarProvidenciaPorNome(str);
+                AtualizarDataGridProvidencia(providenciaLista);
+
+            }
         }
 
         //Situação Identificada
@@ -373,8 +511,33 @@ namespace Apresentacao
                 str = "";
             }
 
-            this.situacaoLista = nSituacaoIdentificada.BuscarSituacaoPorNome(str);
-            AtualizarDataGridSituacaoIdentificada();
+            // Verifica se a lista tipoLista tem itens
+            if (situacaoLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = situacaoLista.Where(t => t.descricaoSituacaoIdentificada.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    SituacaoIdentificadaLista listaFiltrada = new SituacaoIdentificadaLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridSituacaoIdentificada(listaFiltrada);
+                    tbSituacaoIdentificada.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma situação encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbSituacaoIdentificada.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+                this.situacaoLista = nSituacaoIdentificada.BuscarSituacaoPorNome(str);
+                AtualizarDataGridSituacaoIdentificada(situacaoLista);
+            }
+            
         }
 
         //Benefício do Governo
@@ -388,8 +551,35 @@ namespace Apresentacao
                 str = "";
             }
 
-            this.beneficioLista = nBeneficio.BuscarBeneficioGovernoPorNome(str);
-            AtualizarDataGridBeneficioGoverno();
+            // Verifica se a lista tipoLista tem itens
+            if (beneficioLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = beneficioLista.Where(t => t.descricaoBeneficioGoverno.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    BeneficioGovernoLista listaFiltrada = new BeneficioGovernoLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridBeneficioGoverno(listaFiltrada);
+                    tbBeneficioGoverno.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum Benefício encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbBeneficioGoverno.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+
+                this.beneficioLista = nBeneficio.BuscarBeneficioGovernoPorNome(str);
+                AtualizarDataGridBeneficioGoverno(beneficioLista);
+
+                }
+
         }
 
         //Cadastro Único
@@ -403,8 +593,32 @@ namespace Apresentacao
                 str = "";
             }
 
-            this.cadastroUnicoLista = nCadastroUnico.BuscarCadastroUnicoPorNome(str);
-            AtualizarDataGridCad();
+            // Verifica se a lista tipoLista tem itens
+            if (cadastroUnicoLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = cadastroUnicoLista.Where(t => t.descricaoCadastroUnico.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    CadastroUnicoLista listaFiltrada = new CadastroUnicoLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridCad(listaFiltrada);
+                    tbCad.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum CAD encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbCad.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+                this.cadastroUnicoLista = nCadastroUnico.BuscarCadastroUnicoPorNome(str);
+                AtualizarDataGridCad(cadastroUnicoLista);
+            }
 
         }
 
@@ -419,8 +633,34 @@ namespace Apresentacao
                 str = "";
             }
 
-            this.situacaoFamiliarLista = nSituacaoFamiliar.BuscarSituacaoPorNome(str);
-            AtualizarDataGridSituacaoFamiliar();
+            // Verifica se a lista tipoLista tem itens
+            if (situacaoFamiliarLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = situacaoFamiliarLista.Where(t => t.descricaoSituacaoFamiliar.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    SituacaoFamilizarLista listaFiltrada = new SituacaoFamilizarLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridSituacaoFamiliar(listaFiltrada);
+                    tbSituacaoFamiliar.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma Situação Familiar encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbSituacaoFamiliar.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+
+
+                this.situacaoFamiliarLista = nSituacaoFamiliar.BuscarSituacaoPorNome(str);
+                AtualizarDataGridSituacaoFamiliar(situacaoFamiliarLista);
+            }
         }
 
         //Especificação do Atendimento
@@ -434,8 +674,33 @@ namespace Apresentacao
                 str = "";
             }
 
-            this.especificacaoLista = nEspecificacao.BuscarEspecificacaoPorNome(str);
-            AtualizarDataGridEspecificacao();
+            // Verifica se a lista tipoLista tem itens
+            if (especificacaoLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = especificacaoLista.Where(t => t.descricaoEspecificacao.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    EspecificacaoLista listaFiltrada = new EspecificacaoLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridEspecificacao(listaFiltrada);
+                    tbEspecificacaoAtendimento.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma Especificação do Atendimento encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbEspecificacaoAtendimento.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+
+                this.especificacaoLista = nEspecificacao.BuscarEspecificacaoPorNome(str);
+                AtualizarDataGridEspecificacao(especificacaoLista);
+            }
         }
 
         //Atividade CRAS Grupos
@@ -449,12 +714,40 @@ namespace Apresentacao
                 str = "";
             }
 
-            this.atividadeLista = nAtividade.BuscarAtividadePorNome(str);
-            AtualizarDataGridAtividade();
+            // Verifica se a lista tipoLista tem itens
+            if (atividadeLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = atividadeLista.Where(t => t.descricaoAtividade.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    AtividadeLista listaFiltrada = new AtividadeLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridAtividade(listaFiltrada);
+                    tbAtividadeCras.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma Atividade encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbAtividadeCras.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+                this.atividadeLista = nAtividade.BuscarAtividadePorNome(str);
+                AtualizarDataGridAtividade(atividadeLista);
+
+            }
 
         }
 
-        //------------------------------------------------------------------------Caixa de Texto Funcionário
+        #endregion
+
+        //------------------------------------------------------------------------Caixa de Texto 
+        #region CaixaDeTexto
         private void tbBuscarFuncionario_Enter(object sender, EventArgs e)
         {
             tbBuscarFuncionario.Clear();
@@ -544,6 +837,321 @@ namespace Apresentacao
                 pbBuscarTipo_Click(null, e);
                 e.Handled = true;
             }
+        }
+
+
+        //-----------------------------------------------------------------------------Caixa de Texto Providência
+        private void tbProvidencia_Enter(object sender, EventArgs e)
+        {
+            tbProvidencia.Clear();
+            panelProvidencia.BackColor = Color.DeepPink;
+        }
+
+        private void tbProvidencia_Leave(object sender, EventArgs e)
+        {
+            if (tbProvidencia.Text == "")
+            {
+                tbProvidencia.Text = "Providência CRAS ...";
+                panelProvidencia.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbProvidencia.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+        }
+
+        private void tbProvidencia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                pbBuscarProvidencia_Click(null, e);
+                e.Handled = true;
+            }
+        }
+
+        //-----------------------------------------------------------------------------Caixa de Texto Situação Identificada
+        private void tbSituacaoIdentificada_Enter(object sender, EventArgs e)
+        {
+            tbSituacaoIdentificada.Clear();
+            panelSituacaoIdentificada.BackColor = Color.DeepPink;
+        }
+
+        private void tbSituacaoIdentificada_Leave(object sender, EventArgs e)
+        {
+            if (tbSituacaoIdentificada.Text == "")
+            {
+                tbSituacaoIdentificada.Text = "Situação Identificada ...";
+                panelSituacaoIdentificada.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbSituacaoIdentificada.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+        }
+
+        private void tbSituacaoIdentificada_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                pbBuscarSituacaoIdentificada_Click(null, e);
+                e.Handled = true;
+            }
+        }
+
+        //-----------------------------------------------------------------------------Caixa de Texto Benefício Governo
+        private void tbBeneficioGoverno_Enter(object sender, EventArgs e)
+        {
+            tbBeneficioGoverno.Clear();
+            panelBeneficioGoverno.BackColor = Color.DeepPink;
+        }
+
+        private void tbBeneficioGoverno_Leave(object sender, EventArgs e)
+        {
+            if (tbBeneficioGoverno.Text == "")
+            {
+                tbBeneficioGoverno.Text = "Benefício do Governo ...";
+                panelBeneficioGoverno.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbBeneficioGoverno.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+        }
+
+        private void tbBeneficioGoverno_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                pbBuscarBeneficioGoverno_Click(null, e);
+                e.Handled = true;
+            }
+        }
+
+        //-----------------------------------------------------------------------------Caixa de Texto Cadastro Único
+        private void tbCad_Enter(object sender, EventArgs e)
+        {
+            tbCad.Clear();
+            panelCad.BackColor = Color.DeepPink;
+        }
+
+        private void tbCad_Leave(object sender, EventArgs e)
+        {
+            if (tbCad.Text == "")
+            {
+                tbCad.Text = "Cadastro Único ...";
+                panelCad.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbCad.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+        }
+
+        private void tbCad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                pbBuscarCad_Click(null, e);
+                e.Handled = true;
+            }
+        }
+
+
+        //-----------------------------------------------------------------------------Caixa de Texto Situação Familiar
+        private void tbSituacaoFamiliar_Enter(object sender, EventArgs e)
+        {
+            tbSituacaoFamiliar.Clear();
+            painelSituacaoFamiliar.BackColor = Color.DeepPink;
+        }
+
+        private void tbSituacaoFamiliar_Leave(object sender, EventArgs e)
+        {
+            if (tbSituacaoFamiliar.Text == "")
+            {
+                tbSituacaoFamiliar.Text = "Situação Familiar ...";
+                painelSituacaoFamiliar.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbSituacaoFamiliar.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+        }
+
+        private void tbSituacaoFamiliar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                pbBuscarSituacaoFamiliar_Click(null, e);
+                e.Handled = true;
+            }
+        }
+
+        //-----------------------------------------------------------------------------Caixa de Texto Atividade Cras
+
+        private void tbAtividadeCras_Enter(object sender, EventArgs e)
+        {
+            tbAtividadeCras.Clear();
+            panelAtividade.BackColor = Color.DeepPink;
+        }
+
+        private void tbAtividadeCras_Leave(object sender, EventArgs e)
+        {
+            if (tbAtividadeCras.Text == "")
+            {
+                tbAtividadeCras.Text = "Ativiadade no CRAS...";
+                panelAtividade.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbAtividadeCras.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+        }
+
+        private void tbAtividadeCras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                pbBuscarAtividadeCras_Click(null, e);
+                e.Handled = true;
+            }
+        }
+
+
+        //-----------------------------------------------------------------------------Caixa de Texto Especificação Atendimento
+        private void tbEspecificacaoAtendimento_Enter(object sender, EventArgs e)
+        {
+            tbEspecificacaoAtendimento.Clear();
+            panelEspecificacao.BackColor = Color.DeepPink;
+        }
+
+        private void tbEspecificacaoAtendimento_Leave(object sender, EventArgs e)
+        {
+            if (tbEspecificacaoAtendimento.Text == "")
+            {
+                tbEspecificacaoAtendimento.Text = "Especificação do Atendimento...";
+                panelEspecificacao.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+                tbEspecificacaoAtendimento.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+
+            }
+
+        }
+
+        private void tbEspecificacaoAtendimento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            pbBuscarEspecificacaoAtendimento_Click(null, e);
+            e.Handled = true;
+        }
+
+
+
+        #endregion
+
+        //------------------------------------------------------------------------Data Grid Eventos
+
+        #region DataGridCheck
+        //TIPO
+        private void dgvSelecionarTipo_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se a célula alterada está em uma linha válida
+            if (e.RowIndex >= 0 && dgvSelecionarTipo.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+            {
+                // Obtém o valor da célula de checkbox
+                bool isChecked = Convert.ToBoolean(dgvSelecionarTipo[e.ColumnIndex, e.RowIndex].Value);
+
+                // Atualiza o item correspondente na lista `tipoLista`
+                int idTipo = Convert.ToInt32(dgvSelecionarTipo[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                var tipo = tipoLista.FirstOrDefault(t => t.idTipo == idTipo);
+
+                if (tipo != null)
+                {
+                    tipo.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+
+                    // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                    //AtualizarDataGridTipo(tipoLista);
+                }
+            }
+        }
+
+        private void dgvSelecionarTipo_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            //Garante que o evento CellValueChanged seja disparado imediatamente após o clique no checkbox
+            if (dgvSelecionarTipo.IsCurrentCellDirty)
+            {
+                dgvSelecionarTipo.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        //Providencia
+        private void dgvProvidencia_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se a célula alterada está em uma linha válida
+            if (e.RowIndex >= 0 && dgvProvidencia.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+            {
+                // Obtém o valor da célula de checkbox
+                bool isChecked = Convert.ToBoolean(dgvProvidencia[e.ColumnIndex, e.RowIndex].Value);
+
+                // Atualiza o item correspondente na lista `tipoLista`
+                int id = Convert.ToInt32(dgvProvidencia[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                var obj = providenciaLista.FirstOrDefault(t => t.idProvidencia == id);
+
+                if (obj != null)
+                {
+                    obj.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+
+                    // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                    //AtualizarDataGridTipo(tipoLista);
+                }
+            }
+        }
+
+        private void dgvProvidencia_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {        //Garante que o evento CellValueChanged seja disparado imediatamente após o clique no checkbox
+            if (dgvProvidencia.IsCurrentCellDirty)
+            {
+                dgvProvidencia.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        //Situação Identificada
+        private void dgvSituacaoIdentificada_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dgvSituacaoIdentificada.IsCurrentCellDirty)
+            {
+                dgvSituacaoIdentificada.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void dgvSituacaoIdentificada_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+  
+            // Verifica se a célula alterada está em uma linha válida
+            if (e.RowIndex >= 0 && dgvSituacaoIdentificada.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+            {
+                // Obtém o valor da célula de checkbox
+                bool isChecked = Convert.ToBoolean(dgvSituacaoIdentificada[e.ColumnIndex, e.RowIndex].Value);
+
+                // Atualiza o item correspondente na lista `tipoLista`
+                int id = Convert.ToInt32(dgvSituacaoIdentificada[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                var obj = situacaoLista.FirstOrDefault(t => t.idSituacaoIdentificada == id);
+
+                if (obj != null)
+                {
+                    obj.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+
+                    // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                    //AtualizarDataGridTipo(tipoLista);
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+        #endregion
+
+        //Benefício do Governo
+        private void dgvBeneficioGoverno_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvBeneficioGoverno_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
