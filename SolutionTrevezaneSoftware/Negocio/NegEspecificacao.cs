@@ -34,6 +34,7 @@ namespace Negocio
                     especificacao.idEspecificacao = Convert.ToInt32(registro[0]);
                     especificacao.descricaoEspecificacao = registro[1].ToString();
                     especificacao.encaminhamentoEspecificacao = registro[2].ToString();
+                    especificacao.quantidade = 1;
                     especificacao.selecionado = false;
 
                     especificacoes.Add(especificacao);

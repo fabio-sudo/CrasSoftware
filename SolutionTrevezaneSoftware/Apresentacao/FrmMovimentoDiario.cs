@@ -322,7 +322,7 @@ namespace Apresentacao
             {
                 this.dgvEspecificacaoAtendimento[0, indice].Value = esp.selecionado;
                 this.dgvEspecificacaoAtendimento[1, indice].Value = esp.idEspecificacao;
-                this.dgvEspecificacaoAtendimento[2, indice].Value = 1;
+                this.dgvEspecificacaoAtendimento[2, indice].Value = esp.quantidade;
                 this.dgvEspecificacaoAtendimento[3, indice].Value = esp.encaminhamentoEspecificacao;
                 this.dgvEspecificacaoAtendimento[4, indice].Value = esp.descricaoEspecificacao;
 
@@ -685,6 +685,7 @@ namespace Apresentacao
                     // Cria uma nova lista filtrada e atualiza o DataGrid
                     EspecificacaoLista listaFiltrada = new EspecificacaoLista();
                     listaFiltrada.AddRange(resultados);
+
                     //dgvSelecionarTipo.Rows.Clear();
                     AtualizarDataGridEspecificacao(listaFiltrada);
                     tbEspecificacaoAtendimento.Focus();
@@ -1016,7 +1017,7 @@ namespace Apresentacao
         {
             if (tbEspecificacaoAtendimento.Text == "")
             {
-                tbEspecificacaoAtendimento.Text = "Especificação do Atendimento...";
+                tbEspecificacaoAtendimento.Text = "Especificação do Atendimento ...";
                 panelEspecificacao.BackColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
                 tbEspecificacaoAtendimento.ForeColor = Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
 
@@ -1026,8 +1027,11 @@ namespace Apresentacao
 
         private void tbEspecificacaoAtendimento_KeyPress(object sender, KeyPressEventArgs e)
         {
-            pbBuscarEspecificacaoAtendimento_Click(null, e);
+            if (e.KeyChar == 13)
+            {
+                pbBuscarEspecificacaoAtendimento_Click(null, e);
             e.Handled = true;
+            }
         }
 
 
@@ -1134,24 +1138,185 @@ namespace Apresentacao
         }
 
 
-
-
-
-
-
-
-
-        #endregion
-
         //Benefício do Governo
         private void dgvBeneficioGoverno_CurrentCellDirtyStateChanged(object sender, EventArgs e)
         {
-
+            if (dgvBeneficioGoverno.IsCurrentCellDirty)
+            {
+                dgvBeneficioGoverno.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
         }
 
         private void dgvBeneficioGoverno_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
+            // Verifica se a célula alterada está em uma linha válida
+            if (e.RowIndex >= 0 && dgvBeneficioGoverno.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+            {
+                // Obtém o valor da célula de checkbox
+                bool isChecked = Convert.ToBoolean(dgvBeneficioGoverno[e.ColumnIndex, e.RowIndex].Value);
+
+                // Atualiza o item correspondente na lista `tipoLista`
+                int id = Convert.ToInt32(dgvBeneficioGoverno[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                var obj = beneficioLista.FirstOrDefault(t => t.idBeneficioGoverno == id);
+
+                if (obj != null)
+                {
+                    obj.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+
+                    // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                    //AtualizarDataGridTipo(tipoLista);
+                }
+            }
+        }
+
+
+        //CAD
+        private void dgvCad_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dgvCad.IsCurrentCellDirty)
+            {
+                dgvCad.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void dgvCad_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se a célula alterada está em uma linha válida
+            if (e.RowIndex >= 0 && dgvCad.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+            {
+                // Obtém o valor da célula de checkbox
+                bool isChecked = Convert.ToBoolean(dgvCad[e.ColumnIndex, e.RowIndex].Value);
+
+                // Atualiza o item correspondente na lista `tipoLista`
+                int id = Convert.ToInt32(dgvCad[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                var obj = cadastroUnicoLista.FirstOrDefault(t => t.idCadastroUnico == id);
+
+                if (obj != null)
+                {
+                    obj.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+
+                    // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                    //AtualizarDataGridTipo(tipoLista);
+                }
+            }
 
         }
+
+        //Situacao Familiar
+        private void dgvSituacaoFamiliar_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dgvSituacaoFamiliar.IsCurrentCellDirty)
+            {
+                dgvSituacaoFamiliar.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void dgvSituacaoFamiliar_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se a célula alterada está em uma linha válida
+            if (e.RowIndex >= 0 && dgvSituacaoFamiliar.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+            {
+                // Obtém o valor da célula de checkbox
+                bool isChecked = Convert.ToBoolean(dgvSituacaoFamiliar[e.ColumnIndex, e.RowIndex].Value);
+
+                // Atualiza o item correspondente na lista `tipoLista`
+                int id = Convert.ToInt32(dgvSituacaoFamiliar[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                var obj = situacaoFamiliarLista.FirstOrDefault(t => t.idSituacaoFamiliar == id);
+
+                if (obj != null)
+                {
+                    obj.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+
+                    // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                    //AtualizarDataGridTipo(tipoLista);
+                }
+            }
+        }
+
+        //Atividade CRAS
+        private void dgvAtividade_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dgvAtividade.IsCurrentCellDirty)
+            {
+                dgvAtividade.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void dgvAtividade_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se a célula alterada está em uma linha válida
+            if (e.RowIndex >= 0 && dgvAtividade.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+            {
+                // Obtém o valor da célula de checkbox
+                bool isChecked = Convert.ToBoolean(dgvAtividade[e.ColumnIndex, e.RowIndex].Value);
+
+                // Atualiza o item correspondente na lista `tipoLista`
+                int id = Convert.ToInt32(dgvAtividade[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                var obj = atividadeLista.FirstOrDefault(t => t.idAtividade == id);
+
+                if (obj != null)
+                {
+                    obj.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+
+                    // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                    //AtualizarDataGridTipo(tipoLista);
+                }
+            }
+        }
+
+        private void dgvEspecificacaoAtendimento_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dgvEspecificacaoAtendimento.IsCurrentCellDirty)
+            {
+                dgvEspecificacaoAtendimento.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void dgvEspecificacaoAtendimento_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Verifica se a célula alterada está em uma linha válida
+                if (e.RowIndex >= 0 && dgvEspecificacaoAtendimento.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn)
+                {
+                    // Obtém o valor da célula de checkbox
+                    bool isChecked = Convert.ToBoolean(dgvEspecificacaoAtendimento[e.ColumnIndex, e.RowIndex].Value);
+
+                    // Atualiza o item correspondente na lista `tipoLista`
+                    int id = Convert.ToInt32(dgvEspecificacaoAtendimento[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+                    int qtd = Convert.ToInt32(dgvEspecificacaoAtendimento[2, e.RowIndex].Value);
+
+                    var obj = especificacaoLista.FirstOrDefault(t => t.idEspecificacao == id);
+
+                    if (obj != null)
+                    {
+                        obj.selecionado = isChecked; // Atualiza o valor selecionado com o estado do checkbox
+                        obj.quantidade = qtd;
+
+                        // Opcional: Atualiza o DataGrid para refletir a mudança (caso seja necessário)
+                        //AtualizarDataGridTipo(tipoLista);
+                    }
+                }
+                // Verifica se a coluna alterada é a coluna 2
+                else if (e.ColumnIndex == 2)
+                {
+                    // Obtém o novo valor da quantidade
+                    int qtd = Convert.ToInt32(dgvEspecificacaoAtendimento[e.ColumnIndex, e.RowIndex].Value);
+
+                    // Atualiza o item correspondente na lista `tipoLista`
+                    int id = Convert.ToInt32(dgvEspecificacaoAtendimento[1, e.RowIndex].Value); // Supondo que a coluna 1 contém o idTipo
+
+                    var obj = especificacaoLista.FirstOrDefault(t => t.idEspecificacao == id);
+
+                    if (obj != null)
+                    {
+                        obj.quantidade = qtd;
+                    }
+                }
+            }
+        }
     }
+    #endregion
+
+
 }

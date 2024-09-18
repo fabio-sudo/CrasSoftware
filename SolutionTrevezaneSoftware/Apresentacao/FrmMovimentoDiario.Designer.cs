@@ -1043,6 +1043,8 @@
             this.dgvCad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCad.Size = new System.Drawing.Size(277, 229);
             this.dgvCad.TabIndex = 30;
+            this.dgvCad.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCad_CellValueChanged);
+            this.dgvCad.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvCad_CurrentCellDirtyStateChanged);
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -1133,6 +1135,8 @@
             this.dgvSituacaoFamiliar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSituacaoFamiliar.Size = new System.Drawing.Size(277, 229);
             this.dgvSituacaoFamiliar.TabIndex = 33;
+            this.dgvSituacaoFamiliar.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSituacaoFamiliar_CellValueChanged);
+            this.dgvSituacaoFamiliar.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvSituacaoFamiliar_CurrentCellDirtyStateChanged);
             // 
             // dataGridViewCheckBoxColumn2
             // 
@@ -1223,6 +1227,8 @@
             this.dgvAtividade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAtividade.Size = new System.Drawing.Size(277, 229);
             this.dgvAtividade.TabIndex = 35;
+            this.dgvAtividade.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAtividade_CellValueChanged);
+            this.dgvAtividade.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvAtividade_CurrentCellDirtyStateChanged);
             // 
             // dataGridViewCheckBoxColumn3
             // 
@@ -1316,6 +1322,8 @@
             this.dgvEspecificacaoAtendimento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEspecificacaoAtendimento.Size = new System.Drawing.Size(369, 562);
             this.dgvEspecificacaoAtendimento.TabIndex = 41;
+            this.dgvEspecificacaoAtendimento.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEspecificacaoAtendimento_CellValueChanged);
+            this.dgvEspecificacaoAtendimento.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvEspecificacaoAtendimento_CurrentCellDirtyStateChanged);
             // 
             // dataGridViewCheckBoxColumn4
             // 

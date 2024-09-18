@@ -13,6 +13,8 @@ namespace ObjetoTransferencia
 
         public string encaminhamentoEspecificacao { get; set;}
 
+        public int quantidade { get; set; }
+
         public bool selecionado { get; set; }
 
     }
