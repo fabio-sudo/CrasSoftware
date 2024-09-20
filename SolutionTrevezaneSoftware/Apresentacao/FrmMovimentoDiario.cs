@@ -1,18 +1,21 @@
 ﻿using Negocio;
 using ObjetoTransferencia;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Security.Policy;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+
 
 namespace Apresentacao
 {
     public partial class FrmMovimentoDiario : Form
     {
+        //Movimento Diário
+        MovimentoDiario objMovimentoDiario = new MovimentoDiario();
+
+
         //Funcionario
         string strFuncionario;
         Funcionario funcionarioLogado;
@@ -23,6 +26,7 @@ namespace Apresentacao
         Cliente clienteSelecionado = new Cliente();
 
         //--------------------Grides
+
         #region DeclaraçãoObjetosGrides
         NegTipoAtendimento nTipo = new NegTipoAtendimento();
         public TipoLista tipoLista;
@@ -69,7 +73,7 @@ namespace Apresentacao
         }
 
         //----------------------------------------------------------Construtor
-        private void metodoConstrutor(EventArgs e)
+        private void metodoConstrutor()
         {
             try
             {
@@ -80,22 +84,155 @@ namespace Apresentacao
                 {
                     objFuncionario = funcionarioLogado;
                     tbBuscarFuncionario.Text = objFuncionario.nomeFuncionario;
+                    tbBuscarFuncionario.Enabled = false;
+                    pbFuncionario.Enabled = false;
+                    tbCliente.Focus();
                 }
-
-                pbBuscarProvidencia_Click(null, e);
-                pbBuscarTipo_Click(null, e);
-                pbBuscarSituacaoIdentificada_Click(null, e);
-                pbBuscarBeneficioGoverno_Click(null, e);
-                pbBuscarCad_Click(null, e);
-                pbBuscarSituacaoFamiliar_Click(null, e);
-                pbBuscarEspecificacaoAtendimento_Click(null, e);
-                pbBuscarAtividadeCras_Click(null, e);
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
+        private Boolean metodoValidaCadastro()
+        {
+            if ((tbBuscarFuncionario.Text == "") || (tbBuscarFuncionario.Text == "Digite o nome do funcionário ..."))
+            {
+                MessageBox.Show("Selecione o funcionário responsável pelo atendimento!","Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                tbBuscarFuncionario.Focus();
+                return false;
+            }
+
+            if (tbNome.Text == "")
+            {
+                MessageBox.Show("Por favor informe nome do usuário atendido!", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                tbNome.Focus();
+                return false;
+            }
+
+            return true;
+
+        }
+
+        private void metodoInicializaDataGrid()
+        {
+            AtualizarDataGridTipo(tipoLista);
+            AtualizarDataGridProvidencia(providenciaLista);
+            AtualizarDataGridSituacaoIdentificada(situacaoLista);
+            AtualizarDataGridBeneficioGoverno(beneficioLista);
+            AtualizarDataGridCad(cadastroUnicoLista);
+            AtualizarDataGridSituacaoFamiliar(situacaoFamiliarLista);
+            AtualizarDataGridEspecificacao(especificacaoLista);
+            AtualizarDataGridAtividade(atividadeLista);
+
+        }
+
+        private void limparDataGrid(DataGridView grid)
+        {
+            if (grid.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in grid.Rows)
+                {
+                    if (row.Cells[0] is DataGridViewCheckBoxCell checkBoxCell)
+                    {
+                        checkBoxCell.Value = false;
+                    }
+                }
+            }
+        }
+
+        private void metodoLimpaCampos()
+        {
+
+            metodoInicializaDataGrid();
+
+            //Cliente
+            clienteSelecionado = new Cliente();
+            tbCliente.Text = "Digite o nome do cliente...";
+
+            //Usuario
+            tbProntuario.Clear();
+            tbObservacao.Clear();
+            tbNome.Clear();
+            nudAdolescente.Value = 0;
+            nudCriancas.Value = 0;
+            nudIdoso.Value = 0;
+            cbVisita.Checked = false;
+
+
+
+            //Limpa seleção do datagrid view
+            limparDataGrid(dgvSelecionarTipo);
+            limparDataGrid(dgvProvidencia);
+            limparDataGrid(dgvSituacaoIdentificada);
+            limparDataGrid(dgvBeneficioGoverno);
+            limparDataGrid(dgvCad);
+            limparDataGrid(dgvSituacaoFamiliar);
+            limparDataGrid(dgvAtividade);
+
+            //Data Grid Especificação
+            if (dgvEspecificacaoAtendimento.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgvEspecificacaoAtendimento.Rows)
+                {
+                    if (row.Cells[0] is DataGridViewCheckBoxCell checkBoxCell)
+                    {
+                        checkBoxCell.Value = false;
+                    }
+                    if (row.Cells[2] is DataGridViewTextBoxCell textBoxCell)
+                    {
+                        textBoxCell.Value = "1";
+                    }
+
+                }
+            }
+
+
+            //Chek Box
+            cbEncaminhamento.Checked = false;
+            cbBeneficioConcedido.Checked = false;
+            cbInseridoPaif.Checked = false;
+            cbAcompanhamentoIndividual.Checked = false;
+
+            cbRmaIncluidoCad.Checked = false;
+            cbRmaBpc.Checked = false;
+            cbRmaAuxilioNatalidade.Checked = false;
+
+            cbRmaAtualizacaoCad.Checked = false;
+            cbRmaEncaminhadoCreas.Checked = false;
+            cbRmaAuxilioFuneral.Checked = false;
+            cbRmaBeneficioEventual.Checked = false;
+
+        }
+
+        //Lista Genérica
+        public void PreencherListaSelecionados<T>(List<T> listaFonte, List<T> listaDestino, Func<T, bool> selecionadoPredicate) where T : class
+        {
+            if (listaFonte.Count > 0)
+            {
+                listaDestino.Clear();
+                var itensSelecionados = listaFonte.Where(selecionadoPredicate).ToList();
+
+
+                foreach (var item in itensSelecionados)
+                {
+                    listaDestino.Add(item);
+                }
+            }
+            else {
+
+                listaDestino = null;
+            }
+
+
+        }
+
+
         //--------------------------------------------------------Preencher Grid
+
         #region AtualizaGrides
         //atualiza os valores no Data Grid Tipo
         private void AtualizarDataGridTipo(TipoLista lista)
@@ -339,7 +476,7 @@ namespace Apresentacao
         //---------------------------------------------------------Botões
         private void btSair_Click(object sender, EventArgs e)
         {
-
+            metodoLimpaCampos();
         }
 
         private void btBuscarFuncionario_Click(object sender, EventArgs e)
@@ -451,6 +588,7 @@ namespace Apresentacao
                     tbBuscarTipo.Clear();
                 }
             }
+
             else//Caso a lista não tenha itens
             {
                 // Caso a lista esteja vazia, busca na fonte original
@@ -1169,7 +1307,6 @@ namespace Apresentacao
             }
         }
 
-
         //CAD
         private void dgvCad_CurrentCellDirtyStateChanged(object sender, EventArgs e)
         {
@@ -1264,6 +1401,7 @@ namespace Apresentacao
             }
         }
 
+        //Especificação
         private void dgvEspecificacaoAtendimento_CurrentCellDirtyStateChanged(object sender, EventArgs e)
         {
             if (dgvEspecificacaoAtendimento.IsCurrentCellDirty)
@@ -1315,8 +1453,122 @@ namespace Apresentacao
                 }
             }
         }
+
+        #endregion
+
+
+        private void btCadastrar_Click(object sender, EventArgs e)
+        {
+            try { 
+            if (metodoValidaCadastro() == true)
+            {     
+                // Instanciar um novo objeto MovimentoDiario
+                MovimentoDiario objMovimentoDiario = new MovimentoDiario();
+
+
+                if (clienteSelecionado != null)
+                    {
+                        objMovimentoDiario.idCliente = new Cliente();
+                        objMovimentoDiario.idCliente = clienteSelecionado;
+
+                    }
+                    else {
+                        objMovimentoDiario.idCliente = new Cliente();
+                        objMovimentoDiario.idCliente.codigoCliente = 0;
+                    }
+
+
+                 objMovimentoDiario.idFuncionario = new Funcionario();
+                 objMovimentoDiario.idFuncionario = funcionarioLogado;
+
+                // Preencher as propriedades básicas
+                objMovimentoDiario.Data = DateTime.Now;
+                objMovimentoDiario.Prontuario = tbProntuario.Text;
+                objMovimentoDiario.Nome = tbNome.Text;
+                objMovimentoDiario.QuantidadeCriancas = int.Parse(nudCriancas.Text);
+                objMovimentoDiario.QuantidadeAdolescentes = int.Parse(nudAdolescente.Text);
+                objMovimentoDiario.QuantidadeIdosos = int.Parse(nudIdoso.Text);
+                objMovimentoDiario.VisitaDomiciliar = cbVisita.Checked;
+                objMovimentoDiario.Observacoes = tbObservacao.Text;
+
+                // Inicializar e preencher listas selecionadas
+                objMovimentoDiario.tipoAtendimentos = new TipoLista();
+                PreencherListaSelecionados(tipoLista, objMovimentoDiario.tipoAtendimentos, t => t.selecionado);
+
+                objMovimentoDiario.providencias = new ProvidenciaLista();
+                PreencherListaSelecionados(providenciaLista, objMovimentoDiario.providencias, p => p.selecionado);
+
+                objMovimentoDiario.situacaoIdentificadas = new SituacaoIdentificadaLista();
+                PreencherListaSelecionados(situacaoLista, objMovimentoDiario.situacaoIdentificadas, s => s.selecionado);
+
+                objMovimentoDiario.beneficioGovernos = new BeneficioGovernoLista();
+                PreencherListaSelecionados(beneficioLista, objMovimentoDiario.beneficioGovernos, b => b.selecionado);
+
+                objMovimentoDiario.cadastroUnicos = new CadastroUnicoLista();
+                PreencherListaSelecionados(cadastroUnicoLista, objMovimentoDiario.cadastroUnicos, c => c.selecionado);
+
+                objMovimentoDiario.situacaoFamiliars = new SituacaoFamilizarLista();
+                PreencherListaSelecionados(situacaoFamiliarLista, objMovimentoDiario.situacaoFamiliars, s => s.selecionado);
+
+                objMovimentoDiario.atividadeLista = new AtividadeLista();
+                PreencherListaSelecionados(atividadeLista, objMovimentoDiario.atividadeLista, a => a.selecionado);
+
+                objMovimentoDiario.especificacaoLista = new EspecificacaoLista();
+                PreencherListaSelecionados(especificacaoLista, objMovimentoDiario.especificacaoLista, g => g.selecionado);
+
+
+                    //CAD
+                    if (cadastroUnicoLista != null && cadastroUnicoLista.Any())
+                    {
+                        objMovimentoDiario.idCad = cadastroUnicoLista.FirstOrDefault();
+                    }
+
+                    //-------------Realizações
+                    objMovimentoDiario.Encaminhamento = cbEncaminhamento.Checked;
+                    objMovimentoDiario.BeneficioConcedido = cbBeneficioConcedido.Checked;
+                    objMovimentoDiario.InscritoPaif = cbInseridoPaif.Checked;    
+                    objMovimentoDiario.AcompanhamentoIndividual = cbAcompanhamentoIndividual.Checked;
+
+                    //-------------RMA
+                    objMovimentoDiario.IncluidoCad = cbRmaIncluidoCad.Checked;
+                    objMovimentoDiario.Bpc = cbRmaBpc.Checked;
+                    objMovimentoDiario.AuxilioNatalidade = cbRmaAuxilioNatalidade.Checked;
+
+                    objMovimentoDiario.AtualizacaoCad = cbRmaAtualizacaoCad.Checked;
+                    objMovimentoDiario.EncaminhadoCreas = cbRmaEncaminhadoCreas.Checked;
+                    objMovimentoDiario.AuxilioFuneral = cbRmaAuxilioFuneral.Checked;
+                    objMovimentoDiario.BeneficioEventual = cbRmaBeneficioEventual.Checked;
+
+                    // Instanciar a camada de negócios
+                    NegMovimentoDiario negocioMovimento = new NegMovimentoDiario();
+
+                    // Cadastrar o movimento diário
+                    if (negocioMovimento.CadastrarMovimentoDiario(objMovimentoDiario))
+                    {
+                        MessageBox.Show("Movimento Diário cadastrado com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("O cadastro não foi realizado. Verifique os dados informados.");
+                    }
+                }
+
+            }catch(Exception ex) {
+
+                MessageBox.Show("Exceção: "+ex.Message, "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+           }
+
+        private void btPreencher_Click(object sender, EventArgs e)
+        {
+            NegMovimentoDiario Neg = new NegMovimentoDiario();
+            Neg.CadastrarTexte();
+        }
     }
-    #endregion
+    }
 
 
-}
+     
+

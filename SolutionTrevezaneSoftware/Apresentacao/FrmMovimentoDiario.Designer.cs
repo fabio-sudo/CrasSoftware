@@ -407,6 +407,7 @@
             this.btCadastrar.TabIndex = 44;
             this.btCadastrar.Text = "F10 Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // btSair
             // 
@@ -439,6 +440,7 @@
             this.btPreencher.TabIndex = 45;
             this.btPreencher.Text = "F5 Preencher";
             this.btPreencher.UseVisualStyleBackColor = false;
+            this.btPreencher.Click += new System.EventHandler(this.btPreencher_Click);
             // 
             // cbVisita
             // 

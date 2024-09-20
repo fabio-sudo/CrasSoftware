@@ -46,6 +46,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Especificacao.cs" />
     <Compile Include="Funcionario.cs" />
+    <Compile Include="MovimentoDiario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providencia.cs" />
     <Compile Include="SituacaoFamiliar.cs" />

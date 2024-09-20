@@ -47,6 +47,7 @@
     <Compile Include="NegCliente.cs" />
     <Compile Include="NegEspecificacao.cs" />
     <Compile Include="NegFuncionario.cs" />
+    <Compile Include="NegMovimentoDiario.cs" />
     <Compile Include="NegProvidencia.cs" />
     <Compile Include="NegSituacaoFamiliar.cs" />
     <Compile Include="NegSituacaoIdentificada.cs" />
