@@ -271,6 +271,14 @@ C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\bin\D
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAgenda.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirAtividadeCras.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirBeneficioGoverno.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirCadastroUnico.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirEspecificacao.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirProvidenciaCras.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirSituacaoFamiliar.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirSituacaoIdentificada.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirTipoAtendimento.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirAgenda.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirCliente.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarExcluirFuncionario.resources
@@ -291,7 +299,9 @@ C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\D
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarBeneficioGoverno.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCadastroUnico.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarCliente.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarEspecificacao.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarFuncionario.resources
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarMovimentoDiario.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarProvidenciaCras.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarSituacaoFamiliar.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarSituacaoIdentificada.resources
@@ -306,12 +316,3 @@ C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\D
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.CopyComplete
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirTipoAtendimento.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirCadastroUnico.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirAtividadeCras.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirBeneficioGoverno.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirProvidenciaCras.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirSituacaoIdentificada.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirSituacaoFamiliar.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmAlterarCadastrarExcluirEspecificacao.resources
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.FrmSelecionarEspecificacao.resources

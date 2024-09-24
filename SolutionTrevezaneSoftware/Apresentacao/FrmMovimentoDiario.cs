@@ -19,7 +19,6 @@ namespace Apresentacao
         //Funcionario
         string strFuncionario;
         Funcionario funcionarioLogado;
-        Funcionario objFuncionario = new Funcionario();
 
         //Cliente
         string strCliente;
@@ -62,37 +61,25 @@ namespace Apresentacao
 
         #endregion
 
-        public FrmMovimentoDiario([Optional] string nomeFuncionario)
+        public FrmMovimentoDiario([Optional] Funcionario objFuncionario, [Optional]MovimentoDiario objMovimento)
         {
             InitializeComponent();
 
-            if (nomeFuncionario != String.Empty)
+            if(objFuncionario == null)
             {
-                strFuncionario = nomeFuncionario;
+
+                funcionarioLogado = objFuncionario;
             }
+
+            if (objMovimento == null)
+            {
+
+                objMovimentoDiario = objMovimento;
+            }
+
         }
 
         //----------------------------------------------------------Construtor
-        private void metodoConstrutor()
-        {
-            try
-            {
-                funcionarioLogado = FrmMenuPrincipal.userLogado;
-                if (funcionarioLogado.nomeFuncionario == "Josi" || funcionarioLogado.nomeFuncionario == "JOSI")
-                { return; }
-                else
-                {
-                    objFuncionario = funcionarioLogado;
-                    tbBuscarFuncionario.Text = objFuncionario.nomeFuncionario;
-                    tbBuscarFuncionario.Enabled = false;
-                    pbFuncionario.Enabled = false;
-                    tbCliente.Focus();
-                }
-
-            }
-            catch (Exception ex) { MessageBox.Show(ex.Message); }
-        }
-
         private Boolean metodoValidaCadastro()
         {
             if ((tbBuscarFuncionario.Text == "") || (tbBuscarFuncionario.Text == "Digite o nome do funcionário ..."))
@@ -119,6 +106,7 @@ namespace Apresentacao
 
         private void metodoInicializaDataGrid()
         {
+
             AtualizarDataGridTipo(tipoLista);
             AtualizarDataGridProvidencia(providenciaLista);
             AtualizarDataGridSituacaoIdentificada(situacaoLista);
@@ -537,6 +525,19 @@ namespace Apresentacao
         //---------------------------------------------------------Formulário
         private void FrmMovimentoDiario_Load(object sender, EventArgs e)
         {
+
+            if (objMovimentoDiario != null)
+            {
+
+            }
+
+            if (funcionarioLogado != null)
+            {
+                tbBuscarFuncionario.Text = funcionarioLogado.nomeFuncionario;
+            }
+
+
+
             pbBuscarProvidencia_Click(null, e);
             pbBuscarTipo_Click(null, e);
             pbBuscarSituacaoIdentificada_Click(null, e);

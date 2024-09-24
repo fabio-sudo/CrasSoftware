@@ -264,6 +264,12 @@
     <Compile Include="FrmSelecionarFuncionario.Designer.cs">
       <DependentUpon>FrmSelecionarFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSelecionarMovimentoDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelecionarMovimentoDiario.Designer.cs">
+      <DependentUpon>FrmSelecionarMovimentoDiario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSelecionarProvidenciaCras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -406,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSelecionarFuncionario.resx">
       <DependentUpon>FrmSelecionarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelecionarMovimentoDiario.resx">
+      <DependentUpon>FrmSelecionarMovimentoDiario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSelecionarProvidenciaCras.resx">
       <DependentUpon>FrmSelecionarProvidenciaCras.cs</DependentUpon>

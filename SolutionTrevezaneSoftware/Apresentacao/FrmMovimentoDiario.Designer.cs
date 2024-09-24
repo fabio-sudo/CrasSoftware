@@ -145,6 +145,10 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEspecificacao = new System.Windows.Forms.Panel();
             this.tbEspecificacaoAtendimento = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbObservacao = new System.Windows.Forms.TextBox();
+            this.lbObservacao = new System.Windows.Forms.Label();
             this.pbSelecionarEspecificacaoAtendimento = new System.Windows.Forms.PictureBox();
             this.pbBuscarEspecificacaoAtendimento = new System.Windows.Forms.PictureBox();
             this.pbEspecificacaoAtendimento = new System.Windows.Forms.PictureBox();
@@ -171,10 +175,6 @@
             this.pbTipo = new System.Windows.Forms.PictureBox();
             this.pbCliente = new System.Windows.Forms.PictureBox();
             this.pbFuncionario = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbObservacao = new System.Windows.Forms.TextBox();
-            this.lbObservacao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudCriancas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAdolescente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudIdoso)).BeginInit();
@@ -187,6 +187,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSituacaoFamiliar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtividade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEspecificacaoAtendimento)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSelecionarEspecificacaoAtendimento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscarEspecificacaoAtendimento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEspecificacaoAtendimento)).BeginInit();
@@ -213,7 +214,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbTipo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuncionario)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btBuscarFuncionario
@@ -1391,6 +1391,51 @@
             this.tbEspecificacaoAtendimento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEspecificacaoAtendimento_KeyPress);
             this.tbEspecificacaoAtendimento.Leave += new System.EventHandler(this.tbEspecificacaoAtendimento_Leave);
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel7.Location = new System.Drawing.Point(12, 113);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1518, 3);
+            this.panel7.TabIndex = 15;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cbAcompanhamentoIndividual);
+            this.groupBox1.Controls.Add(this.cbEncaminhamento);
+            this.groupBox1.Controls.Add(this.cbBeneficioConcedido);
+            this.groupBox1.Controls.Add(this.cbInseridoPaif);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.groupBox1.Location = new System.Drawing.Point(874, 474);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(276, 123);
+            this.groupBox1.TabIndex = 37;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Realizações";
+            // 
+            // tbObservacao
+            // 
+            this.tbObservacao.Location = new System.Drawing.Point(948, 5);
+            this.tbObservacao.Multiline = true;
+            this.tbObservacao.Name = "tbObservacao";
+            this.tbObservacao.Size = new System.Drawing.Size(582, 103);
+            this.tbObservacao.TabIndex = 43;
+            this.tbObservacao.Text = " ";
+            // 
+            // lbObservacao
+            // 
+            this.lbObservacao.AutoSize = true;
+            this.lbObservacao.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.lbObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.lbObservacao.Location = new System.Drawing.Point(899, 92);
+            this.lbObservacao.Name = "lbObservacao";
+            this.lbObservacao.Size = new System.Drawing.Size(43, 16);
+            this.lbObservacao.TabIndex = 42;
+            this.lbObservacao.Text = "Obs.:";
+            // 
             // pbSelecionarEspecificacaoAtendimento
             // 
             this.pbSelecionarEspecificacaoAtendimento.Image = global::Apresentacao.Properties.Resources.DialogOK;
@@ -1685,51 +1730,6 @@
             this.pbFuncionario.TabIndex = 211;
             this.pbFuncionario.TabStop = false;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel7.Location = new System.Drawing.Point(12, 113);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1518, 3);
-            this.panel7.TabIndex = 15;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.cbAcompanhamentoIndividual);
-            this.groupBox1.Controls.Add(this.cbEncaminhamento);
-            this.groupBox1.Controls.Add(this.cbBeneficioConcedido);
-            this.groupBox1.Controls.Add(this.cbInseridoPaif);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.groupBox1.Location = new System.Drawing.Point(874, 474);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 123);
-            this.groupBox1.TabIndex = 37;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Realizações";
-            // 
-            // tbObservacao
-            // 
-            this.tbObservacao.Location = new System.Drawing.Point(948, 5);
-            this.tbObservacao.Multiline = true;
-            this.tbObservacao.Name = "tbObservacao";
-            this.tbObservacao.Size = new System.Drawing.Size(582, 103);
-            this.tbObservacao.TabIndex = 43;
-            this.tbObservacao.Text = " ";
-            // 
-            // lbObservacao
-            // 
-            this.lbObservacao.AutoSize = true;
-            this.lbObservacao.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.lbObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbObservacao.Location = new System.Drawing.Point(899, 92);
-            this.lbObservacao.Name = "lbObservacao";
-            this.lbObservacao.Size = new System.Drawing.Size(43, 16);
-            this.lbObservacao.TabIndex = 42;
-            this.lbObservacao.Text = "Obs.:";
-            // 
             // FrmMovimentoDiario
             // 
             this.AllowDrop = true;
@@ -1833,6 +1833,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSituacaoFamiliar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAtividade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEspecificacaoAtendimento)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSelecionarEspecificacaoAtendimento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscarEspecificacaoAtendimento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEspecificacaoAtendimento)).EndInit();
@@ -1859,8 +1861,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbTipo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFuncionario)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

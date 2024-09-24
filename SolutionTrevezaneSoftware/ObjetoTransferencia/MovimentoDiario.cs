@@ -54,4 +54,7 @@ namespace ObjetoTransferencia
         public AtividadeLista atividadeLista { get; set; } = new AtividadeLista();
         public EspecificacaoLista especificacaoLista { get; set;} = new EspecificacaoLista();
     }
+
+
+    public class MovimentoDiarioLista : List<MovimentoDiario> { }
 }

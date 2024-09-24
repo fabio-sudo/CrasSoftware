@@ -82,3 +82,25 @@ C:\Program Files (x86)\SolutionTrevezaneSoftware\Console\bin\Debug\ObjetoTransfe
 C:\Program Files (x86)\SolutionTrevezaneSoftware\Console\obj\Debug\TestesConsole.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\SolutionTrevezaneSoftware\Console\obj\Debug\Console.exe
 C:\Program Files (x86)\SolutionTrevezaneSoftware\Console\obj\Debug\Console.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Console.exe.config
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Console.exe
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Console.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\AcessoDados.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Apresentacao.exe
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Negocio.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\ObjetoTransferencia.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\AcessoDados.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\AcessoDados.dll.config
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Apresentacao.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Apresentacao.exe.config
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\Negocio.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\TestesConsole.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\TestesConsole.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\TestesConsole.csproj.CopyComplete
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\Console.exe
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\Console.pdb

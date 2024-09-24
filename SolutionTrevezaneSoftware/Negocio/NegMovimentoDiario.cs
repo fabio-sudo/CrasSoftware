@@ -61,10 +61,20 @@ namespace Negocio
                         Value = tipoDataTable
                     };
                     sqlserver.AdicionarParametro(parametroTipoIds);
-                }                
+                }
                 else
                 {
-                    sqlserver.AdicionarParametro(new SqlParameter("@tipoIds", DBNull.Value));
+                    // Cria um DataTable vazio com a estrutura correta
+                    DataTable tipoDataTable = CriarDataTableVazio("idTipo");
+
+                    SqlParameter parametroTipoIds = new SqlParameter
+                    {
+                        ParameterName = "@tipoIds",
+                        SqlDbType = SqlDbType.Structured,
+                        TypeName = "dbo.TypeIds",
+                        Value = tipoDataTable
+                    };
+                    sqlserver.AdicionarParametro(parametroTipoIds);
                 }
 
                 // Converte a lista situacaoFamiliars para DataTable
@@ -89,7 +99,17 @@ namespace Negocio
                 }
                 else
                 {
-                    sqlserver.AdicionarParametro(new SqlParameter("@situacaoIds", DBNull.Value));
+                    // Cria um DataTable vazio com a estrutura correta
+                    DataTable situacaoFamiliarDataTable = CriarDataTableVazio("idSituacaoFamiliar");
+
+                    SqlParameter parametroSituacaoFamiliarIds = new SqlParameter
+                    {
+                        ParameterName = "@situacaoIds",
+                        SqlDbType = SqlDbType.Structured,
+                        TypeName = "dbo.SituacaoIds",
+                        Value = situacaoFamiliarDataTable
+                    };
+                    sqlserver.AdicionarParametro(parametroSituacaoFamiliarIds);
                 }
 
                 // Converte a lista beneficioGovernos para DataTable
@@ -114,7 +134,17 @@ namespace Negocio
                 }
                 else
                 {
-                    sqlserver.AdicionarParametro(new SqlParameter("@beneficioGovernoIds", DBNull.Value));
+                    // Cria um DataTable vazio com a estrutura correta
+                    DataTable beneficioGovernoDataTable = CriarDataTableVazio("idBeneficioGoverno");
+
+                    SqlParameter parametroBeneficioGovernoIds = new SqlParameter
+                    {
+                        ParameterName = "@beneficioGovernoIds",
+                        SqlDbType = SqlDbType.Structured,
+                        TypeName = "dbo.BeneficioGovernoIds",
+                        Value = beneficioGovernoDataTable
+                    };
+                    sqlserver.AdicionarParametro(parametroBeneficioGovernoIds);
                 }
 
                 // Converte a lista providencias para DataTable
@@ -139,7 +169,17 @@ namespace Negocio
                 }
                 else
                 {
-                    sqlserver.AdicionarParametro(new SqlParameter("@providenciaIds", DBNull.Value));
+                    // Cria um DataTable vazio com a estrutura correta
+                    DataTable providenciaDataTable = CriarDataTableVazio("idProvidencia");
+
+                    SqlParameter parametroProvidenciaIds = new SqlParameter
+                    {
+                        ParameterName = "@providenciaIds",
+                        SqlDbType = SqlDbType.Structured,
+                        TypeName = "dbo.ProvidenciaIds",
+                        Value = providenciaDataTable
+                    };
+                    sqlserver.AdicionarParametro(parametroProvidenciaIds);
                 }
 
                 // Converte a lista atividadeLista para DataTable
@@ -164,7 +204,17 @@ namespace Negocio
                 }
                 else
                 {
-                    sqlserver.AdicionarParametro(new SqlParameter("@atividadeIds", DBNull.Value));
+                    // Cria um DataTable vazio com a estrutura correta
+                    DataTable atividadeDataTable = CriarDataTableVazio("idAtividade");
+
+                    SqlParameter parametroAtividadeIds = new SqlParameter
+                    {
+                        ParameterName = "@atividadeIds",
+                        SqlDbType = SqlDbType.Structured,
+                        TypeName = "dbo.AtividadeIds",
+                        Value = atividadeDataTable
+                    };
+                    sqlserver.AdicionarParametro(parametroAtividadeIds);
                 }
 
                 // Converte a lista situacaoIdentificadas para DataTable
@@ -189,17 +239,20 @@ namespace Negocio
                 }
                 else
                 {
-                    sqlserver.AdicionarParametro(new SqlParameter("@situacaoIdentificadaIds", DBNull.Value));
+                    // Cria um DataTable vazio com a estrutura correta
+                    DataTable situacaoIdentificadaDataTable = CriarDataTableVazio("idSituacao");
+
+                    SqlParameter parametroSituacaoIds = new SqlParameter
+                    {
+                        ParameterName = "@situacaoIdentificadaIds",
+                        SqlDbType = SqlDbType.Structured,
+                        TypeName = "dbo.SituacaoIdentificadaIds",
+                        Value = situacaoIdentificadaDataTable
+                    };
+                    sqlserver.AdicionarParametro(parametroSituacaoIds);
                 }
                 #endregion
 
-
-                //string comando = "exec uspCadastrarMovimentoDiario" +
-                //    "@data, @pronturario, @nome, @quantidadeCriancas, @quantidadeAdolecentes, @quantidadeIdosos, " +
-                //    "@visitaDomiciliar, @beneficioConcedido, @inscritoPaif, @acompanhamentoIndividual, @observacoes, " +
-                //    "@incluidoCad, @atualizacaoCad, @bpc, @encaminhadoCreas, @auxlioNatalidade, @auxilioFuneral, " +
-                //    "@beneficioEventual, @encaminhamento, @idCliente, @idCad, @idFuncionario, @tipoIds, @situacaoIds, " +
-                //    "@beneficioGovernoIds, @providenciaIds, @atividadeIds, @situacaoIdentificadaIds";
 
                 object resposta = sqlserver.ExecutarScalar("uspCadastrarMovimentoDiario", CommandType.StoredProcedure);
 
@@ -210,8 +263,6 @@ namespace Negocio
                 throw new Exception("Erro na camada de negócios - Cadastro. " + ex.Message);
             }
         }
-
-
 
         public bool CadastrarTexte()
         {
@@ -289,6 +340,227 @@ namespace Negocio
             return dataTable;
         }
 
+        // Método auxiliar para criar um DataTable vazio com a estrutura correta
+        private DataTable CriarDataTableVazio(string nomeColuna)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add(nomeColuna, typeof(int));
+            return table;
+        }
+
+
+        public MovimentoDiarioLista BuscarMovimentoDiarioPorDataUsuario(DateTime dataInicial, DateTime dataFinal, string nomeUsuario, int idFuncionario)
+        {
+            try
+            {
+                // Limpa os parâmetros anteriores
+                sqlserver.LimparParametros();
+
+                // Adiciona os parâmetros necessários para a busca
+                sqlserver.AdicionarParametro(new SqlParameter("@dataInicial", dataInicial));
+                sqlserver.AdicionarParametro(new SqlParameter("@dataFinal", dataFinal));
+                sqlserver.AdicionarParametro(new SqlParameter("@nomeUsuario", nomeUsuario ?? (object)DBNull.Value));
+                sqlserver.AdicionarParametro(new SqlParameter("@idFuncionario", idFuncionario));
+
+                // Executa a consulta e obtém o resultado
+                DataTable tabelaResultado = sqlserver.ExecutarConsulta("uspBuscarMovimentoDiarioPorDataUsuario", CommandType.StoredProcedure);
+
+                // Cria uma lista para armazenar os resultados
+                MovimentoDiarioLista listaMovimentoDiario = new MovimentoDiarioLista();
+
+                // Preenche a lista com os dados retornados
+                foreach (DataRow registro in tabelaResultado.Rows)
+                {
+                    MovimentoDiario movimento = new MovimentoDiario
+                    {
+                        IdMovimentoDiario = Convert.ToInt32(registro[0]),
+                        Data = registro[1] != DBNull.Value ? Convert.ToDateTime(registro[1]) : (DateTime?)null,
+                        Prontuario = registro[2].ToString(),
+                        Nome = registro[3].ToString(),
+                        QuantidadeCriancas = registro[4] != DBNull.Value ? Convert.ToInt32(registro[4]) : (int?)null,
+                        QuantidadeAdolescentes = registro[5] != DBNull.Value ? Convert.ToInt32(registro[5]) : (int?)null,
+                        QuantidadeIdosos = registro[6] != DBNull.Value ? Convert.ToInt32(registro[6]) : (int?)null,
+                        VisitaDomiciliar = registro[7] != DBNull.Value ? Convert.ToBoolean(registro[7]) : (bool?)null,
+                        BeneficioConcedido = registro[8] != DBNull.Value ? Convert.ToBoolean(registro[8]) : (bool?)null,
+                        InscritoPaif = registro[9] != DBNull.Value ? Convert.ToBoolean(registro[9]) : (bool?)null,
+                        AcompanhamentoIndividual = registro[10] != DBNull.Value ? Convert.ToBoolean(registro[10]) : (bool?)null,
+                        Observacoes = registro[11].ToString(),
+                        IncluidoCad = registro[12] != DBNull.Value ? Convert.ToBoolean(registro[12]) : (bool?)null,
+                        AtualizacaoCad = registro[13] != DBNull.Value ? Convert.ToBoolean(registro[13]) : (bool?)null,
+                        Bpc = registro[14] != DBNull.Value ? Convert.ToBoolean(registro[14]) : (bool?)null,
+                        EncaminhadoCreas = registro[15] != DBNull.Value ? Convert.ToBoolean(registro[15]) : (bool?)null,
+                        AuxilioNatalidade = registro[16] != DBNull.Value ? Convert.ToBoolean(registro[16]) : (bool?)null,
+                        AuxilioFuneral = registro[17] != DBNull.Value ? Convert.ToBoolean(registro[17]) : (bool?)null,
+                        BeneficioEventual = registro[18] != DBNull.Value ? Convert.ToBoolean(registro[18]) : (bool?)null,
+                        Encaminhamento = registro[19] != DBNull.Value ? Convert.ToBoolean(registro[19]) : (bool?)null,
+                        idCliente = registro[20] != DBNull.Value ? new Cliente { codigoCliente = Convert.ToInt32(registro[20]) } : null,
+                        idCad = registro[21] != DBNull.Value ? new CadastroUnico { idCadastroUnico = Convert.ToInt32(registro[21]) } : null,
+                        idFuncionario = registro[22] != DBNull.Value ? new Funcionario { codigoFuncionario = Convert.ToInt32(registro[22]) } : null,
+
+                        // As listas permanecem vazias e serão preenchidas se necessário
+                        tipoAtendimentos = new TipoLista(),
+                        providencias = new ProvidenciaLista(),
+                        situacaoIdentificadas = new SituacaoIdentificadaLista(),
+                        beneficioGovernos = new BeneficioGovernoLista(),
+                        cadastroUnicos = new CadastroUnicoLista(),
+                        situacaoFamiliars = new SituacaoFamilizarLista(),
+                        atividadeLista = new AtividadeLista(),
+                        especificacaoLista = new EspecificacaoLista()
+                    };
+
+                    // Adiciona o objeto movimento na lista
+                    listaMovimentoDiario.Add(movimento);
+                }
+
+                return listaMovimentoDiario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao buscar movimentos diários. " + ex.Message);
+            }
+        }
+
+        public MovimentoDiarioLista BuscarMovimentoDiarioPorDataFuncionario(DateTime dataInicial, DateTime dataFinal, string nomeUsuario, int idFuncionario)
+        {
+            try
+            {
+                // Limpa os parâmetros anteriores
+                sqlserver.LimparParametros();
+
+                // Adiciona os parâmetros necessários para a busca
+                sqlserver.AdicionarParametro(new SqlParameter("@dataInicial", dataInicial));
+                sqlserver.AdicionarParametro(new SqlParameter("@dataFinal", dataFinal));
+                sqlserver.AdicionarParametro(new SqlParameter("@nomeUsuario", nomeUsuario ?? (object)DBNull.Value));
+                sqlserver.AdicionarParametro(new SqlParameter("@idFuncionario", idFuncionario));
+
+                // Executa a consulta e obtém o resultado
+                DataTable tabelaResultado = sqlserver.ExecutarConsulta("uspBuscarMovimentoDiarioPorDataFuncionario", CommandType.StoredProcedure);
+
+                // Cria uma lista para armazenar os resultados
+                MovimentoDiarioLista listaMovimentoDiario = new MovimentoDiarioLista();
+
+                // Preenche a lista com os dados retornados
+                foreach (DataRow registro in tabelaResultado.Rows)
+                {
+                    MovimentoDiario movimento = new MovimentoDiario
+                    {
+                        IdMovimentoDiario = Convert.ToInt32(registro[0]),
+                        Data = registro[1] != DBNull.Value ? Convert.ToDateTime(registro[1]) : (DateTime?)null,
+                        Prontuario = registro[2].ToString(),
+                        Nome = registro[3].ToString(),
+                        QuantidadeCriancas = registro[4] != DBNull.Value ? Convert.ToInt32(registro[4]) : (int?)null,
+                        QuantidadeAdolescentes = registro[5] != DBNull.Value ? Convert.ToInt32(registro[5]) : (int?)null,
+                        QuantidadeIdosos = registro[6] != DBNull.Value ? Convert.ToInt32(registro[6]) : (int?)null,
+                        VisitaDomiciliar = registro[7] != DBNull.Value ? Convert.ToBoolean(registro[7]) : (bool?)null,
+                        BeneficioConcedido = registro[8] != DBNull.Value ? Convert.ToBoolean(registro[8]) : (bool?)null,
+                        InscritoPaif = registro[9] != DBNull.Value ? Convert.ToBoolean(registro[9]) : (bool?)null,
+                        AcompanhamentoIndividual = registro[10] != DBNull.Value ? Convert.ToBoolean(registro[10]) : (bool?)null,
+                        Observacoes = registro[11].ToString(),
+                        IncluidoCad = registro[12] != DBNull.Value ? Convert.ToBoolean(registro[12]) : (bool?)null,
+                        AtualizacaoCad = registro[13] != DBNull.Value ? Convert.ToBoolean(registro[13]) : (bool?)null,
+                        Bpc = registro[14] != DBNull.Value ? Convert.ToBoolean(registro[14]) : (bool?)null,
+                        EncaminhadoCreas = registro[15] != DBNull.Value ? Convert.ToBoolean(registro[15]) : (bool?)null,
+                        AuxilioNatalidade = registro[16] != DBNull.Value ? Convert.ToBoolean(registro[16]) : (bool?)null,
+                        AuxilioFuneral = registro[17] != DBNull.Value ? Convert.ToBoolean(registro[17]) : (bool?)null,
+                        BeneficioEventual = registro[18] != DBNull.Value ? Convert.ToBoolean(registro[18]) : (bool?)null,
+                        Encaminhamento = registro[19] != DBNull.Value ? Convert.ToBoolean(registro[19]) : (bool?)null,
+                        idCliente = registro[20] != DBNull.Value ? new Cliente { codigoCliente = Convert.ToInt32(registro[20]) } : null,
+                        idCad = registro[21] != DBNull.Value ? new CadastroUnico { idCadastroUnico = Convert.ToInt32(registro[21]) } : null,
+                        idFuncionario = registro[22] != DBNull.Value ? new Funcionario { codigoFuncionario = Convert.ToInt32(registro[22]) } : null,
+
+                        // As listas permanecem vazias e serão preenchidas se necessário
+                        tipoAtendimentos = new TipoLista(),
+                        providencias = new ProvidenciaLista(),
+                        situacaoIdentificadas = new SituacaoIdentificadaLista(),
+                        beneficioGovernos = new BeneficioGovernoLista(),
+                        cadastroUnicos = new CadastroUnicoLista(),
+                        situacaoFamiliars = new SituacaoFamilizarLista(),
+                        atividadeLista = new AtividadeLista(),
+                        especificacaoLista = new EspecificacaoLista()
+                    };
+
+                    // Adiciona o objeto movimento na lista
+                    listaMovimentoDiario.Add(movimento);
+                }
+
+                return listaMovimentoDiario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao buscar movimentos diários. " + ex.Message);
+            }
+        }
+
+        public MovimentoDiarioLista BuscarMovimentoDiarioPorDataECPF(DateTime dataInicial, DateTime dataFinal, string cpfCliente, int idFuncionario)
+        {
+            try
+            {
+                // Limpa os parâmetros anteriores
+                sqlserver.LimparParametros();
+
+                // Adiciona os parâmetros necessários para a busca
+                sqlserver.AdicionarParametro(new SqlParameter("@dataInicial", dataInicial));
+                sqlserver.AdicionarParametro(new SqlParameter("@dataFinal", dataFinal));
+                sqlserver.AdicionarParametro(new SqlParameter("@cpfCliente", cpfCliente ?? (object)DBNull.Value)); // Alterado para cpfCliente
+                sqlserver.AdicionarParametro(new SqlParameter("@idFuncionario", idFuncionario));
+
+                // Executa a consulta e obtém o resultado
+                DataTable tabelaResultado = sqlserver.ExecutarConsulta("uspBuscarMovimentoDiarioPorDataECPF", CommandType.StoredProcedure); // Alterado para o novo nome do SP
+
+                // Cria uma lista para armazenar os resultados
+                MovimentoDiarioLista listaMovimentoDiario = new MovimentoDiarioLista();
+
+                // Preenche a lista com os dados retornados
+                foreach (DataRow registro in tabelaResultado.Rows)
+                {
+                    MovimentoDiario movimento = new MovimentoDiario
+                    {
+                        IdMovimentoDiario = Convert.ToInt32(registro[0]),
+                        Data = registro[1] != DBNull.Value ? Convert.ToDateTime(registro[1]) : (DateTime?)null,
+                        Prontuario = registro[2].ToString(),
+                        Nome = registro[3].ToString(),
+                        QuantidadeCriancas = registro[4] != DBNull.Value ? Convert.ToInt32(registro[4]) : (int?)null,
+                        QuantidadeAdolescentes = registro[5] != DBNull.Value ? Convert.ToInt32(registro[5]) : (int?)null,
+                        QuantidadeIdosos = registro[6] != DBNull.Value ? Convert.ToInt32(registro[6]) : (int?)null,
+                        VisitaDomiciliar = registro[7] != DBNull.Value ? Convert.ToBoolean(registro[7]) : (bool?)null,
+                        BeneficioConcedido = registro[8] != DBNull.Value ? Convert.ToBoolean(registro[8]) : (bool?)null,
+                        InscritoPaif = registro[9] != DBNull.Value ? Convert.ToBoolean(registro[9]) : (bool?)null,
+                        AcompanhamentoIndividual = registro[10] != DBNull.Value ? Convert.ToBoolean(registro[10]) : (bool?)null,
+                        Observacoes = registro[11].ToString(),
+                        IncluidoCad = registro[12] != DBNull.Value ? Convert.ToBoolean(registro[12]) : (bool?)null,
+                        AtualizacaoCad = registro[13] != DBNull.Value ? Convert.ToBoolean(registro[13]) : (bool?)null,
+                        Bpc = registro[14] != DBNull.Value ? Convert.ToBoolean(registro[14]) : (bool?)null,
+                        EncaminhadoCreas = registro[15] != DBNull.Value ? Convert.ToBoolean(registro[15]) : (bool?)null,
+                        AuxilioNatalidade = registro[16] != DBNull.Value ? Convert.ToBoolean(registro[16]) : (bool?)null,
+                        AuxilioFuneral = registro[17] != DBNull.Value ? Convert.ToBoolean(registro[17]) : (bool?)null,
+                        BeneficioEventual = registro[18] != DBNull.Value ? Convert.ToBoolean(registro[18]) : (bool?)null,
+                        Encaminhamento = registro[19] != DBNull.Value ? Convert.ToBoolean(registro[19]) : (bool?)null,
+                        idCliente = registro[20] != DBNull.Value ? new Cliente { codigoCliente = Convert.ToInt32(registro[20]) } : null,
+                        idCad = registro[21] != DBNull.Value ? new CadastroUnico { idCadastroUnico = Convert.ToInt32(registro[21]) } : null,
+                        idFuncionario = registro[22] != DBNull.Value ? new Funcionario { codigoFuncionario = Convert.ToInt32(registro[22]) } : null,
+
+                        // As listas permanecem vazias e serão preenchidas se necessário
+                        tipoAtendimentos = new TipoLista(),
+                        providencias = new ProvidenciaLista(),
+                        situacaoIdentificadas = new SituacaoIdentificadaLista(),
+                        beneficioGovernos = new BeneficioGovernoLista(),
+                        cadastroUnicos = new CadastroUnicoLista(),
+                        situacaoFamiliars = new SituacaoFamilizarLista(),
+                        atividadeLista = new AtividadeLista(),
+                        especificacaoLista = new EspecificacaoLista()
+                    };
+
+                    // Adiciona o objeto movimento na lista
+                    listaMovimentoDiario.Add(movimento);
+                }
+
+                return listaMovimentoDiario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao buscar movimentos diários. " + ex.Message);
+            }
+        }
 
 
 
