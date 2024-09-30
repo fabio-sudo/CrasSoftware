@@ -23,6 +23,7 @@ namespace Apresentacao
         //Cliente
         string strCliente;
         Cliente clienteSelecionado = new Cliente();
+        NegCliente nCliente = new NegCliente();
 
         //--------------------Grides
 
@@ -65,13 +66,13 @@ namespace Apresentacao
         {
             InitializeComponent();
 
-            if(objFuncionario == null)
+            if(objFuncionario != null)
             {
 
                 funcionarioLogado = objFuncionario;
             }
 
-            if (objMovimento == null)
+            if (objMovimento != null)
             {
 
                 objMovimentoDiario = objMovimento;
@@ -218,6 +219,27 @@ namespace Apresentacao
 
         }
 
+        private void metodoPreencheFormulario()
+        {
+            if (objMovimentoDiario != null)
+            {
+                if (objMovimentoDiario.idCliente.codigoCliente != 0)
+                {
+                    clienteSelecionado = nCliente.BuscarClientePorCodigo(objMovimentoDiario.idCliente.codigoCliente);
+                    objMovimentoDiario.idCliente = clienteSelecionado;
+                    strCliente = clienteSelecionado.nomeCliente;
+                    tbCliente.Text = strCliente;
+                }
+
+                tbProntuario.Text = objMovimentoDiario.Prontuario;
+                tbNome.Text = objMovimentoDiario.Nome;
+                nudCriancas.Value = (decimal)objMovimentoDiario.QuantidadeCriancas;
+                nudAdolescente.Value = (decimal)objMovimentoDiario.QuantidadeAdolescentes;
+                nudIdoso.Value = (decimal)objMovimentoDiario.QuantidadeIdosos;
+                cbVisita.Checked = (bool)objMovimentoDiario.VisitaDomiciliar;
+                tbObservacao.Text = objMovimentoDiario.Observacoes;
+            }
+        }
 
         //--------------------------------------------------------Preencher Grid
 
@@ -464,7 +486,23 @@ namespace Apresentacao
         //---------------------------------------------------------Botões
         private void btSair_Click(object sender, EventArgs e)
         {
-            metodoLimpaCampos();
+
+            DialogResult resposta;
+            //Criando Caixa de dialogo
+            FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("Confirmação",
+            " Deseja realmente sair do movimento diário?",
+            Properties.Resources.DialogQuestion,
+            System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76))))),
+            Color.White,
+            "Sim", "Não",
+            false);
+
+            resposta = frmCaixa.ShowDialog();
+            if (resposta == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
         }
 
         private void btBuscarFuncionario_Click(object sender, EventArgs e)
@@ -525,19 +563,7 @@ namespace Apresentacao
         //---------------------------------------------------------Formulário
         private void FrmMovimentoDiario_Load(object sender, EventArgs e)
         {
-
-            if (objMovimentoDiario != null)
-            {
-
-            }
-
-            if (funcionarioLogado != null)
-            {
-                tbBuscarFuncionario.Text = funcionarioLogado.nomeFuncionario;
-            }
-
-
-
+            //------------Preencher Grids
             pbBuscarProvidencia_Click(null, e);
             pbBuscarTipo_Click(null, e);
             pbBuscarSituacaoIdentificada_Click(null, e);
@@ -547,11 +573,14 @@ namespace Apresentacao
             pbBuscarEspecificacaoAtendimento_Click(null, e);
             pbBuscarAtividadeCras_Click(null, e);
 
-            //Caso funcionário logado estiver preenchido o focu vai para próxima caixa de texto
-            if(funcionarioLogado != null)
+            //------------Funcionario
+            if (funcionarioLogado != null)
             {
-                tbCliente.Focus();
+                strFuncionario = funcionarioLogado.nomeFuncionario;
             }
+
+            //-----------------------------Form Alterar Excluir
+            metodoPreencheFormulario();
         }
 
 
@@ -594,6 +623,23 @@ namespace Apresentacao
             {
                 // Caso a lista esteja vazia, busca na fonte original
                 this.tipoLista = nTipo.BuscarTipoPorNome(str);
+
+
+                //Caso o objeto venha preenchido ja seleciona os itens no datagrid
+                if(objMovimentoDiario != null)
+                {
+                    foreach (TipoAtendimento tipo in objMovimentoDiario.tipoAtendimentos)
+                    {
+                            var obj = tipoLista.FirstOrDefault(t => t.idTipo == tipo.idTipo);
+                            if (obj != null)
+                            {
+
+                                obj.selecionado = true;
+                            }
+                        }
+                    }
+  
+
                 AtualizarDataGridTipo(tipoLista);
             }
         }
@@ -634,6 +680,20 @@ namespace Apresentacao
             {
 
                 this.providenciaLista = nProvidencia.BuscarProvidenciaPorNome(str);
+
+                //Caso o objeto venha preenchido ja seleciona os itens no datagrid
+                if (objMovimentoDiario != null)
+                {
+                    foreach (Providencia prov in objMovimentoDiario.providencias)
+                    {
+                        var obj = providenciaLista.FirstOrDefault(t => t.idProvidencia == prov.idProvidencia);
+                        if (obj != null)
+                        {
+
+                            obj.selecionado = true;
+                        }
+                    }
+                }
                 AtualizarDataGridProvidencia(providenciaLista);
 
             }
@@ -674,6 +734,23 @@ namespace Apresentacao
             else//Caso a lista não tenha itens
             {
                 this.situacaoLista = nSituacaoIdentificada.BuscarSituacaoPorNome(str);
+
+
+                //Caso o objeto venha preenchido ja seleciona os itens no datagrid
+                if (objMovimentoDiario != null)
+                {
+                    foreach (SituacaoIdentificada sit in objMovimentoDiario.situacaoIdentificadas)
+                    {
+                        var obj = situacaoLista.FirstOrDefault(t => t.idSituacaoIdentificada == sit.idSituacaoIdentificada);
+                        if (obj != null)
+                        {
+
+                            obj.selecionado = true;
+                        }
+                    }
+                }
+
+
                 AtualizarDataGridSituacaoIdentificada(situacaoLista);
             }
             
@@ -715,6 +792,24 @@ namespace Apresentacao
             {
 
                 this.beneficioLista = nBeneficio.BuscarBeneficioGovernoPorNome(str);
+
+
+                //Caso o objeto venha preenchido ja seleciona os itens no datagrid
+                if (objMovimentoDiario != null)
+                {
+                    foreach (BeneficioGoverno ben in objMovimentoDiario.beneficioGovernos)
+                    {
+                        var obj = beneficioLista.FirstOrDefault(t => t.idBeneficioGoverno == ben.idBeneficioGoverno);
+                        if (obj != null)
+                        {
+
+                            obj.selecionado = true;
+                        }
+                    }
+                }
+
+
+
                 AtualizarDataGridBeneficioGoverno(beneficioLista);
 
                 }
@@ -756,6 +851,19 @@ namespace Apresentacao
             else//Caso a lista não tenha itens
             {
                 this.cadastroUnicoLista = nCadastroUnico.BuscarCadastroUnicoPorNome(str);
+
+
+                //Caso o objeto venha preenchido ja seleciona os itens no datagrid
+                if (objMovimentoDiario != null)
+                {
+                        var obj = cadastroUnicoLista.FirstOrDefault(t => t.idCadastroUnico == objMovimentoDiario.idCad.idCadastroUnico);
+                        if (obj != null)
+                        {
+
+                            obj.selecionado = true;
+                        }   
+                }
+
                 AtualizarDataGridCad(cadastroUnicoLista);
             }
 
@@ -798,8 +906,81 @@ namespace Apresentacao
 
 
                 this.situacaoFamiliarLista = nSituacaoFamiliar.BuscarSituacaoPorNome(str);
+
+                //Caso o objeto venha preenchido ja seleciona os itens no datagrid
+                if (objMovimentoDiario != null)
+                {
+                    foreach (SituacaoFamiliar sit in objMovimentoDiario.situacaoFamiliars)
+                    {
+                        var obj = situacaoFamiliarLista.FirstOrDefault(t => t.idSituacaoFamiliar == sit.idSituacaoFamiliar);
+                        if (obj != null)
+                        {
+
+                            obj.selecionado = true;
+                        }
+                    }
+                }
+
                 AtualizarDataGridSituacaoFamiliar(situacaoFamiliarLista);
             }
+        }
+
+        //Atividade CRAS Grupos
+        private void pbBuscarAtividadeCras_Click(object sender, EventArgs e)
+        {
+            string str;
+            str = tbAtividadeCras.Text;
+
+            if (tbAtividadeCras.Text.Equals("Ativiadade no CRAS ...") || tbAtividadeCras.Text == string.Empty)
+            {
+                str = "";
+            }
+
+            // Verifica se a lista tipoLista tem itens
+            if (atividadeLista != null)
+            {
+                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
+                var resultados = atividadeLista.Where(t => t.descricaoAtividade.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+
+                if (resultados.Count > 0)
+                {
+                    // Cria uma nova lista filtrada e atualiza o DataGrid
+                    AtividadeLista listaFiltrada = new AtividadeLista();
+                    listaFiltrada.AddRange(resultados);
+                    //dgvSelecionarTipo.Rows.Clear();
+                    AtualizarDataGridAtividade(listaFiltrada);
+                    tbAtividadeCras.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma Atividade encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbAtividadeCras.Clear();
+                }
+            }
+            else//Caso a lista não tenha itens
+            {
+                this.atividadeLista = nAtividade.BuscarAtividadePorNome(str);
+
+
+                //Caso o objeto venha preenchido ja seleciona os itens no datagrid
+                if (objMovimentoDiario != null)
+                {
+                    foreach (Atividade atv in objMovimentoDiario.atividadeLista)
+                    {
+                        var obj = atividadeLista.FirstOrDefault(t => t.idAtividade == atv.idAtividade);
+                        if (obj != null)
+                        {
+
+                            obj.selecionado = true;
+                        }
+                    }
+                }
+
+
+                AtualizarDataGridAtividade(atividadeLista);
+
+            }
+
         }
 
         //Especificação do Atendimento
@@ -843,50 +1024,10 @@ namespace Apresentacao
             }
         }
 
-        //Atividade CRAS Grupos
-        private void pbBuscarAtividadeCras_Click(object sender, EventArgs e)
-        {
-            string str;
-            str = tbAtividadeCras.Text;
-
-            if (tbAtividadeCras.Text.Equals("Ativiadade no CRAS ...") || tbAtividadeCras.Text == string.Empty)
-            {
-                str = "";
-            }
-
-            // Verifica se a lista tipoLista tem itens
-            if (atividadeLista != null)
-            {
-                // Filtra a lista tipoLista usando IndexOf para comparação insensível a maiúsculas/minúsculas
-                var resultados = atividadeLista.Where(t => t.descricaoAtividade.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
-
-                if (resultados.Count > 0)
-                {
-                    // Cria uma nova lista filtrada e atualiza o DataGrid
-                    AtividadeLista listaFiltrada = new AtividadeLista();
-                    listaFiltrada.AddRange(resultados);
-                    //dgvSelecionarTipo.Rows.Clear();
-                    AtualizarDataGridAtividade(listaFiltrada);
-                    tbAtividadeCras.Focus();
-                }
-                else
-                {
-                    MessageBox.Show("Nenhuma Atividade encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    tbAtividadeCras.Clear();
-                }
-            }
-            else//Caso a lista não tenha itens
-            {
-                this.atividadeLista = nAtividade.BuscarAtividadePorNome(str);
-                AtualizarDataGridAtividade(atividadeLista);
-
-            }
-
-        }
-
         #endregion
 
         //------------------------------------------------------------------------Caixa de Texto 
+
         #region CaixaDeTexto
         private void tbBuscarFuncionario_Enter(object sender, EventArgs e)
         {
@@ -949,6 +1090,11 @@ namespace Apresentacao
             tbCliente.Clear();
             pbCliente.Image = Properties.Resources.ClienteRosa;
             panelCliente.BackColor = Color.DeepPink;
+
+            if (strCliente != String.Empty)
+            {
+                tbCliente.Text = strCliente;
+            }
         }
 
         //-----------------------------------------------------------------------------Caixa de Texto Tipo de Atendimento
@@ -1456,6 +1602,8 @@ namespace Apresentacao
         }
 
         #endregion
+
+        //----------------------------------------------------------Botões
 
 
         private void btCadastrar_Click(object sender, EventArgs e)

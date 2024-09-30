@@ -17,6 +17,7 @@ namespace Apresentacao
 
         NegMovimentoDiario nMovimento = new NegMovimentoDiario();
         public MovimentoDiarioLista movimentos;
+        MovimentoDiario movimentoSelecionado = new MovimentoDiario();
 
         //Funcionario
         string strFuncionario;
@@ -172,15 +173,12 @@ namespace Apresentacao
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
-
-
         //---------------------Inicialização do Formulário
         private void FrmSelecionarMovimentoDiario_Load(object sender, EventArgs e)
         {
             //Buscar inicio e fim do mes
             ObterUltimoDiaDoMes();
         }
-
 
         //----------------------Caixa de Texto Funcionário
         private void tbFuncionario_Leave(object sender, EventArgs e)
@@ -349,6 +347,39 @@ namespace Apresentacao
             catch (Exception ex) { MessageBox.Show("Erro ao buscar movimento diaário: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+        //---------------------Botões
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+            if (this.dgvSelecionar.Rows.Count > 0)
+            {
+                int indiceRegistroSelecionado = Convert.ToInt32(dgvSelecionar.CurrentRow.Cells[0].Value);
+                foreach (MovimentoDiario mov in movimentos)
+                {
+                    if (mov.IdMovimentoDiario == indiceRegistroSelecionado)
+                    {
+                        movimentoSelecionado = mov;
+                        nMovimento.PreencherListasMovimentoDiario(movimentoSelecionado);
+                        break;
+                    }                  
+                }
 
+                //Envia o movimendo diario para atualização ou exclusão
+                FrmMovimentoDiario frmMovimento = new FrmMovimentoDiario(funcionarioLogado, movimentoSelecionado);
+                DialogResult result =
+                frmMovimento.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    //Atualiza os dados no data grid
+                    btBuscar.PerformClick();
+                }
+            }
+        }
+
+        private void dgvSelecionar_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btAlterar.PerformClick();
+        }
+
+        //---------------------------------------------------------Final Form
     }
 }

@@ -28,12 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvSelecionar = new System.Windows.Forms.DataGridView();
+            this.idMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prontuarioMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeCriancas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeAdolecentes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeIdosos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visitaMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Encaminhamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.beneficioConcedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inseridoPaif = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.acompanhamentoIndividual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacoesMovivmento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btBuscar = new System.Windows.Forms.Button();
             this.panelBuscar = new System.Windows.Forms.Panel();
             this.tbBuscar = new System.Windows.Forms.TextBox();
@@ -50,19 +63,6 @@
             this.panelBuscarFuncionario = new System.Windows.Forms.Panel();
             this.tbFuncionario = new System.Windows.Forms.TextBox();
             this.pbFuncionario = new System.Windows.Forms.PictureBox();
-            this.idMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prontuarioMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeCriancas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeAdolecentes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeIdosos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visitaMovimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Encaminhamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.beneficioConcedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inseridoPaif = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.acompanhamentoIndividual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.observacoesMovivmento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelecionar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFiltrar)).BeginInit();
@@ -73,17 +73,17 @@
             // 
             this.dgvSelecionar.AllowUserToAddRows = false;
             this.dgvSelecionar.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.dgvSelecionar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.dgvSelecionar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSelecionar.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSelecionar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSelecionar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSelecionar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSelecionar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idMovimento,
@@ -99,24 +99,120 @@
             this.inseridoPaif,
             this.acompanhamentoIndividual,
             this.observacoesMovivmento});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DeepPink;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSelecionar.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSelecionar.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSelecionar.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvSelecionar.Location = new System.Drawing.Point(11, 62);
             this.dgvSelecionar.Margin = new System.Windows.Forms.Padding(2);
             this.dgvSelecionar.Name = "dgvSelecionar";
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
-            this.dgvSelecionar.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
+            this.dgvSelecionar.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvSelecionar.RowTemplate.Height = 24;
             this.dgvSelecionar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSelecionar.Size = new System.Drawing.Size(1525, 646);
             this.dgvSelecionar.TabIndex = 4;
+            this.dgvSelecionar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionar_CellDoubleClick);
+            // 
+            // idMovimento
+            // 
+            this.idMovimento.HeaderText = "ID";
+            this.idMovimento.Name = "idMovimento";
+            this.idMovimento.ReadOnly = true;
+            this.idMovimento.Visible = false;
+            this.idMovimento.Width = 30;
+            // 
+            // dataMovimento
+            // 
+            dataGridViewCellStyle3.Format = "d";
+            dataGridViewCellStyle3.NullValue = null;
+            this.dataMovimento.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataMovimento.HeaderText = "Data";
+            this.dataMovimento.Name = "dataMovimento";
+            this.dataMovimento.ReadOnly = true;
+            this.dataMovimento.ToolTipText = "Data do movimento diário";
+            this.dataMovimento.Width = 70;
+            // 
+            // prontuarioMovimento
+            // 
+            this.prontuarioMovimento.HeaderText = "Prontuário";
+            this.prontuarioMovimento.Name = "prontuarioMovimento";
+            this.prontuarioMovimento.ToolTipText = "Número do Pontuário do Usuário";
+            this.prontuarioMovimento.Width = 80;
+            // 
+            // nomeCliente
+            // 
+            this.nomeCliente.HeaderText = "Usuário";
+            this.nomeCliente.Name = "nomeCliente";
+            this.nomeCliente.ToolTipText = "Nome completo do usuário atendido";
+            this.nomeCliente.Width = 200;
+            // 
+            // quantidadeCriancas
+            // 
+            this.quantidadeCriancas.HeaderText = "Qtd.Cç";
+            this.quantidadeCriancas.Name = "quantidadeCriancas";
+            this.quantidadeCriancas.ToolTipText = "Quantiade de Crianças da Família";
+            this.quantidadeCriancas.Width = 65;
+            // 
+            // quantidadeAdolecentes
+            // 
+            this.quantidadeAdolecentes.HeaderText = "Qtd.Adol";
+            this.quantidadeAdolecentes.Name = "quantidadeAdolecentes";
+            this.quantidadeAdolecentes.ToolTipText = "Quantiade de Adolescentes da Família";
+            this.quantidadeAdolecentes.Width = 65;
+            // 
+            // quantidadeIdosos
+            // 
+            this.quantidadeIdosos.HeaderText = "Qtd.Idos";
+            this.quantidadeIdosos.Name = "quantidadeIdosos";
+            this.quantidadeIdosos.ToolTipText = "Quantiade de Idosos da Família";
+            this.quantidadeIdosos.Width = 65;
+            // 
+            // visitaMovimento
+            // 
+            this.visitaMovimento.HeaderText = "Visita";
+            this.visitaMovimento.Name = "visitaMovimento";
+            this.visitaMovimento.ToolTipText = "Visita realizada ao Usuário";
+            this.visitaMovimento.Width = 50;
+            // 
+            // Encaminhamento
+            // 
+            this.Encaminhamento.HeaderText = "Encam.";
+            this.Encaminhamento.Name = "Encaminhamento";
+            this.Encaminhamento.ToolTipText = "Encaminhamento realizado";
+            this.Encaminhamento.Width = 90;
+            // 
+            // beneficioConcedido
+            // 
+            this.beneficioConcedido.HeaderText = "Ben. Conc";
+            this.beneficioConcedido.Name = "beneficioConcedido";
+            this.beneficioConcedido.ToolTipText = "Benefício concedido para o usuário";
+            this.beneficioConcedido.Width = 95;
+            // 
+            // inseridoPaif
+            // 
+            this.inseridoPaif.HeaderText = "Ins. PAIF";
+            this.inseridoPaif.Name = "inseridoPaif";
+            this.inseridoPaif.ToolTipText = "Usuário inserido no PAIF";
+            this.inseridoPaif.Width = 90;
+            // 
+            // acompanhamentoIndividual
+            // 
+            this.acompanhamentoIndividual.HeaderText = "Acom. Ind";
+            this.acompanhamentoIndividual.Name = "acompanhamentoIndividual";
+            this.acompanhamentoIndividual.ToolTipText = "Acompanhamento Individual com o usuário";
+            this.acompanhamentoIndividual.Width = 95;
+            // 
+            // observacoesMovivmento
+            // 
+            this.observacoesMovivmento.HeaderText = "Obeservações";
+            this.observacoesMovivmento.Name = "observacoesMovivmento";
+            this.observacoesMovivmento.Width = 600;
             // 
             // btBuscar
             // 
@@ -240,6 +336,7 @@
             this.btAlterar.TabIndex = 215;
             this.btAlterar.Text = "F4 Alterar";
             this.btAlterar.UseVisualStyleBackColor = false;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // btCadastrar
             // 
@@ -321,101 +418,6 @@
             this.pbFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFuncionario.TabIndex = 326;
             this.pbFuncionario.TabStop = false;
-            // 
-            // idMovimento
-            // 
-            this.idMovimento.HeaderText = "ID";
-            this.idMovimento.Name = "idMovimento";
-            this.idMovimento.ReadOnly = true;
-            this.idMovimento.Visible = false;
-            this.idMovimento.Width = 30;
-            // 
-            // dataMovimento
-            // 
-            dataGridViewCellStyle13.Format = "d";
-            dataGridViewCellStyle13.NullValue = null;
-            this.dataMovimento.DefaultCellStyle = dataGridViewCellStyle13;
-            this.dataMovimento.HeaderText = "Data";
-            this.dataMovimento.Name = "dataMovimento";
-            this.dataMovimento.ReadOnly = true;
-            this.dataMovimento.ToolTipText = "Data do movimento diário";
-            this.dataMovimento.Width = 70;
-            // 
-            // prontuarioMovimento
-            // 
-            this.prontuarioMovimento.HeaderText = "Prontuário";
-            this.prontuarioMovimento.Name = "prontuarioMovimento";
-            this.prontuarioMovimento.ToolTipText = "Número do Pontuário do Usuário";
-            this.prontuarioMovimento.Width = 80;
-            // 
-            // nomeCliente
-            // 
-            this.nomeCliente.HeaderText = "Usuário";
-            this.nomeCliente.Name = "nomeCliente";
-            this.nomeCliente.ToolTipText = "Nome completo do usuário atendido";
-            this.nomeCliente.Width = 200;
-            // 
-            // quantidadeCriancas
-            // 
-            this.quantidadeCriancas.HeaderText = "Qtd.Cç";
-            this.quantidadeCriancas.Name = "quantidadeCriancas";
-            this.quantidadeCriancas.ToolTipText = "Quantiade de Crianças da Família";
-            this.quantidadeCriancas.Width = 65;
-            // 
-            // quantidadeAdolecentes
-            // 
-            this.quantidadeAdolecentes.HeaderText = "Qtd.Adol";
-            this.quantidadeAdolecentes.Name = "quantidadeAdolecentes";
-            this.quantidadeAdolecentes.ToolTipText = "Quantiade de Adolescentes da Família";
-            this.quantidadeAdolecentes.Width = 65;
-            // 
-            // quantidadeIdosos
-            // 
-            this.quantidadeIdosos.HeaderText = "Qtd.Idos";
-            this.quantidadeIdosos.Name = "quantidadeIdosos";
-            this.quantidadeIdosos.ToolTipText = "Quantiade de Idosos da Família";
-            this.quantidadeIdosos.Width = 65;
-            // 
-            // visitaMovimento
-            // 
-            this.visitaMovimento.HeaderText = "Visita";
-            this.visitaMovimento.Name = "visitaMovimento";
-            this.visitaMovimento.ToolTipText = "Visita realizada ao Usuário";
-            this.visitaMovimento.Width = 50;
-            // 
-            // Encaminhamento
-            // 
-            this.Encaminhamento.HeaderText = "Encam.";
-            this.Encaminhamento.Name = "Encaminhamento";
-            this.Encaminhamento.ToolTipText = "Encaminhamento realizado";
-            this.Encaminhamento.Width = 90;
-            // 
-            // beneficioConcedido
-            // 
-            this.beneficioConcedido.HeaderText = "Ben. Conc";
-            this.beneficioConcedido.Name = "beneficioConcedido";
-            this.beneficioConcedido.ToolTipText = "Benefício concedido para o usuário";
-            this.beneficioConcedido.Width = 95;
-            // 
-            // inseridoPaif
-            // 
-            this.inseridoPaif.HeaderText = "Ins. PAIF";
-            this.inseridoPaif.Name = "inseridoPaif";
-            this.inseridoPaif.ToolTipText = "Usuário inserido no PAIF";
-            this.inseridoPaif.Width = 90;
-            // 
-            // acompanhamentoIndividual
-            // 
-            this.acompanhamentoIndividual.HeaderText = "Acom. Ind";
-            this.acompanhamentoIndividual.Name = "acompanhamentoIndividual";
-            this.acompanhamentoIndividual.ToolTipText = "Acompanhamento Individual com o usuário";
-            this.acompanhamentoIndividual.Width = 95;
-            // 
-            // observacoesMovivmento
-            // 
-            this.observacoesMovivmento.HeaderText = "Obeservações";
-            this.observacoesMovivmento.Name = "observacoesMovivmento";
-            this.observacoesMovivmento.Width = 600;
             // 
             // FrmSelecionarMovimentoDiario
             // 

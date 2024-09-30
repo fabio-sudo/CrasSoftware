@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
+using System.Linq;
 namespace Negocio
 {
     public class NegMovimentoDiario
@@ -562,7 +563,77 @@ namespace Negocio
             }
         }
 
+        public void PreencherListasMovimentoDiario(MovimentoDiario movimento)
+        {
+            try
+            {
+                // Limpa os parâmetros anteriores
+                sqlserver.LimparParametros();
 
+                // Adiciona o parâmetro necessário para a busca
+                sqlserver.AdicionarParametro(new SqlParameter("@idMovimentoDiario", movimento.IdMovimentoDiario));
+
+                // Executa a consulta e obtém o resultado
+                DataTable tabelaResultado = sqlserver.ExecutarConsulta("uspBuscarRelacionadosPorMovimentoDiario", CommandType.StoredProcedure);
+
+                if (tabelaResultado.Rows.Count > 0)
+                {
+                    DataRow registro = tabelaResultado.Rows[0];
+
+                    // Preenche a lista de tipos
+                    if (registro["tipoIds"] != DBNull.Value)
+                    {
+                        string tipoIds = registro["tipoIds"].ToString();
+                        var tipos = tipoIds.Split(',').Select(id => new TipoAtendimento { idTipo = Convert.ToInt32(id.Trim()) }).ToList();
+                        movimento.tipoAtendimentos.AddRange(tipos);
+                    }
+
+                    // Preenche a lista de situações
+                    if (registro["situacaoFamiliarIds"] != DBNull.Value)
+                    {
+                        string situacaoIds = registro["situacaoFamiliarIds"].ToString();
+                        var situacoes = situacaoIds.Split(',').Select(id => new SituacaoFamiliar { idSituacaoFamiliar = Convert.ToInt32(id.Trim()) }).ToList();
+                        movimento.situacaoFamiliars.AddRange(situacoes);
+                    }
+
+                    // Preenche a lista de benefícios do governo
+                    if (registro["beneficioGovernoIds"] != DBNull.Value)
+                    {
+                        string beneficioGovernoIds = registro["beneficioGovernoIds"].ToString();
+                        var beneficios = beneficioGovernoIds.Split(',').Select(id => new BeneficioGoverno { idBeneficioGoverno = Convert.ToInt32(id.Trim()) }).ToList();
+                        movimento.beneficioGovernos.AddRange(beneficios);
+                    }
+
+                    // Preenche a lista de providências
+                    if (registro["providenciaIds"] != DBNull.Value)
+                    {
+                        string providenciaIds = registro["providenciaIds"].ToString();
+                        var providencias = providenciaIds.Split(',').Select(id => new Providencia { idProvidencia = Convert.ToInt32(id.Trim()) }).ToList();
+                        movimento.providencias.AddRange(providencias);
+                    }
+
+                    // Preenche a lista de atividades
+                    if (registro["atividadeIds"] != DBNull.Value)
+                    {
+                        string atividadeIds = registro["atividadeIds"].ToString();
+                        var atividades = atividadeIds.Split(',').Select(id => new Atividade { idAtividade = Convert.ToInt32(id.Trim()) }).ToList();
+                        movimento.atividadeLista.AddRange(atividades);
+                    }
+
+                    // Preenche a lista de situações identificadas
+                    if (registro["situacaoIdentificadaIds"] != DBNull.Value)
+                    {
+                        string situacaoIdentificadaIds = registro["situacaoIdentificadaIds"].ToString();
+                        var situacoesIdentificadas = situacaoIdentificadaIds.Split(',').Select(id => new SituacaoIdentificada { idSituacaoIdentificada = Convert.ToInt32(id.Trim()) }).ToList();
+                        movimento.situacaoIdentificadas.AddRange(situacoesIdentificadas);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao preencher listas de movimento diário. " + ex.Message);
+            }
+        }
 
     }
 }
