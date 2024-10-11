@@ -56,15 +56,15 @@ namespace Apresentacao
 
                 return false;
             }
-            else if (mtbRg.Text.Trim() == String.Empty)
-            {
-                MessageBox.Show("Informe o RG do Cliente!",
-                        "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                mtbRg.Clear();
-                mtbRg.Focus();
+            //else if (mtbRg.Text.Trim() == String.Empty)
+            //{
+            //    MessageBox.Show("Informe o RG do Cliente!",
+            //            "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    mtbRg.Clear();
+            //    mtbRg.Focus();
 
-                return false;
-            }
+            //    return false;
+            //}
             else if (mtbCpf.Text.Trim() == String.Empty)
             {
                 MessageBox.Show("Informe o CPF do Cliente!",
@@ -290,51 +290,51 @@ namespace Apresentacao
         //Mostra que o campo rg é obrigatório
         private void mtbRg_Leave(object sender, EventArgs e)
         {
-            try
-            {
-                //Verifica se o campo for preenchido
-                if (mtbRg.Text == String.Empty)
-                {
-                    epCliente.SetError(mtbRg, "Campo obrigatório!");
-                    return;
-                }
-                else
-                    epCliente.Clear();
+            //try
+            //{
+            //    //Verifica se o campo for preenchido
+            //    if (mtbRg.Text == String.Empty)
+            //    {
+            //        epCliente.SetError(mtbRg, "Campo obrigatório!");
+            //        return;
+            //    }
+            //    else
+            //        epCliente.Clear();
 
-                //Verifica se já existe CPF cadastrado
-                Cliente cliente = new Cliente();
-                cliente = nCliente.ValidarNovoCadastroRG(mtbRg.Text);
-                if (cliente != null)
-                {
-                    //Criando Caixa de dialogo
-                    FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("RG já Existe",
-                    " Cód: " + cliente.codigoCliente +
-                    " Nome: " + cliente.nomeCliente + " " + cliente.sobrenomeCliente +
-                    " RG: " + cliente.rgCliente,
-                    Properties.Resources.DialogWarning,
-                    System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76))))),
-                    Color.White,
-                    "Ok", "",
-                    false);
-                    frmCaixa.ShowDialog();
-                    //Volta parametro para caixa de texto
-                    mtbRg.Clear();
-                    mtbRg.Focus();
-                }
+            //    //Verifica se já existe CPF cadastrado
+            //    Cliente cliente = new Cliente();
+            //    cliente = nCliente.ValidarNovoCadastroRG(mtbRg.Text);
+            //    if (cliente != null)
+            //    {
+            //        //Criando Caixa de dialogo
+            //        FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("RG já Existe",
+            //        " Cód: " + cliente.codigoCliente +
+            //        " Nome: " + cliente.nomeCliente + " " + cliente.sobrenomeCliente +
+            //        " RG: " + cliente.rgCliente,
+            //        Properties.Resources.DialogWarning,
+            //        System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76))))),
+            //        Color.White,
+            //        "Ok", "",
+            //        false);
+            //        frmCaixa.ShowDialog();
+            //        //Volta parametro para caixa de texto
+            //        mtbRg.Clear();
+            //        mtbRg.Focus();
+            //    }
 
-            }
-            catch (Exception ex)
-            {
-                //Criando Caixa de dialogo
-                FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("Erro",
-                ex.Message,
-                Properties.Resources.DialogErro,
-                Color.White,
-                Color.Black,
-                "Ok", "",
-                false);
-                frmCaixa.ShowDialog();
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    //Criando Caixa de dialogo
+            //    FrmCaixaDialogo frmCaixa = new FrmCaixaDialogo("Erro",
+            //    ex.Message,
+            //    Properties.Resources.DialogErro,
+            //    Color.White,
+            //    Color.Black,
+            //    "Ok", "",
+            //    false);
+            //    frmCaixa.ShowDialog();
+            //}
         }
 
         //Valida Cliente já está cadastrado

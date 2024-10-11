@@ -16,7 +16,7 @@ namespace Apresentacao
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmSelecionarMovimentoDiario());
+            Application.Run(new FrmCliente());
         }
     }
 }
