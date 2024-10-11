@@ -108,20 +108,22 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSelecionar.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSelecionar.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvSelecionar.Location = new System.Drawing.Point(11, 62);
-            this.dgvSelecionar.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvSelecionar.Location = new System.Drawing.Point(15, 76);
+            this.dgvSelecionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvSelecionar.Name = "dgvSelecionar";
+            this.dgvSelecionar.RowHeadersWidth = 51;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvSelecionar.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvSelecionar.RowTemplate.Height = 24;
             this.dgvSelecionar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSelecionar.Size = new System.Drawing.Size(1525, 646);
+            this.dgvSelecionar.Size = new System.Drawing.Size(2033, 795);
             this.dgvSelecionar.TabIndex = 4;
             this.dgvSelecionar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionar_CellDoubleClick);
             // 
             // idMovimento
             // 
             this.idMovimento.HeaderText = "ID";
+            this.idMovimento.MinimumWidth = 6;
             this.idMovimento.Name = "idMovimento";
             this.idMovimento.ReadOnly = true;
             this.idMovimento.Visible = false;
@@ -133,6 +135,7 @@
             dataGridViewCellStyle3.NullValue = null;
             this.dataMovimento.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataMovimento.HeaderText = "Data";
+            this.dataMovimento.MinimumWidth = 6;
             this.dataMovimento.Name = "dataMovimento";
             this.dataMovimento.ReadOnly = true;
             this.dataMovimento.ToolTipText = "Data do movimento diário";
@@ -141,6 +144,7 @@
             // prontuarioMovimento
             // 
             this.prontuarioMovimento.HeaderText = "Prontuário";
+            this.prontuarioMovimento.MinimumWidth = 6;
             this.prontuarioMovimento.Name = "prontuarioMovimento";
             this.prontuarioMovimento.ToolTipText = "Número do Pontuário do Usuário";
             this.prontuarioMovimento.Width = 80;
@@ -148,6 +152,7 @@
             // nomeCliente
             // 
             this.nomeCliente.HeaderText = "Usuário";
+            this.nomeCliente.MinimumWidth = 6;
             this.nomeCliente.Name = "nomeCliente";
             this.nomeCliente.ToolTipText = "Nome completo do usuário atendido";
             this.nomeCliente.Width = 200;
@@ -155,6 +160,7 @@
             // quantidadeCriancas
             // 
             this.quantidadeCriancas.HeaderText = "Qtd.Cç";
+            this.quantidadeCriancas.MinimumWidth = 6;
             this.quantidadeCriancas.Name = "quantidadeCriancas";
             this.quantidadeCriancas.ToolTipText = "Quantiade de Crianças da Família";
             this.quantidadeCriancas.Width = 65;
@@ -162,6 +168,7 @@
             // quantidadeAdolecentes
             // 
             this.quantidadeAdolecentes.HeaderText = "Qtd.Adol";
+            this.quantidadeAdolecentes.MinimumWidth = 6;
             this.quantidadeAdolecentes.Name = "quantidadeAdolecentes";
             this.quantidadeAdolecentes.ToolTipText = "Quantiade de Adolescentes da Família";
             this.quantidadeAdolecentes.Width = 65;
@@ -169,6 +176,7 @@
             // quantidadeIdosos
             // 
             this.quantidadeIdosos.HeaderText = "Qtd.Idos";
+            this.quantidadeIdosos.MinimumWidth = 6;
             this.quantidadeIdosos.Name = "quantidadeIdosos";
             this.quantidadeIdosos.ToolTipText = "Quantiade de Idosos da Família";
             this.quantidadeIdosos.Width = 65;
@@ -176,6 +184,7 @@
             // visitaMovimento
             // 
             this.visitaMovimento.HeaderText = "Visita";
+            this.visitaMovimento.MinimumWidth = 6;
             this.visitaMovimento.Name = "visitaMovimento";
             this.visitaMovimento.ToolTipText = "Visita realizada ao Usuário";
             this.visitaMovimento.Width = 50;
@@ -183,6 +192,7 @@
             // Encaminhamento
             // 
             this.Encaminhamento.HeaderText = "Encam.";
+            this.Encaminhamento.MinimumWidth = 6;
             this.Encaminhamento.Name = "Encaminhamento";
             this.Encaminhamento.ToolTipText = "Encaminhamento realizado";
             this.Encaminhamento.Width = 90;
@@ -190,6 +200,7 @@
             // beneficioConcedido
             // 
             this.beneficioConcedido.HeaderText = "Ben. Conc";
+            this.beneficioConcedido.MinimumWidth = 6;
             this.beneficioConcedido.Name = "beneficioConcedido";
             this.beneficioConcedido.ToolTipText = "Benefício concedido para o usuário";
             this.beneficioConcedido.Width = 95;
@@ -197,6 +208,7 @@
             // inseridoPaif
             // 
             this.inseridoPaif.HeaderText = "Ins. PAIF";
+            this.inseridoPaif.MinimumWidth = 6;
             this.inseridoPaif.Name = "inseridoPaif";
             this.inseridoPaif.ToolTipText = "Usuário inserido no PAIF";
             this.inseridoPaif.Width = 90;
@@ -204,6 +216,7 @@
             // acompanhamentoIndividual
             // 
             this.acompanhamentoIndividual.HeaderText = "Acom. Ind";
+            this.acompanhamentoIndividual.MinimumWidth = 6;
             this.acompanhamentoIndividual.Name = "acompanhamentoIndividual";
             this.acompanhamentoIndividual.ToolTipText = "Acompanhamento Individual com o usuário";
             this.acompanhamentoIndividual.Width = 95;
@@ -211,6 +224,7 @@
             // observacoesMovivmento
             // 
             this.observacoesMovivmento.HeaderText = "Obeservações";
+            this.observacoesMovivmento.MinimumWidth = 6;
             this.observacoesMovivmento.Name = "observacoesMovivmento";
             this.observacoesMovivmento.Width = 600;
             // 
@@ -221,10 +235,10 @@
             this.btBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBuscar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBuscar.Location = new System.Drawing.Point(614, 24);
-            this.btBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btBuscar.Location = new System.Drawing.Point(819, 30);
+            this.btBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(98, 34);
+            this.btBuscar.Size = new System.Drawing.Size(131, 42);
             this.btBuscar.TabIndex = 59;
             this.btBuscar.Text = "F5 Buscar";
             this.btBuscar.UseVisualStyleBackColor = false;
@@ -233,10 +247,10 @@
             // panelBuscar
             // 
             this.panelBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelBuscar.Location = new System.Drawing.Point(322, 55);
-            this.panelBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBuscar.Location = new System.Drawing.Point(429, 68);
+            this.panelBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBuscar.Name = "panelBuscar";
-            this.panelBuscar.Size = new System.Drawing.Size(287, 2);
+            this.panelBuscar.Size = new System.Drawing.Size(383, 2);
             this.panelBuscar.TabIndex = 60;
             // 
             // tbBuscar
@@ -244,10 +258,10 @@
             this.tbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbBuscar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.tbBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbBuscar.Location = new System.Drawing.Point(352, 36);
-            this.tbBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.tbBuscar.Location = new System.Drawing.Point(469, 44);
+            this.tbBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(257, 16);
+            this.tbBuscar.Size = new System.Drawing.Size(343, 20);
             this.tbBuscar.TabIndex = 58;
             this.tbBuscar.Text = "Digite o nome do Usuário ou CPF ...";
             this.tbBuscar.TextChanged += new System.EventHandler(this.tbBuscar_TextChanged);
@@ -258,10 +272,10 @@
             // pbBuscar
             // 
             this.pbBuscar.Image = global::Apresentacao.Properties.Resources.CrediarioPendenteAviso;
-            this.pbBuscar.Location = new System.Drawing.Point(322, 24);
-            this.pbBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscar.Location = new System.Drawing.Point(429, 30);
+            this.pbBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscar.Name = "pbBuscar";
-            this.pbBuscar.Size = new System.Drawing.Size(26, 29);
+            this.pbBuscar.Size = new System.Drawing.Size(35, 36);
             this.pbBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscar.TabIndex = 61;
             this.pbBuscar.TabStop = false;
@@ -272,9 +286,10 @@
             this.lbDataFinal.AutoSize = true;
             this.lbDataFinal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.lbDataFinal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbDataFinal.Location = new System.Drawing.Point(1373, 9);
+            this.lbDataFinal.Location = new System.Drawing.Point(1831, 11);
+            this.lbDataFinal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDataFinal.Name = "lbDataFinal";
-            this.lbDataFinal.Size = new System.Drawing.Size(46, 19);
+            this.lbDataFinal.Size = new System.Drawing.Size(55, 24);
             this.lbDataFinal.TabIndex = 211;
             this.lbDataFinal.Text = "Final";
             // 
@@ -283,9 +298,10 @@
             this.dtpDataFinal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpDataFinal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDataFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataFinal.Location = new System.Drawing.Point(1377, 31);
+            this.dtpDataFinal.Location = new System.Drawing.Point(1836, 38);
+            this.dtpDataFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDataFinal.Name = "dtpDataFinal";
-            this.dtpDataFinal.Size = new System.Drawing.Size(123, 26);
+            this.dtpDataFinal.Size = new System.Drawing.Size(163, 30);
             this.dtpDataFinal.TabIndex = 212;
             // 
             // dtpDataInicial
@@ -293,9 +309,10 @@
             this.dtpDataInicial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpDataInicial.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDataInicial.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataInicial.Location = new System.Drawing.Point(1248, 31);
+            this.dtpDataInicial.Location = new System.Drawing.Point(1664, 38);
+            this.dtpDataInicial.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDataInicial.Name = "dtpDataInicial";
-            this.dtpDataInicial.Size = new System.Drawing.Size(123, 26);
+            this.dtpDataInicial.Size = new System.Drawing.Size(163, 30);
             this.dtpDataInicial.TabIndex = 210;
             // 
             // lbdataInicial
@@ -304,9 +321,10 @@
             this.lbdataInicial.AutoSize = true;
             this.lbdataInicial.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.lbdataInicial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbdataInicial.Location = new System.Drawing.Point(1244, 9);
+            this.lbdataInicial.Location = new System.Drawing.Point(1659, 11);
+            this.lbdataInicial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbdataInicial.Name = "lbdataInicial";
-            this.lbdataInicial.Size = new System.Drawing.Size(50, 19);
+            this.lbdataInicial.Size = new System.Drawing.Size(60, 24);
             this.lbdataInicial.TabIndex = 209;
             this.lbdataInicial.Text = "Inicio";
             // 
@@ -314,9 +332,10 @@
             // 
             this.pbFiltrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbFiltrar.Image = global::Apresentacao.Properties.Resources.FiltroImg;
-            this.pbFiltrar.Location = new System.Drawing.Point(1506, 30);
+            this.pbFiltrar.Location = new System.Drawing.Point(2008, 37);
+            this.pbFiltrar.Margin = new System.Windows.Forms.Padding(4);
             this.pbFiltrar.Name = "pbFiltrar";
-            this.pbFiltrar.Size = new System.Drawing.Size(30, 27);
+            this.pbFiltrar.Size = new System.Drawing.Size(40, 33);
             this.pbFiltrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFiltrar.TabIndex = 213;
             this.pbFiltrar.TabStop = false;
@@ -329,10 +348,10 @@
             this.btAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btAlterar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btAlterar.Location = new System.Drawing.Point(113, 724);
-            this.btAlterar.Margin = new System.Windows.Forms.Padding(2);
+            this.btAlterar.Location = new System.Drawing.Point(151, 891);
+            this.btAlterar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(98, 34);
+            this.btAlterar.Size = new System.Drawing.Size(131, 42);
             this.btAlterar.TabIndex = 215;
             this.btAlterar.Text = "F4 Alterar";
             this.btAlterar.UseVisualStyleBackColor = false;
@@ -345,13 +364,14 @@
             this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastrar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btCadastrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCadastrar.Location = new System.Drawing.Point(11, 724);
-            this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btCadastrar.Location = new System.Drawing.Point(15, 891);
+            this.btCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCadastrar.Name = "btCadastrar";
-            this.btCadastrar.Size = new System.Drawing.Size(98, 34);
+            this.btCadastrar.Size = new System.Drawing.Size(131, 42);
             this.btCadastrar.TabIndex = 214;
             this.btCadastrar.Text = "F10 Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // btSair
             // 
@@ -360,10 +380,10 @@
             this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSair.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btSair.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSair.Location = new System.Drawing.Point(1438, 724);
-            this.btSair.Margin = new System.Windows.Forms.Padding(2);
+            this.btSair.Location = new System.Drawing.Point(1917, 891);
+            this.btSair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(98, 34);
+            this.btSair.Size = new System.Drawing.Size(131, 42);
             this.btSair.TabIndex = 216;
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
@@ -375,10 +395,10 @@
             this.btBuscarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBuscarFuncionario.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btBuscarFuncionario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBuscarFuncionario.Location = new System.Drawing.Point(257, 25);
-            this.btBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.btBuscarFuncionario.Location = new System.Drawing.Point(343, 31);
+            this.btBuscarFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btBuscarFuncionario.Name = "btBuscarFuncionario";
-            this.btBuscarFuncionario.Size = new System.Drawing.Size(61, 34);
+            this.btBuscarFuncionario.Size = new System.Drawing.Size(81, 42);
             this.btBuscarFuncionario.TabIndex = 324;
             this.btBuscarFuncionario.Text = "Buscar";
             this.btBuscarFuncionario.UseVisualStyleBackColor = false;
@@ -387,10 +407,10 @@
             // panelBuscarFuncionario
             // 
             this.panelBuscarFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelBuscarFuncionario.Location = new System.Drawing.Point(11, 55);
-            this.panelBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBuscarFuncionario.Location = new System.Drawing.Point(15, 68);
+            this.panelBuscarFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBuscarFuncionario.Name = "panelBuscarFuncionario";
-            this.panelBuscarFuncionario.Size = new System.Drawing.Size(242, 2);
+            this.panelBuscarFuncionario.Size = new System.Drawing.Size(323, 2);
             this.panelBuscarFuncionario.TabIndex = 325;
             // 
             // tbFuncionario
@@ -398,10 +418,10 @@
             this.tbFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbFuncionario.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.tbFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbFuncionario.Location = new System.Drawing.Point(41, 36);
-            this.tbFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.tbFuncionario.Location = new System.Drawing.Point(55, 44);
+            this.tbFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbFuncionario.Name = "tbFuncionario";
-            this.tbFuncionario.Size = new System.Drawing.Size(212, 16);
+            this.tbFuncionario.Size = new System.Drawing.Size(283, 20);
             this.tbFuncionario.TabIndex = 323;
             this.tbFuncionario.Text = "Digite o nome do funcionário ...";
             this.tbFuncionario.Enter += new System.EventHandler(this.tbFuncionario_Enter);
@@ -411,19 +431,19 @@
             // pbFuncionario
             // 
             this.pbFuncionario.Image = global::Apresentacao.Properties.Resources.FuncionarioAzul;
-            this.pbFuncionario.Location = new System.Drawing.Point(11, 24);
-            this.pbFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.pbFuncionario.Location = new System.Drawing.Point(15, 30);
+            this.pbFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbFuncionario.Name = "pbFuncionario";
-            this.pbFuncionario.Size = new System.Drawing.Size(26, 29);
+            this.pbFuncionario.Size = new System.Drawing.Size(35, 36);
             this.pbFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFuncionario.TabIndex = 326;
             this.pbFuncionario.TabStop = false;
             // 
             // FrmSelecionarMovimentoDiario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1547, 769);
+            this.ClientSize = new System.Drawing.Size(1924, 946);
             this.Controls.Add(this.btBuscarFuncionario);
             this.Controls.Add(this.panelBuscarFuncionario);
             this.Controls.Add(this.tbFuncionario);
@@ -441,8 +461,10 @@
             this.Controls.Add(this.tbBuscar);
             this.Controls.Add(this.pbBuscar);
             this.Controls.Add(this.dgvSelecionar);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "FrmSelecionarMovimentoDiario";
             this.Text = "Movimento Diário";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmSelecionarMovimentoDiario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelecionar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();

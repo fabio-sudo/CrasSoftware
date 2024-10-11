@@ -223,10 +223,10 @@
             this.btBuscarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBuscarFuncionario.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btBuscarFuncionario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBuscarFuncionario.Location = new System.Drawing.Point(394, 21);
-            this.btBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.btBuscarFuncionario.Location = new System.Drawing.Point(525, 26);
+            this.btBuscarFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btBuscarFuncionario.Name = "btBuscarFuncionario";
-            this.btBuscarFuncionario.Size = new System.Drawing.Size(61, 34);
+            this.btBuscarFuncionario.Size = new System.Drawing.Size(81, 42);
             this.btBuscarFuncionario.TabIndex = 1;
             this.btBuscarFuncionario.Text = "Buscar";
             this.btBuscarFuncionario.UseVisualStyleBackColor = false;
@@ -235,10 +235,10 @@
             // panelBuscarFuncionario
             // 
             this.panelBuscarFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelBuscarFuncionario.Location = new System.Drawing.Point(148, 51);
-            this.panelBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBuscarFuncionario.Location = new System.Drawing.Point(197, 63);
+            this.panelBuscarFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBuscarFuncionario.Name = "panelBuscarFuncionario";
-            this.panelBuscarFuncionario.Size = new System.Drawing.Size(242, 2);
+            this.panelBuscarFuncionario.Size = new System.Drawing.Size(323, 2);
             this.panelBuscarFuncionario.TabIndex = 48;
             // 
             // tbBuscarFuncionario
@@ -246,10 +246,10 @@
             this.tbBuscarFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbBuscarFuncionario.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.tbBuscarFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbBuscarFuncionario.Location = new System.Drawing.Point(178, 32);
-            this.tbBuscarFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.tbBuscarFuncionario.Location = new System.Drawing.Point(237, 39);
+            this.tbBuscarFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBuscarFuncionario.Name = "tbBuscarFuncionario";
-            this.tbBuscarFuncionario.Size = new System.Drawing.Size(212, 16);
+            this.tbBuscarFuncionario.Size = new System.Drawing.Size(283, 20);
             this.tbBuscarFuncionario.TabIndex = 0;
             this.tbBuscarFuncionario.Text = "Digite o nome do funcionário ...";
             this.tbBuscarFuncionario.Enter += new System.EventHandler(this.tbBuscarFuncionario_Enter);
@@ -261,10 +261,9 @@
             this.lbDataAtendimento.AutoSize = true;
             this.lbDataAtendimento.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.lbDataAtendimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbDataAtendimento.Location = new System.Drawing.Point(8, 6);
-            this.lbDataAtendimento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbDataAtendimento.Location = new System.Drawing.Point(11, 7);
             this.lbDataAtendimento.Name = "lbDataAtendimento";
-            this.lbDataAtendimento.Size = new System.Drawing.Size(130, 16);
+            this.lbDataAtendimento.Size = new System.Drawing.Size(148, 19);
             this.lbDataAtendimento.TabIndex = 49;
             this.lbDataAtendimento.Text = "Data Atendimento";
             // 
@@ -276,19 +275,19 @@
             this.dtpDiaSemana.CustomFormat = "MMMM d dddd ";
             this.dtpDiaSemana.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
             this.dtpDiaSemana.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDiaSemana.Location = new System.Drawing.Point(11, 27);
-            this.dtpDiaSemana.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDiaSemana.Location = new System.Drawing.Point(15, 33);
+            this.dtpDiaSemana.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDiaSemana.Name = "dtpDiaSemana";
-            this.dtpDiaSemana.Size = new System.Drawing.Size(124, 26);
+            this.dtpDiaSemana.Size = new System.Drawing.Size(164, 30);
             this.dtpDiaSemana.TabIndex = 50;
             // 
             // tbProntuario
             // 
             this.tbProntuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProntuario.Location = new System.Drawing.Point(11, 86);
-            this.tbProntuario.Margin = new System.Windows.Forms.Padding(2);
+            this.tbProntuario.Location = new System.Drawing.Point(15, 106);
+            this.tbProntuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbProntuario.Name = "tbProntuario";
-            this.tbProntuario.Size = new System.Drawing.Size(82, 23);
+            this.tbProntuario.Size = new System.Drawing.Size(108, 27);
             this.tbProntuario.TabIndex = 5;
             // 
             // lbProntuario
@@ -297,20 +296,19 @@
             this.lbProntuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbProntuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProntuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbProntuario.Location = new System.Drawing.Point(8, 67);
-            this.lbProntuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbProntuario.Location = new System.Drawing.Point(11, 82);
             this.lbProntuario.Name = "lbProntuario";
-            this.lbProntuario.Size = new System.Drawing.Size(84, 17);
+            this.lbProntuario.Size = new System.Drawing.Size(96, 20);
             this.lbProntuario.TabIndex = 4;
             this.lbProntuario.Text = "Prontuário";
             // 
             // tbNome
             // 
             this.tbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNome.Location = new System.Drawing.Point(97, 86);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNome.Location = new System.Drawing.Point(129, 106);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(304, 23);
+            this.tbNome.Size = new System.Drawing.Size(404, 27);
             this.tbNome.TabIndex = 7;
             // 
             // lbNome
@@ -319,19 +317,19 @@
             this.lbNome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbNome.Location = new System.Drawing.Point(94, 67);
-            this.lbNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNome.Location = new System.Drawing.Point(125, 82);
             this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(121, 17);
+            this.lbNome.Size = new System.Drawing.Size(142, 20);
             this.lbNome.TabIndex = 6;
             this.lbNome.Text = "Nome Completo";
             // 
             // nudCriancas
             // 
             this.nudCriancas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.nudCriancas.Location = new System.Drawing.Point(406, 85);
+            this.nudCriancas.Location = new System.Drawing.Point(541, 105);
+            this.nudCriancas.Margin = new System.Windows.Forms.Padding(4);
             this.nudCriancas.Name = "nudCriancas";
-            this.nudCriancas.Size = new System.Drawing.Size(80, 23);
+            this.nudCriancas.Size = new System.Drawing.Size(107, 27);
             this.nudCriancas.TabIndex = 9;
             this.nudCriancas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -341,10 +339,9 @@
             this.lbCriancas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbCriancas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.lbCriancas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbCriancas.Location = new System.Drawing.Point(403, 69);
-            this.lbCriancas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbCriancas.Location = new System.Drawing.Point(537, 85);
             this.lbCriancas.Name = "lbCriancas";
-            this.lbCriancas.Size = new System.Drawing.Size(56, 13);
+            this.lbCriancas.Size = new System.Drawing.Size(71, 17);
             this.lbCriancas.TabIndex = 8;
             this.lbCriancas.Text = "Crianças";
             // 
@@ -354,19 +351,19 @@
             this.lbAdolescente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbAdolescente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.lbAdolescente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbAdolescente.Location = new System.Drawing.Point(489, 69);
-            this.lbAdolescente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbAdolescente.Location = new System.Drawing.Point(652, 85);
             this.lbAdolescente.Name = "lbAdolescente";
-            this.lbAdolescente.Size = new System.Drawing.Size(83, 13);
+            this.lbAdolescente.Size = new System.Drawing.Size(105, 17);
             this.lbAdolescente.TabIndex = 10;
             this.lbAdolescente.Text = "Adolescentes";
             // 
             // nudAdolescente
             // 
             this.nudAdolescente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.nudAdolescente.Location = new System.Drawing.Point(492, 85);
+            this.nudAdolescente.Location = new System.Drawing.Point(656, 105);
+            this.nudAdolescente.Margin = new System.Windows.Forms.Padding(4);
             this.nudAdolescente.Name = "nudAdolescente";
-            this.nudAdolescente.Size = new System.Drawing.Size(80, 23);
+            this.nudAdolescente.Size = new System.Drawing.Size(107, 27);
             this.nudAdolescente.TabIndex = 11;
             this.nudAdolescente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -376,19 +373,19 @@
             this.lbIdoso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbIdoso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.lbIdoso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbIdoso.Location = new System.Drawing.Point(576, 69);
-            this.lbIdoso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbIdoso.Location = new System.Drawing.Point(768, 85);
             this.lbIdoso.Name = "lbIdoso";
-            this.lbIdoso.Size = new System.Drawing.Size(44, 13);
+            this.lbIdoso.Size = new System.Drawing.Size(55, 17);
             this.lbIdoso.TabIndex = 12;
             this.lbIdoso.Text = "Idosos";
             // 
             // nudIdoso
             // 
             this.nudIdoso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.nudIdoso.Location = new System.Drawing.Point(578, 85);
+            this.nudIdoso.Location = new System.Drawing.Point(771, 105);
+            this.nudIdoso.Margin = new System.Windows.Forms.Padding(4);
             this.nudIdoso.Name = "nudIdoso";
-            this.nudIdoso.Size = new System.Drawing.Size(80, 23);
+            this.nudIdoso.Size = new System.Drawing.Size(107, 27);
             this.nudIdoso.TabIndex = 13;
             this.nudIdoso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -400,10 +397,10 @@
             this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastrar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btCadastrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCadastrar.Location = new System.Drawing.Point(11, 745);
-            this.btCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btCadastrar.Location = new System.Drawing.Point(15, 917);
+            this.btCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCadastrar.Name = "btCadastrar";
-            this.btCadastrar.Size = new System.Drawing.Size(98, 34);
+            this.btCadastrar.Size = new System.Drawing.Size(131, 42);
             this.btCadastrar.TabIndex = 44;
             this.btCadastrar.Text = "F10 Cadastrar";
             this.btCadastrar.UseVisualStyleBackColor = false;
@@ -416,10 +413,10 @@
             this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSair.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btSair.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSair.Location = new System.Drawing.Point(1426, 745);
-            this.btSair.Margin = new System.Windows.Forms.Padding(2);
+            this.btSair.Location = new System.Drawing.Point(1901, 917);
+            this.btSair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(98, 34);
+            this.btSair.Size = new System.Drawing.Size(131, 42);
             this.btSair.TabIndex = 46;
             this.btSair.Text = "Esc Sair";
             this.btSair.UseVisualStyleBackColor = false;
@@ -433,10 +430,10 @@
             this.btPreencher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPreencher.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btPreencher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btPreencher.Location = new System.Drawing.Point(113, 745);
-            this.btPreencher.Margin = new System.Windows.Forms.Padding(2);
+            this.btPreencher.Location = new System.Drawing.Point(151, 917);
+            this.btPreencher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btPreencher.Name = "btPreencher";
-            this.btPreencher.Size = new System.Drawing.Size(98, 34);
+            this.btPreencher.Size = new System.Drawing.Size(131, 42);
             this.btPreencher.TabIndex = 45;
             this.btPreencher.Text = "F5 Preencher";
             this.btPreencher.UseVisualStyleBackColor = false;
@@ -447,9 +444,10 @@
             this.cbVisita.AutoSize = true;
             this.cbVisita.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.cbVisita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.cbVisita.Location = new System.Drawing.Point(696, 85);
+            this.cbVisita.Location = new System.Drawing.Point(928, 105);
+            this.cbVisita.Margin = new System.Windows.Forms.Padding(4);
             this.cbVisita.Name = "cbVisita";
-            this.cbVisita.Size = new System.Drawing.Size(70, 23);
+            this.cbVisita.Size = new System.Drawing.Size(84, 28);
             this.cbVisita.TabIndex = 14;
             this.cbVisita.Text = "Visita";
             this.cbVisita.UseVisualStyleBackColor = true;
@@ -459,9 +457,10 @@
             this.cbEncaminhamento.AutoSize = true;
             this.cbEncaminhamento.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.cbEncaminhamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.cbEncaminhamento.Location = new System.Drawing.Point(6, 25);
+            this.cbEncaminhamento.Location = new System.Drawing.Point(8, 31);
+            this.cbEncaminhamento.Margin = new System.Windows.Forms.Padding(4);
             this.cbEncaminhamento.Name = "cbEncaminhamento";
-            this.cbEncaminhamento.Size = new System.Drawing.Size(121, 18);
+            this.cbEncaminhamento.Size = new System.Drawing.Size(149, 20);
             this.cbEncaminhamento.TabIndex = 3;
             this.cbEncaminhamento.Text = "Encaminhamento";
             this.cbEncaminhamento.UseVisualStyleBackColor = true;
@@ -471,9 +470,10 @@
             this.cbAcompanhamentoIndividual.AutoSize = true;
             this.cbAcompanhamentoIndividual.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.cbAcompanhamentoIndividual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.cbAcompanhamentoIndividual.Location = new System.Drawing.Point(7, 97);
+            this.cbAcompanhamentoIndividual.Location = new System.Drawing.Point(9, 119);
+            this.cbAcompanhamentoIndividual.Margin = new System.Windows.Forms.Padding(4);
             this.cbAcompanhamentoIndividual.Name = "cbAcompanhamentoIndividual";
-            this.cbAcompanhamentoIndividual.Size = new System.Drawing.Size(182, 18);
+            this.cbAcompanhamentoIndividual.Size = new System.Drawing.Size(227, 20);
             this.cbAcompanhamentoIndividual.TabIndex = 2;
             this.cbAcompanhamentoIndividual.Text = "Acompanhamento Individual";
             this.cbAcompanhamentoIndividual.UseVisualStyleBackColor = true;
@@ -483,9 +483,10 @@
             this.cbInseridoPaif.AutoSize = true;
             this.cbInseridoPaif.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.cbInseridoPaif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.cbInseridoPaif.Location = new System.Drawing.Point(7, 73);
+            this.cbInseridoPaif.Location = new System.Drawing.Point(9, 90);
+            this.cbInseridoPaif.Margin = new System.Windows.Forms.Padding(4);
             this.cbInseridoPaif.Name = "cbInseridoPaif";
-            this.cbInseridoPaif.Size = new System.Drawing.Size(98, 18);
+            this.cbInseridoPaif.Size = new System.Drawing.Size(121, 20);
             this.cbInseridoPaif.TabIndex = 1;
             this.cbInseridoPaif.Text = "Inserido PAIF";
             this.cbInseridoPaif.UseVisualStyleBackColor = true;
@@ -495,9 +496,10 @@
             this.cbBeneficioConcedido.AutoSize = true;
             this.cbBeneficioConcedido.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.cbBeneficioConcedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.cbBeneficioConcedido.Location = new System.Drawing.Point(7, 49);
+            this.cbBeneficioConcedido.Location = new System.Drawing.Point(9, 60);
+            this.cbBeneficioConcedido.Margin = new System.Windows.Forms.Padding(4);
             this.cbBeneficioConcedido.Name = "cbBeneficioConcedido";
-            this.cbBeneficioConcedido.Size = new System.Drawing.Size(139, 18);
+            this.cbBeneficioConcedido.Size = new System.Drawing.Size(176, 20);
             this.cbBeneficioConcedido.TabIndex = 0;
             this.cbBeneficioConcedido.Text = "Beneficio Concedido";
             this.cbBeneficioConcedido.UseVisualStyleBackColor = true;
@@ -514,9 +516,11 @@
             this.gbRMA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gbRMA.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.gbRMA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.gbRMA.Location = new System.Drawing.Point(874, 603);
+            this.gbRMA.Location = new System.Drawing.Point(1165, 742);
+            this.gbRMA.Margin = new System.Windows.Forms.Padding(4);
             this.gbRMA.Name = "gbRMA";
-            this.gbRMA.Size = new System.Drawing.Size(276, 126);
+            this.gbRMA.Padding = new System.Windows.Forms.Padding(4);
+            this.gbRMA.Size = new System.Drawing.Size(368, 155);
             this.gbRMA.TabIndex = 38;
             this.gbRMA.TabStop = false;
             this.gbRMA.Text = "RMA";
@@ -525,9 +529,10 @@
             // 
             this.cbRmaBeneficioEventual.AutoSize = true;
             this.cbRmaBeneficioEventual.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.cbRmaBeneficioEventual.Location = new System.Drawing.Point(6, 99);
+            this.cbRmaBeneficioEventual.Location = new System.Drawing.Point(8, 122);
+            this.cbRmaBeneficioEventual.Margin = new System.Windows.Forms.Padding(4);
             this.cbRmaBeneficioEventual.Name = "cbRmaBeneficioEventual";
-            this.cbRmaBeneficioEventual.Size = new System.Drawing.Size(126, 18);
+            this.cbRmaBeneficioEventual.Size = new System.Drawing.Size(162, 20);
             this.cbRmaBeneficioEventual.TabIndex = 6;
             this.cbRmaBeneficioEventual.Text = "Beneficio Eventual";
             this.cbRmaBeneficioEventual.UseVisualStyleBackColor = true;
@@ -536,9 +541,10 @@
             // 
             this.cbRmaAuxilioFuneral.AutoSize = true;
             this.cbRmaAuxilioFuneral.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.cbRmaAuxilioFuneral.Location = new System.Drawing.Point(134, 75);
+            this.cbRmaAuxilioFuneral.Location = new System.Drawing.Point(179, 92);
+            this.cbRmaAuxilioFuneral.Margin = new System.Windows.Forms.Padding(4);
             this.cbRmaAuxilioFuneral.Name = "cbRmaAuxilioFuneral";
-            this.cbRmaAuxilioFuneral.Size = new System.Drawing.Size(107, 18);
+            this.cbRmaAuxilioFuneral.Size = new System.Drawing.Size(134, 20);
             this.cbRmaAuxilioFuneral.TabIndex = 5;
             this.cbRmaAuxilioFuneral.Text = "Auxílio Funeral";
             this.cbRmaAuxilioFuneral.UseVisualStyleBackColor = true;
@@ -547,9 +553,10 @@
             // 
             this.cbRmaAuxilioNatalidade.AutoSize = true;
             this.cbRmaAuxilioNatalidade.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.cbRmaAuxilioNatalidade.Location = new System.Drawing.Point(6, 75);
+            this.cbRmaAuxilioNatalidade.Location = new System.Drawing.Point(8, 92);
+            this.cbRmaAuxilioNatalidade.Margin = new System.Windows.Forms.Padding(4);
             this.cbRmaAuxilioNatalidade.Name = "cbRmaAuxilioNatalidade";
-            this.cbRmaAuxilioNatalidade.Size = new System.Drawing.Size(122, 18);
+            this.cbRmaAuxilioNatalidade.Size = new System.Drawing.Size(154, 20);
             this.cbRmaAuxilioNatalidade.TabIndex = 4;
             this.cbRmaAuxilioNatalidade.Text = "Auxílio Natalidade";
             this.cbRmaAuxilioNatalidade.UseVisualStyleBackColor = true;
@@ -558,9 +565,10 @@
             // 
             this.cbRmaEncaminhadoCreas.AutoSize = true;
             this.cbRmaEncaminhadoCreas.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.cbRmaEncaminhadoCreas.Location = new System.Drawing.Point(134, 51);
+            this.cbRmaEncaminhadoCreas.Location = new System.Drawing.Point(179, 63);
+            this.cbRmaEncaminhadoCreas.Margin = new System.Windows.Forms.Padding(4);
             this.cbRmaEncaminhadoCreas.Name = "cbRmaEncaminhadoCreas";
-            this.cbRmaEncaminhadoCreas.Size = new System.Drawing.Size(138, 18);
+            this.cbRmaEncaminhadoCreas.Size = new System.Drawing.Size(174, 20);
             this.cbRmaEncaminhadoCreas.TabIndex = 3;
             this.cbRmaEncaminhadoCreas.Text = "Encaminhado CREAS";
             this.cbRmaEncaminhadoCreas.UseVisualStyleBackColor = true;
@@ -569,9 +577,10 @@
             // 
             this.cbRmaBpc.AutoSize = true;
             this.cbRmaBpc.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.cbRmaBpc.Location = new System.Drawing.Point(6, 51);
+            this.cbRmaBpc.Location = new System.Drawing.Point(8, 63);
+            this.cbRmaBpc.Margin = new System.Windows.Forms.Padding(4);
             this.cbRmaBpc.Name = "cbRmaBpc";
-            this.cbRmaBpc.Size = new System.Drawing.Size(48, 18);
+            this.cbRmaBpc.Size = new System.Drawing.Size(58, 20);
             this.cbRmaBpc.TabIndex = 2;
             this.cbRmaBpc.Text = "BPC";
             this.cbRmaBpc.UseVisualStyleBackColor = true;
@@ -580,9 +589,10 @@
             // 
             this.cbRmaAtualizacaoCad.AutoSize = true;
             this.cbRmaAtualizacaoCad.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.cbRmaAtualizacaoCad.Location = new System.Drawing.Point(134, 25);
+            this.cbRmaAtualizacaoCad.Location = new System.Drawing.Point(179, 31);
+            this.cbRmaAtualizacaoCad.Margin = new System.Windows.Forms.Padding(4);
             this.cbRmaAtualizacaoCad.Name = "cbRmaAtualizacaoCad";
-            this.cbRmaAtualizacaoCad.Size = new System.Drawing.Size(114, 18);
+            this.cbRmaAtualizacaoCad.Size = new System.Drawing.Size(141, 20);
             this.cbRmaAtualizacaoCad.TabIndex = 1;
             this.cbRmaAtualizacaoCad.Text = "Atualização CAD";
             this.cbRmaAtualizacaoCad.UseVisualStyleBackColor = true;
@@ -591,9 +601,10 @@
             // 
             this.cbRmaIncluidoCad.AutoSize = true;
             this.cbRmaIncluidoCad.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.cbRmaIncluidoCad.Location = new System.Drawing.Point(6, 27);
+            this.cbRmaIncluidoCad.Location = new System.Drawing.Point(8, 33);
+            this.cbRmaIncluidoCad.Margin = new System.Windows.Forms.Padding(4);
             this.cbRmaIncluidoCad.Name = "cbRmaIncluidoCad";
-            this.cbRmaIncluidoCad.Size = new System.Drawing.Size(98, 18);
+            this.cbRmaIncluidoCad.Size = new System.Drawing.Size(121, 20);
             this.cbRmaIncluidoCad.TabIndex = 0;
             this.cbRmaIncluidoCad.Text = "Inclusão CAD";
             this.cbRmaIncluidoCad.UseVisualStyleBackColor = true;
@@ -605,10 +616,10 @@
             this.btCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCliente.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold);
             this.btCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCliente.Location = new System.Drawing.Point(705, 22);
-            this.btCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.btCliente.Location = new System.Drawing.Point(940, 27);
+            this.btCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCliente.Name = "btCliente";
-            this.btCliente.Size = new System.Drawing.Size(61, 34);
+            this.btCliente.Size = new System.Drawing.Size(81, 42);
             this.btCliente.TabIndex = 3;
             this.btCliente.Text = "Buscar";
             this.btCliente.UseVisualStyleBackColor = false;
@@ -617,10 +628,10 @@
             // panelCliente
             // 
             this.panelCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelCliente.Location = new System.Drawing.Point(459, 51);
-            this.panelCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.panelCliente.Location = new System.Drawing.Point(612, 63);
+            this.panelCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCliente.Name = "panelCliente";
-            this.panelCliente.Size = new System.Drawing.Size(242, 2);
+            this.panelCliente.Size = new System.Drawing.Size(323, 2);
             this.panelCliente.TabIndex = 47;
             // 
             // tbCliente
@@ -628,10 +639,10 @@
             this.tbCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbCliente.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.tbCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbCliente.Location = new System.Drawing.Point(489, 32);
-            this.tbCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCliente.Location = new System.Drawing.Point(652, 39);
+            this.tbCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbCliente.Name = "tbCliente";
-            this.tbCliente.Size = new System.Drawing.Size(212, 16);
+            this.tbCliente.Size = new System.Drawing.Size(283, 20);
             this.tbCliente.TabIndex = 2;
             this.tbCliente.Text = "Digite o nome do cliente ...";
             this.tbCliente.Enter += new System.EventHandler(this.tbCliente_Enter);
@@ -667,15 +678,15 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSelecionarTipo.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSelecionarTipo.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvSelecionarTipo.Location = new System.Drawing.Point(12, 167);
-            this.dgvSelecionarTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvSelecionarTipo.Location = new System.Drawing.Point(16, 206);
+            this.dgvSelecionarTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvSelecionarTipo.Name = "dgvSelecionarTipo";
             this.dgvSelecionarTipo.RowHeadersWidth = 25;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvSelecionarTipo.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSelecionarTipo.RowTemplate.Height = 24;
             this.dgvSelecionarTipo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSelecionarTipo.Size = new System.Drawing.Size(277, 291);
+            this.dgvSelecionarTipo.Size = new System.Drawing.Size(369, 358);
             this.dgvSelecionarTipo.TabIndex = 18;
             this.dgvSelecionarTipo.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelecionarTipo_CellValueChanged);
             this.dgvSelecionarTipo.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvSelecionarTipo_CurrentCellDirtyStateChanged);
@@ -684,6 +695,7 @@
             // 
             this.selecao.DataPropertyName = "selecionarTipo";
             this.selecao.HeaderText = "...";
+            this.selecao.MinimumWidth = 6;
             this.selecao.Name = "selecao";
             this.selecao.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.selecao.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -693,14 +705,17 @@
             // 
             this.idTipo.DataPropertyName = "idTipo";
             this.idTipo.HeaderText = "ID";
+            this.idTipo.MinimumWidth = 6;
             this.idTipo.Name = "idTipo";
             this.idTipo.ReadOnly = true;
             this.idTipo.Visible = false;
+            this.idTipo.Width = 125;
             // 
             // descricaoTipo
             // 
             this.descricaoTipo.DataPropertyName = "descricaoTipo";
             this.descricaoTipo.HeaderText = "Descrição";
+            this.descricaoTipo.MinimumWidth = 6;
             this.descricaoTipo.Name = "descricaoTipo";
             this.descricaoTipo.ReadOnly = true;
             this.descricaoTipo.ToolTipText = "Descrição tipo de atendimento";
@@ -709,10 +724,10 @@
             // panelTipo
             // 
             this.panelTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelTipo.Location = new System.Drawing.Point(12, 160);
-            this.panelTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTipo.Location = new System.Drawing.Point(16, 197);
+            this.panelTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTipo.Name = "panelTipo";
-            this.panelTipo.Size = new System.Drawing.Size(229, 2);
+            this.panelTipo.Size = new System.Drawing.Size(305, 2);
             this.panelTipo.TabIndex = 17;
             // 
             // tbBuscarTipo
@@ -720,10 +735,10 @@
             this.tbBuscarTipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbBuscarTipo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbBuscarTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbBuscarTipo.Location = new System.Drawing.Point(42, 141);
-            this.tbBuscarTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.tbBuscarTipo.Location = new System.Drawing.Point(56, 174);
+            this.tbBuscarTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBuscarTipo.Name = "tbBuscarTipo";
-            this.tbBuscarTipo.Size = new System.Drawing.Size(199, 19);
+            this.tbBuscarTipo.Size = new System.Drawing.Size(265, 23);
             this.tbBuscarTipo.TabIndex = 16;
             this.tbBuscarTipo.Text = "Tipo de Atendimento ...";
             this.tbBuscarTipo.Enter += new System.EventHandler(this.tbBuscarTipo_Enter);
@@ -759,15 +774,15 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvProvidencia.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvProvidencia.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvProvidencia.Location = new System.Drawing.Point(299, 167);
-            this.dgvProvidencia.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvProvidencia.Location = new System.Drawing.Point(399, 206);
+            this.dgvProvidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvProvidencia.Name = "dgvProvidencia";
             this.dgvProvidencia.RowHeadersWidth = 25;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvProvidencia.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvProvidencia.RowTemplate.Height = 24;
             this.dgvProvidencia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProvidencia.Size = new System.Drawing.Size(277, 291);
+            this.dgvProvidencia.Size = new System.Drawing.Size(369, 358);
             this.dgvProvidencia.TabIndex = 21;
             this.dgvProvidencia.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProvidencia_CellValueChanged);
             this.dgvProvidencia.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvProvidencia_CurrentCellDirtyStateChanged);
@@ -776,6 +791,7 @@
             // 
             this.selecionarProvidencia.DataPropertyName = "selecionarProvidencia";
             this.selecionarProvidencia.HeaderText = "...";
+            this.selecionarProvidencia.MinimumWidth = 6;
             this.selecionarProvidencia.Name = "selecionarProvidencia";
             this.selecionarProvidencia.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.selecionarProvidencia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -785,14 +801,17 @@
             // 
             this.idProvidencia.DataPropertyName = "idProvidencia";
             this.idProvidencia.HeaderText = "ID";
+            this.idProvidencia.MinimumWidth = 6;
             this.idProvidencia.Name = "idProvidencia";
             this.idProvidencia.ReadOnly = true;
             this.idProvidencia.Visible = false;
+            this.idProvidencia.Width = 125;
             // 
             // descricaoProvidencia
             // 
             this.descricaoProvidencia.DataPropertyName = "descricaoProvidencia";
             this.descricaoProvidencia.HeaderText = "Descrição";
+            this.descricaoProvidencia.MinimumWidth = 6;
             this.descricaoProvidencia.Name = "descricaoProvidencia";
             this.descricaoProvidencia.ReadOnly = true;
             this.descricaoProvidencia.ToolTipText = "Descrição tipo de atendimento";
@@ -801,10 +820,10 @@
             // panelProvidencia
             // 
             this.panelProvidencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelProvidencia.Location = new System.Drawing.Point(299, 160);
-            this.panelProvidencia.Margin = new System.Windows.Forms.Padding(2);
+            this.panelProvidencia.Location = new System.Drawing.Point(399, 197);
+            this.panelProvidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelProvidencia.Name = "panelProvidencia";
-            this.panelProvidencia.Size = new System.Drawing.Size(229, 2);
+            this.panelProvidencia.Size = new System.Drawing.Size(305, 2);
             this.panelProvidencia.TabIndex = 20;
             // 
             // tbProvidencia
@@ -812,10 +831,10 @@
             this.tbProvidencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbProvidencia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbProvidencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbProvidencia.Location = new System.Drawing.Point(329, 141);
-            this.tbProvidencia.Margin = new System.Windows.Forms.Padding(2);
+            this.tbProvidencia.Location = new System.Drawing.Point(439, 174);
+            this.tbProvidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbProvidencia.Name = "tbProvidencia";
-            this.tbProvidencia.Size = new System.Drawing.Size(199, 19);
+            this.tbProvidencia.Size = new System.Drawing.Size(265, 23);
             this.tbProvidencia.TabIndex = 19;
             this.tbProvidencia.Text = "Providência CRAS ...";
             this.tbProvidencia.Enter += new System.EventHandler(this.tbProvidencia_Enter);
@@ -851,15 +870,15 @@
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSituacaoIdentificada.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvSituacaoIdentificada.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvSituacaoIdentificada.Location = new System.Drawing.Point(586, 167);
-            this.dgvSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvSituacaoIdentificada.Location = new System.Drawing.Point(781, 206);
+            this.dgvSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvSituacaoIdentificada.Name = "dgvSituacaoIdentificada";
             this.dgvSituacaoIdentificada.RowHeadersWidth = 25;
             dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvSituacaoIdentificada.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvSituacaoIdentificada.RowTemplate.Height = 24;
             this.dgvSituacaoIdentificada.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSituacaoIdentificada.Size = new System.Drawing.Size(277, 291);
+            this.dgvSituacaoIdentificada.Size = new System.Drawing.Size(369, 358);
             this.dgvSituacaoIdentificada.TabIndex = 24;
             this.dgvSituacaoIdentificada.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSituacaoIdentificada_CellValueChanged);
             this.dgvSituacaoIdentificada.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvSituacaoIdentificada_CurrentCellDirtyStateChanged);
@@ -868,6 +887,7 @@
             // 
             this.selecionarSituacaoIdentificada.DataPropertyName = "selecionarSituacaoIdentificada";
             this.selecionarSituacaoIdentificada.HeaderText = "...";
+            this.selecionarSituacaoIdentificada.MinimumWidth = 6;
             this.selecionarSituacaoIdentificada.Name = "selecionarSituacaoIdentificada";
             this.selecionarSituacaoIdentificada.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.selecionarSituacaoIdentificada.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -877,14 +897,17 @@
             // 
             this.idSituacaoIdentificada.DataPropertyName = "idSituacaoIdentificada";
             this.idSituacaoIdentificada.HeaderText = "ID";
+            this.idSituacaoIdentificada.MinimumWidth = 6;
             this.idSituacaoIdentificada.Name = "idSituacaoIdentificada";
             this.idSituacaoIdentificada.ReadOnly = true;
             this.idSituacaoIdentificada.Visible = false;
+            this.idSituacaoIdentificada.Width = 125;
             // 
             // descricaoSituacaoIdentificada
             // 
             this.descricaoSituacaoIdentificada.DataPropertyName = "descricaoSituacaoIdentificada";
             this.descricaoSituacaoIdentificada.HeaderText = "Descrição";
+            this.descricaoSituacaoIdentificada.MinimumWidth = 6;
             this.descricaoSituacaoIdentificada.Name = "descricaoSituacaoIdentificada";
             this.descricaoSituacaoIdentificada.ReadOnly = true;
             this.descricaoSituacaoIdentificada.ToolTipText = "Descrição tipo de atendimento";
@@ -893,10 +916,10 @@
             // panelSituacaoIdentificada
             // 
             this.panelSituacaoIdentificada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelSituacaoIdentificada.Location = new System.Drawing.Point(586, 160);
-            this.panelSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
+            this.panelSituacaoIdentificada.Location = new System.Drawing.Point(781, 197);
+            this.panelSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelSituacaoIdentificada.Name = "panelSituacaoIdentificada";
-            this.panelSituacaoIdentificada.Size = new System.Drawing.Size(229, 2);
+            this.panelSituacaoIdentificada.Size = new System.Drawing.Size(305, 2);
             this.panelSituacaoIdentificada.TabIndex = 23;
             // 
             // tbSituacaoIdentificada
@@ -904,10 +927,10 @@
             this.tbSituacaoIdentificada.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSituacaoIdentificada.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbSituacaoIdentificada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbSituacaoIdentificada.Location = new System.Drawing.Point(616, 141);
-            this.tbSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSituacaoIdentificada.Location = new System.Drawing.Point(821, 174);
+            this.tbSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSituacaoIdentificada.Name = "tbSituacaoIdentificada";
-            this.tbSituacaoIdentificada.Size = new System.Drawing.Size(199, 19);
+            this.tbSituacaoIdentificada.Size = new System.Drawing.Size(265, 23);
             this.tbSituacaoIdentificada.TabIndex = 22;
             this.tbSituacaoIdentificada.Text = "Situação Identificada ...";
             this.tbSituacaoIdentificada.Enter += new System.EventHandler(this.tbSituacaoIdentificada_Enter);
@@ -943,15 +966,15 @@
             dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBeneficioGoverno.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvBeneficioGoverno.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvBeneficioGoverno.Location = new System.Drawing.Point(873, 167);
-            this.dgvBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvBeneficioGoverno.Location = new System.Drawing.Point(1164, 206);
+            this.dgvBeneficioGoverno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvBeneficioGoverno.Name = "dgvBeneficioGoverno";
             this.dgvBeneficioGoverno.RowHeadersWidth = 25;
             dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvBeneficioGoverno.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvBeneficioGoverno.RowTemplate.Height = 24;
             this.dgvBeneficioGoverno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBeneficioGoverno.Size = new System.Drawing.Size(277, 291);
+            this.dgvBeneficioGoverno.Size = new System.Drawing.Size(369, 358);
             this.dgvBeneficioGoverno.TabIndex = 27;
             this.dgvBeneficioGoverno.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBeneficioGoverno_CellValueChanged);
             this.dgvBeneficioGoverno.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvBeneficioGoverno_CurrentCellDirtyStateChanged);
@@ -960,6 +983,7 @@
             // 
             this.selecionarBeneficioGoverno.DataPropertyName = "selecionarBeneficioGoverno";
             this.selecionarBeneficioGoverno.HeaderText = "...";
+            this.selecionarBeneficioGoverno.MinimumWidth = 6;
             this.selecionarBeneficioGoverno.Name = "selecionarBeneficioGoverno";
             this.selecionarBeneficioGoverno.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.selecionarBeneficioGoverno.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -969,14 +993,17 @@
             // 
             this.idBeneficioGoverno.DataPropertyName = "idBeneficioGoverno";
             this.idBeneficioGoverno.HeaderText = "ID";
+            this.idBeneficioGoverno.MinimumWidth = 6;
             this.idBeneficioGoverno.Name = "idBeneficioGoverno";
             this.idBeneficioGoverno.ReadOnly = true;
             this.idBeneficioGoverno.Visible = false;
+            this.idBeneficioGoverno.Width = 125;
             // 
             // descricaoBeneficioGoverno
             // 
             this.descricaoBeneficioGoverno.DataPropertyName = "descricaoBeneficioGoverno";
             this.descricaoBeneficioGoverno.HeaderText = "Descrição";
+            this.descricaoBeneficioGoverno.MinimumWidth = 6;
             this.descricaoBeneficioGoverno.Name = "descricaoBeneficioGoverno";
             this.descricaoBeneficioGoverno.ReadOnly = true;
             this.descricaoBeneficioGoverno.ToolTipText = "Descrição tipo de atendimento";
@@ -985,10 +1012,10 @@
             // panelBeneficioGoverno
             // 
             this.panelBeneficioGoverno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelBeneficioGoverno.Location = new System.Drawing.Point(873, 160);
-            this.panelBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBeneficioGoverno.Location = new System.Drawing.Point(1164, 197);
+            this.panelBeneficioGoverno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBeneficioGoverno.Name = "panelBeneficioGoverno";
-            this.panelBeneficioGoverno.Size = new System.Drawing.Size(229, 2);
+            this.panelBeneficioGoverno.Size = new System.Drawing.Size(305, 2);
             this.panelBeneficioGoverno.TabIndex = 26;
             // 
             // tbBeneficioGoverno
@@ -996,10 +1023,10 @@
             this.tbBeneficioGoverno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbBeneficioGoverno.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbBeneficioGoverno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbBeneficioGoverno.Location = new System.Drawing.Point(903, 141);
-            this.tbBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
+            this.tbBeneficioGoverno.Location = new System.Drawing.Point(1204, 174);
+            this.tbBeneficioGoverno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBeneficioGoverno.Name = "tbBeneficioGoverno";
-            this.tbBeneficioGoverno.Size = new System.Drawing.Size(199, 19);
+            this.tbBeneficioGoverno.Size = new System.Drawing.Size(265, 23);
             this.tbBeneficioGoverno.TabIndex = 25;
             this.tbBeneficioGoverno.Text = "Benefício do Governo ...";
             this.tbBeneficioGoverno.Enter += new System.EventHandler(this.tbBeneficioGoverno_Enter);
@@ -1035,15 +1062,15 @@
             dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCad.DefaultCellStyle = dataGridViewCellStyle19;
             this.dgvCad.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvCad.Location = new System.Drawing.Point(12, 500);
-            this.dgvCad.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvCad.Location = new System.Drawing.Point(16, 615);
+            this.dgvCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvCad.Name = "dgvCad";
             this.dgvCad.RowHeadersWidth = 25;
             dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvCad.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvCad.RowTemplate.Height = 24;
             this.dgvCad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCad.Size = new System.Drawing.Size(277, 229);
+            this.dgvCad.Size = new System.Drawing.Size(369, 282);
             this.dgvCad.TabIndex = 30;
             this.dgvCad.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCad_CellValueChanged);
             this.dgvCad.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvCad_CurrentCellDirtyStateChanged);
@@ -1052,6 +1079,7 @@
             // 
             this.dataGridViewCheckBoxColumn1.DataPropertyName = "selecionarCad";
             this.dataGridViewCheckBoxColumn1.HeaderText = "...";
+            this.dataGridViewCheckBoxColumn1.MinimumWidth = 6;
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -1061,14 +1089,17 @@
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "idCad";
             this.dataGridViewTextBoxColumn3.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Visible = false;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "descricaoCad";
             this.dataGridViewTextBoxColumn4.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.ToolTipText = "Descrição tipo de atendimento";
@@ -1077,10 +1108,10 @@
             // panelCad
             // 
             this.panelCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelCad.Location = new System.Drawing.Point(12, 493);
-            this.panelCad.Margin = new System.Windows.Forms.Padding(2);
+            this.panelCad.Location = new System.Drawing.Point(16, 607);
+            this.panelCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCad.Name = "panelCad";
-            this.panelCad.Size = new System.Drawing.Size(229, 2);
+            this.panelCad.Size = new System.Drawing.Size(305, 2);
             this.panelCad.TabIndex = 29;
             // 
             // tbCad
@@ -1088,10 +1119,10 @@
             this.tbCad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbCad.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbCad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbCad.Location = new System.Drawing.Point(42, 474);
-            this.tbCad.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCad.Location = new System.Drawing.Point(56, 583);
+            this.tbCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbCad.Name = "tbCad";
-            this.tbCad.Size = new System.Drawing.Size(199, 19);
+            this.tbCad.Size = new System.Drawing.Size(265, 23);
             this.tbCad.TabIndex = 28;
             this.tbCad.Text = "Cadastro Único ...";
             this.tbCad.Enter += new System.EventHandler(this.tbCad_Enter);
@@ -1127,15 +1158,15 @@
             dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSituacaoFamiliar.DefaultCellStyle = dataGridViewCellStyle23;
             this.dgvSituacaoFamiliar.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvSituacaoFamiliar.Location = new System.Drawing.Point(299, 500);
-            this.dgvSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvSituacaoFamiliar.Location = new System.Drawing.Point(399, 615);
+            this.dgvSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvSituacaoFamiliar.Name = "dgvSituacaoFamiliar";
             this.dgvSituacaoFamiliar.RowHeadersWidth = 25;
             dataGridViewCellStyle24.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvSituacaoFamiliar.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dgvSituacaoFamiliar.RowTemplate.Height = 24;
             this.dgvSituacaoFamiliar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSituacaoFamiliar.Size = new System.Drawing.Size(277, 229);
+            this.dgvSituacaoFamiliar.Size = new System.Drawing.Size(369, 282);
             this.dgvSituacaoFamiliar.TabIndex = 33;
             this.dgvSituacaoFamiliar.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSituacaoFamiliar_CellValueChanged);
             this.dgvSituacaoFamiliar.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvSituacaoFamiliar_CurrentCellDirtyStateChanged);
@@ -1144,6 +1175,7 @@
             // 
             this.dataGridViewCheckBoxColumn2.DataPropertyName = "selecionarSituacaoFamiliar";
             this.dataGridViewCheckBoxColumn2.HeaderText = "...";
+            this.dataGridViewCheckBoxColumn2.MinimumWidth = 6;
             this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
             this.dataGridViewCheckBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCheckBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -1153,14 +1185,17 @@
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "idSituacaoFamiliar";
             this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "descricaoSituacaoFamiliar";
             this.dataGridViewTextBoxColumn2.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.ToolTipText = "Descrição tipo de atendimento";
@@ -1169,10 +1204,10 @@
             // painelSituacaoFamiliar
             // 
             this.painelSituacaoFamiliar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.painelSituacaoFamiliar.Location = new System.Drawing.Point(299, 493);
-            this.painelSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
+            this.painelSituacaoFamiliar.Location = new System.Drawing.Point(399, 607);
+            this.painelSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.painelSituacaoFamiliar.Name = "painelSituacaoFamiliar";
-            this.painelSituacaoFamiliar.Size = new System.Drawing.Size(229, 2);
+            this.painelSituacaoFamiliar.Size = new System.Drawing.Size(305, 2);
             this.painelSituacaoFamiliar.TabIndex = 32;
             // 
             // tbSituacaoFamiliar
@@ -1180,10 +1215,10 @@
             this.tbSituacaoFamiliar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSituacaoFamiliar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbSituacaoFamiliar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbSituacaoFamiliar.Location = new System.Drawing.Point(329, 474);
-            this.tbSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSituacaoFamiliar.Location = new System.Drawing.Point(439, 583);
+            this.tbSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSituacaoFamiliar.Name = "tbSituacaoFamiliar";
-            this.tbSituacaoFamiliar.Size = new System.Drawing.Size(199, 19);
+            this.tbSituacaoFamiliar.Size = new System.Drawing.Size(265, 23);
             this.tbSituacaoFamiliar.TabIndex = 31;
             this.tbSituacaoFamiliar.Text = "Situação Familiar ...";
             this.tbSituacaoFamiliar.Enter += new System.EventHandler(this.tbSituacaoFamiliar_Enter);
@@ -1219,15 +1254,15 @@
             dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAtividade.DefaultCellStyle = dataGridViewCellStyle27;
             this.dgvAtividade.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvAtividade.Location = new System.Drawing.Point(586, 500);
-            this.dgvAtividade.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvAtividade.Location = new System.Drawing.Point(781, 615);
+            this.dgvAtividade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvAtividade.Name = "dgvAtividade";
             this.dgvAtividade.RowHeadersWidth = 25;
             dataGridViewCellStyle28.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvAtividade.RowsDefaultCellStyle = dataGridViewCellStyle28;
             this.dgvAtividade.RowTemplate.Height = 24;
             this.dgvAtividade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAtividade.Size = new System.Drawing.Size(277, 229);
+            this.dgvAtividade.Size = new System.Drawing.Size(369, 282);
             this.dgvAtividade.TabIndex = 35;
             this.dgvAtividade.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAtividade_CellValueChanged);
             this.dgvAtividade.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvAtividade_CurrentCellDirtyStateChanged);
@@ -1236,6 +1271,7 @@
             // 
             this.dataGridViewCheckBoxColumn3.DataPropertyName = "selecionarSituacaoFamiliar";
             this.dataGridViewCheckBoxColumn3.HeaderText = "...";
+            this.dataGridViewCheckBoxColumn3.MinimumWidth = 6;
             this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
             this.dataGridViewCheckBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCheckBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -1245,14 +1281,17 @@
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "idSituacaoFamiliar";
             this.dataGridViewTextBoxColumn5.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.Visible = false;
+            this.dataGridViewTextBoxColumn5.Width = 125;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "descricaoSituacaoFamiliar";
             this.dataGridViewTextBoxColumn6.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.ToolTipText = "Descrição tipo de atendimento";
@@ -1261,10 +1300,10 @@
             // panelAtividade
             // 
             this.panelAtividade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelAtividade.Location = new System.Drawing.Point(586, 493);
-            this.panelAtividade.Margin = new System.Windows.Forms.Padding(2);
+            this.panelAtividade.Location = new System.Drawing.Point(781, 607);
+            this.panelAtividade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelAtividade.Name = "panelAtividade";
-            this.panelAtividade.Size = new System.Drawing.Size(229, 2);
+            this.panelAtividade.Size = new System.Drawing.Size(305, 2);
             this.panelAtividade.TabIndex = 36;
             // 
             // tbAtividadeCras
@@ -1272,10 +1311,10 @@
             this.tbAtividadeCras.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAtividadeCras.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbAtividadeCras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbAtividadeCras.Location = new System.Drawing.Point(616, 474);
-            this.tbAtividadeCras.Margin = new System.Windows.Forms.Padding(2);
+            this.tbAtividadeCras.Location = new System.Drawing.Point(821, 583);
+            this.tbAtividadeCras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAtividadeCras.Name = "tbAtividadeCras";
-            this.tbAtividadeCras.Size = new System.Drawing.Size(199, 19);
+            this.tbAtividadeCras.Size = new System.Drawing.Size(265, 23);
             this.tbAtividadeCras.TabIndex = 34;
             this.tbAtividadeCras.Text = "Ativiadade no CRAS ...";
             this.tbAtividadeCras.Enter += new System.EventHandler(this.tbAtividadeCras_Enter);
@@ -1314,15 +1353,15 @@
             this.dgvEspecificacaoAtendimento.DefaultCellStyle = dataGridViewCellStyle31;
             this.dgvEspecificacaoAtendimento.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvEspecificacaoAtendimento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgvEspecificacaoAtendimento.Location = new System.Drawing.Point(1161, 167);
-            this.dgvEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvEspecificacaoAtendimento.Location = new System.Drawing.Point(1548, 206);
+            this.dgvEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvEspecificacaoAtendimento.Name = "dgvEspecificacaoAtendimento";
             this.dgvEspecificacaoAtendimento.RowHeadersWidth = 25;
             dataGridViewCellStyle32.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold);
             this.dgvEspecificacaoAtendimento.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.dgvEspecificacaoAtendimento.RowTemplate.Height = 24;
             this.dgvEspecificacaoAtendimento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEspecificacaoAtendimento.Size = new System.Drawing.Size(369, 562);
+            this.dgvEspecificacaoAtendimento.Size = new System.Drawing.Size(492, 692);
             this.dgvEspecificacaoAtendimento.TabIndex = 41;
             this.dgvEspecificacaoAtendimento.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEspecificacaoAtendimento_CellValueChanged);
             this.dgvEspecificacaoAtendimento.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvEspecificacaoAtendimento_CurrentCellDirtyStateChanged);
@@ -1331,6 +1370,7 @@
             // 
             this.dataGridViewCheckBoxColumn4.DataPropertyName = "selecionarEspecificacaoAtendimento";
             this.dataGridViewCheckBoxColumn4.HeaderText = "...";
+            this.dataGridViewCheckBoxColumn4.MinimumWidth = 6;
             this.dataGridViewCheckBoxColumn4.Name = "dataGridViewCheckBoxColumn4";
             this.dataGridViewCheckBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCheckBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -1340,19 +1380,23 @@
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "idEspecificacaoAtendimento";
             this.dataGridViewTextBoxColumn7.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             this.dataGridViewTextBoxColumn7.Visible = false;
+            this.dataGridViewTextBoxColumn7.Width = 125;
             // 
             // quantidadeEspecificacao
             // 
             this.quantidadeEspecificacao.HeaderText = "Qtd";
+            this.quantidadeEspecificacao.MinimumWidth = 6;
             this.quantidadeEspecificacao.Name = "quantidadeEspecificacao";
             this.quantidadeEspecificacao.Width = 30;
             // 
             // encaminhamento
             // 
             this.encaminhamento.HeaderText = "Enc";
+            this.encaminhamento.MinimumWidth = 6;
             this.encaminhamento.Name = "encaminhamento";
             this.encaminhamento.ReadOnly = true;
             this.encaminhamento.ToolTipText = "Tipo de Encaminhamento";
@@ -1362,6 +1406,7 @@
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "descricaoEspecificacaoAtendimento";
             this.dataGridViewTextBoxColumn8.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.ToolTipText = "Descrição tipo de atendimento";
@@ -1370,10 +1415,10 @@
             // panelEspecificacao
             // 
             this.panelEspecificacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelEspecificacao.Location = new System.Drawing.Point(1161, 160);
-            this.panelEspecificacao.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEspecificacao.Location = new System.Drawing.Point(1548, 197);
+            this.panelEspecificacao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEspecificacao.Name = "panelEspecificacao";
-            this.panelEspecificacao.Size = new System.Drawing.Size(298, 2);
+            this.panelEspecificacao.Size = new System.Drawing.Size(397, 2);
             this.panelEspecificacao.TabIndex = 40;
             // 
             // tbEspecificacaoAtendimento
@@ -1381,10 +1426,10 @@
             this.tbEspecificacaoAtendimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbEspecificacaoAtendimento.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.tbEspecificacaoAtendimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.tbEspecificacaoAtendimento.Location = new System.Drawing.Point(1191, 141);
-            this.tbEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(2);
+            this.tbEspecificacaoAtendimento.Location = new System.Drawing.Point(1588, 174);
+            this.tbEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbEspecificacaoAtendimento.Name = "tbEspecificacaoAtendimento";
-            this.tbEspecificacaoAtendimento.Size = new System.Drawing.Size(268, 19);
+            this.tbEspecificacaoAtendimento.Size = new System.Drawing.Size(357, 23);
             this.tbEspecificacaoAtendimento.TabIndex = 39;
             this.tbEspecificacaoAtendimento.Text = "Especificação do Atendimento ...";
             this.tbEspecificacaoAtendimento.Enter += new System.EventHandler(this.tbEspecificacaoAtendimento_Enter);
@@ -1394,10 +1439,10 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel7.Location = new System.Drawing.Point(12, 113);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(16, 139);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1518, 3);
+            this.panel7.Size = new System.Drawing.Size(2024, 4);
             this.panel7.TabIndex = 15;
             // 
             // groupBox1
@@ -1409,19 +1454,22 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.groupBox1.Location = new System.Drawing.Point(874, 474);
+            this.groupBox1.Location = new System.Drawing.Point(1165, 583);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 123);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(368, 151);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Realizações";
             // 
             // tbObservacao
             // 
-            this.tbObservacao.Location = new System.Drawing.Point(948, 5);
+            this.tbObservacao.Location = new System.Drawing.Point(1264, 6);
+            this.tbObservacao.Margin = new System.Windows.Forms.Padding(4);
             this.tbObservacao.Multiline = true;
             this.tbObservacao.Name = "tbObservacao";
-            this.tbObservacao.Size = new System.Drawing.Size(582, 103);
+            this.tbObservacao.Size = new System.Drawing.Size(775, 126);
             this.tbObservacao.TabIndex = 43;
             this.tbObservacao.Text = " ";
             // 
@@ -1430,30 +1478,32 @@
             this.lbObservacao.AutoSize = true;
             this.lbObservacao.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.lbObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.lbObservacao.Location = new System.Drawing.Point(899, 92);
+            this.lbObservacao.Location = new System.Drawing.Point(1199, 113);
+            this.lbObservacao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbObservacao.Name = "lbObservacao";
-            this.lbObservacao.Size = new System.Drawing.Size(43, 16);
+            this.lbObservacao.Size = new System.Drawing.Size(52, 19);
             this.lbObservacao.TabIndex = 42;
             this.lbObservacao.Text = "Obs.:";
             // 
             // pbSelecionarEspecificacaoAtendimento
             // 
             this.pbSelecionarEspecificacaoAtendimento.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbSelecionarEspecificacaoAtendimento.Location = new System.Drawing.Point(1510, 141);
-            this.pbSelecionarEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(2);
+            this.pbSelecionarEspecificacaoAtendimento.Location = new System.Drawing.Point(2013, 174);
+            this.pbSelecionarEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbSelecionarEspecificacaoAtendimento.Name = "pbSelecionarEspecificacaoAtendimento";
-            this.pbSelecionarEspecificacaoAtendimento.Size = new System.Drawing.Size(20, 22);
+            this.pbSelecionarEspecificacaoAtendimento.Size = new System.Drawing.Size(27, 27);
             this.pbSelecionarEspecificacaoAtendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSelecionarEspecificacaoAtendimento.TabIndex = 318;
             this.pbSelecionarEspecificacaoAtendimento.TabStop = false;
+            this.pbSelecionarEspecificacaoAtendimento.Click += new System.EventHandler(this.pbSelecionarEspecificacaoAtendimento_Click);
             // 
             // pbBuscarEspecificacaoAtendimento
             // 
             this.pbBuscarEspecificacaoAtendimento.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarEspecificacaoAtendimento.Location = new System.Drawing.Point(1486, 141);
-            this.pbBuscarEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarEspecificacaoAtendimento.Location = new System.Drawing.Point(1981, 174);
+            this.pbBuscarEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarEspecificacaoAtendimento.Name = "pbBuscarEspecificacaoAtendimento";
-            this.pbBuscarEspecificacaoAtendimento.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarEspecificacaoAtendimento.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarEspecificacaoAtendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarEspecificacaoAtendimento.TabIndex = 317;
             this.pbBuscarEspecificacaoAtendimento.TabStop = false;
@@ -1462,10 +1512,10 @@
             // pbEspecificacaoAtendimento
             // 
             this.pbEspecificacaoAtendimento.Image = global::Apresentacao.Properties.Resources.img_Especificacao;
-            this.pbEspecificacaoAtendimento.Location = new System.Drawing.Point(1161, 129);
-            this.pbEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(2);
+            this.pbEspecificacaoAtendimento.Location = new System.Drawing.Point(1548, 159);
+            this.pbEspecificacaoAtendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbEspecificacaoAtendimento.Name = "pbEspecificacaoAtendimento";
-            this.pbEspecificacaoAtendimento.Size = new System.Drawing.Size(26, 29);
+            this.pbEspecificacaoAtendimento.Size = new System.Drawing.Size(35, 36);
             this.pbEspecificacaoAtendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbEspecificacaoAtendimento.TabIndex = 316;
             this.pbEspecificacaoAtendimento.TabStop = false;
@@ -1473,21 +1523,22 @@
             // pbAdicionarAtividadeCras
             // 
             this.pbAdicionarAtividadeCras.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbAdicionarAtividadeCras.Location = new System.Drawing.Point(843, 474);
-            this.pbAdicionarAtividadeCras.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdicionarAtividadeCras.Location = new System.Drawing.Point(1124, 583);
+            this.pbAdicionarAtividadeCras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAdicionarAtividadeCras.Name = "pbAdicionarAtividadeCras";
-            this.pbAdicionarAtividadeCras.Size = new System.Drawing.Size(20, 22);
+            this.pbAdicionarAtividadeCras.Size = new System.Drawing.Size(27, 27);
             this.pbAdicionarAtividadeCras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdicionarAtividadeCras.TabIndex = 312;
             this.pbAdicionarAtividadeCras.TabStop = false;
+            this.pbAdicionarAtividadeCras.Click += new System.EventHandler(this.pbAdicionarAtividadeCras_Click);
             // 
             // pbBuscarAtividadeCras
             // 
             this.pbBuscarAtividadeCras.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarAtividadeCras.Location = new System.Drawing.Point(819, 474);
-            this.pbBuscarAtividadeCras.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarAtividadeCras.Location = new System.Drawing.Point(1092, 583);
+            this.pbBuscarAtividadeCras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarAtividadeCras.Name = "pbBuscarAtividadeCras";
-            this.pbBuscarAtividadeCras.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarAtividadeCras.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarAtividadeCras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarAtividadeCras.TabIndex = 311;
             this.pbBuscarAtividadeCras.TabStop = false;
@@ -1496,10 +1547,10 @@
             // pbAtividadeCras
             // 
             this.pbAtividadeCras.Image = global::Apresentacao.Properties.Resources.atividadeDesenvolvidaImg;
-            this.pbAtividadeCras.Location = new System.Drawing.Point(586, 462);
-            this.pbAtividadeCras.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAtividadeCras.Location = new System.Drawing.Point(781, 569);
+            this.pbAtividadeCras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAtividadeCras.Name = "pbAtividadeCras";
-            this.pbAtividadeCras.Size = new System.Drawing.Size(26, 29);
+            this.pbAtividadeCras.Size = new System.Drawing.Size(35, 36);
             this.pbAtividadeCras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAtividadeCras.TabIndex = 310;
             this.pbAtividadeCras.TabStop = false;
@@ -1507,21 +1558,22 @@
             // pbAdicionarSituacaoFamiliar
             // 
             this.pbAdicionarSituacaoFamiliar.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbAdicionarSituacaoFamiliar.Location = new System.Drawing.Point(556, 474);
-            this.pbAdicionarSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdicionarSituacaoFamiliar.Location = new System.Drawing.Point(741, 583);
+            this.pbAdicionarSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAdicionarSituacaoFamiliar.Name = "pbAdicionarSituacaoFamiliar";
-            this.pbAdicionarSituacaoFamiliar.Size = new System.Drawing.Size(20, 22);
+            this.pbAdicionarSituacaoFamiliar.Size = new System.Drawing.Size(27, 27);
             this.pbAdicionarSituacaoFamiliar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdicionarSituacaoFamiliar.TabIndex = 306;
             this.pbAdicionarSituacaoFamiliar.TabStop = false;
+            this.pbAdicionarSituacaoFamiliar.Click += new System.EventHandler(this.pbAdicionarSituacaoFamiliar_Click);
             // 
             // pbBuscarSituacaoFamiliar
             // 
             this.pbBuscarSituacaoFamiliar.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarSituacaoFamiliar.Location = new System.Drawing.Point(532, 474);
-            this.pbBuscarSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarSituacaoFamiliar.Location = new System.Drawing.Point(709, 583);
+            this.pbBuscarSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarSituacaoFamiliar.Name = "pbBuscarSituacaoFamiliar";
-            this.pbBuscarSituacaoFamiliar.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarSituacaoFamiliar.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarSituacaoFamiliar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarSituacaoFamiliar.TabIndex = 305;
             this.pbBuscarSituacaoFamiliar.TabStop = false;
@@ -1530,10 +1582,10 @@
             // pbSituacaoFamiliar
             // 
             this.pbSituacaoFamiliar.Image = global::Apresentacao.Properties.Resources.situacaoFamiliarImg;
-            this.pbSituacaoFamiliar.Location = new System.Drawing.Point(299, 462);
-            this.pbSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(2);
+            this.pbSituacaoFamiliar.Location = new System.Drawing.Point(399, 569);
+            this.pbSituacaoFamiliar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbSituacaoFamiliar.Name = "pbSituacaoFamiliar";
-            this.pbSituacaoFamiliar.Size = new System.Drawing.Size(26, 29);
+            this.pbSituacaoFamiliar.Size = new System.Drawing.Size(35, 36);
             this.pbSituacaoFamiliar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSituacaoFamiliar.TabIndex = 304;
             this.pbSituacaoFamiliar.TabStop = false;
@@ -1541,21 +1593,22 @@
             // pbAdicionarCad
             // 
             this.pbAdicionarCad.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbAdicionarCad.Location = new System.Drawing.Point(269, 474);
-            this.pbAdicionarCad.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdicionarCad.Location = new System.Drawing.Point(359, 583);
+            this.pbAdicionarCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAdicionarCad.Name = "pbAdicionarCad";
-            this.pbAdicionarCad.Size = new System.Drawing.Size(20, 22);
+            this.pbAdicionarCad.Size = new System.Drawing.Size(27, 27);
             this.pbAdicionarCad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdicionarCad.TabIndex = 300;
             this.pbAdicionarCad.TabStop = false;
+            this.pbAdicionarCad.Click += new System.EventHandler(this.pbAdicionarCad_Click);
             // 
             // pbBuscarCad
             // 
             this.pbBuscarCad.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarCad.Location = new System.Drawing.Point(245, 474);
-            this.pbBuscarCad.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarCad.Location = new System.Drawing.Point(327, 583);
+            this.pbBuscarCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarCad.Name = "pbBuscarCad";
-            this.pbBuscarCad.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarCad.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarCad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarCad.TabIndex = 299;
             this.pbBuscarCad.TabStop = false;
@@ -1564,10 +1617,10 @@
             // pbCad
             // 
             this.pbCad.Image = global::Apresentacao.Properties.Resources.cadImg;
-            this.pbCad.Location = new System.Drawing.Point(12, 462);
-            this.pbCad.Margin = new System.Windows.Forms.Padding(2);
+            this.pbCad.Location = new System.Drawing.Point(16, 569);
+            this.pbCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbCad.Name = "pbCad";
-            this.pbCad.Size = new System.Drawing.Size(26, 29);
+            this.pbCad.Size = new System.Drawing.Size(35, 36);
             this.pbCad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCad.TabIndex = 298;
             this.pbCad.TabStop = false;
@@ -1575,21 +1628,22 @@
             // pbAdicionarBeneficioGoverno
             // 
             this.pbAdicionarBeneficioGoverno.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbAdicionarBeneficioGoverno.Location = new System.Drawing.Point(1130, 141);
-            this.pbAdicionarBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdicionarBeneficioGoverno.Location = new System.Drawing.Point(1507, 174);
+            this.pbAdicionarBeneficioGoverno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAdicionarBeneficioGoverno.Name = "pbAdicionarBeneficioGoverno";
-            this.pbAdicionarBeneficioGoverno.Size = new System.Drawing.Size(20, 22);
+            this.pbAdicionarBeneficioGoverno.Size = new System.Drawing.Size(27, 27);
             this.pbAdicionarBeneficioGoverno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdicionarBeneficioGoverno.TabIndex = 294;
             this.pbAdicionarBeneficioGoverno.TabStop = false;
+            this.pbAdicionarBeneficioGoverno.Click += new System.EventHandler(this.pbAdicionarBeneficioGoverno_Click);
             // 
             // pbBuscarBeneficioGoverno
             // 
             this.pbBuscarBeneficioGoverno.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarBeneficioGoverno.Location = new System.Drawing.Point(1106, 141);
-            this.pbBuscarBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarBeneficioGoverno.Location = new System.Drawing.Point(1475, 174);
+            this.pbBuscarBeneficioGoverno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarBeneficioGoverno.Name = "pbBuscarBeneficioGoverno";
-            this.pbBuscarBeneficioGoverno.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarBeneficioGoverno.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarBeneficioGoverno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarBeneficioGoverno.TabIndex = 293;
             this.pbBuscarBeneficioGoverno.TabStop = false;
@@ -1598,10 +1652,10 @@
             // pbBeneficioGoverno
             // 
             this.pbBeneficioGoverno.Image = global::Apresentacao.Properties.Resources.CrediarioPagoAviso;
-            this.pbBeneficioGoverno.Location = new System.Drawing.Point(873, 129);
-            this.pbBeneficioGoverno.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBeneficioGoverno.Location = new System.Drawing.Point(1164, 159);
+            this.pbBeneficioGoverno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBeneficioGoverno.Name = "pbBeneficioGoverno";
-            this.pbBeneficioGoverno.Size = new System.Drawing.Size(26, 29);
+            this.pbBeneficioGoverno.Size = new System.Drawing.Size(35, 36);
             this.pbBeneficioGoverno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBeneficioGoverno.TabIndex = 292;
             this.pbBeneficioGoverno.TabStop = false;
@@ -1609,21 +1663,22 @@
             // pbAdicionarSituacaoIdentificada
             // 
             this.pbAdicionarSituacaoIdentificada.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbAdicionarSituacaoIdentificada.Location = new System.Drawing.Point(843, 141);
-            this.pbAdicionarSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdicionarSituacaoIdentificada.Location = new System.Drawing.Point(1124, 174);
+            this.pbAdicionarSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAdicionarSituacaoIdentificada.Name = "pbAdicionarSituacaoIdentificada";
-            this.pbAdicionarSituacaoIdentificada.Size = new System.Drawing.Size(20, 22);
+            this.pbAdicionarSituacaoIdentificada.Size = new System.Drawing.Size(27, 27);
             this.pbAdicionarSituacaoIdentificada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdicionarSituacaoIdentificada.TabIndex = 288;
             this.pbAdicionarSituacaoIdentificada.TabStop = false;
+            this.pbAdicionarSituacaoIdentificada.Click += new System.EventHandler(this.pbAdicionarSituacaoIdentificada_Click);
             // 
             // pbBuscarSituacaoIdentificada
             // 
             this.pbBuscarSituacaoIdentificada.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarSituacaoIdentificada.Location = new System.Drawing.Point(819, 141);
-            this.pbBuscarSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarSituacaoIdentificada.Location = new System.Drawing.Point(1092, 174);
+            this.pbBuscarSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarSituacaoIdentificada.Name = "pbBuscarSituacaoIdentificada";
-            this.pbBuscarSituacaoIdentificada.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarSituacaoIdentificada.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarSituacaoIdentificada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarSituacaoIdentificada.TabIndex = 287;
             this.pbBuscarSituacaoIdentificada.TabStop = false;
@@ -1632,10 +1687,10 @@
             // pbSituacaoIdentificada
             // 
             this.pbSituacaoIdentificada.Image = global::Apresentacao.Properties.Resources.situacaoIdentificadaImg;
-            this.pbSituacaoIdentificada.Location = new System.Drawing.Point(586, 129);
-            this.pbSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(2);
+            this.pbSituacaoIdentificada.Location = new System.Drawing.Point(781, 159);
+            this.pbSituacaoIdentificada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbSituacaoIdentificada.Name = "pbSituacaoIdentificada";
-            this.pbSituacaoIdentificada.Size = new System.Drawing.Size(26, 29);
+            this.pbSituacaoIdentificada.Size = new System.Drawing.Size(35, 36);
             this.pbSituacaoIdentificada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSituacaoIdentificada.TabIndex = 286;
             this.pbSituacaoIdentificada.TabStop = false;
@@ -1643,21 +1698,22 @@
             // pbAdicionarProvidencia
             // 
             this.pbAdicionarProvidencia.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbAdicionarProvidencia.Location = new System.Drawing.Point(556, 141);
-            this.pbAdicionarProvidencia.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdicionarProvidencia.Location = new System.Drawing.Point(741, 174);
+            this.pbAdicionarProvidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAdicionarProvidencia.Name = "pbAdicionarProvidencia";
-            this.pbAdicionarProvidencia.Size = new System.Drawing.Size(20, 22);
+            this.pbAdicionarProvidencia.Size = new System.Drawing.Size(27, 27);
             this.pbAdicionarProvidencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdicionarProvidencia.TabIndex = 282;
             this.pbAdicionarProvidencia.TabStop = false;
+            this.pbAdicionarProvidencia.Click += new System.EventHandler(this.pbAdicionarProvidencia_Click);
             // 
             // pbBuscarProvidencia
             // 
             this.pbBuscarProvidencia.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarProvidencia.Location = new System.Drawing.Point(532, 141);
-            this.pbBuscarProvidencia.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarProvidencia.Location = new System.Drawing.Point(709, 174);
+            this.pbBuscarProvidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarProvidencia.Name = "pbBuscarProvidencia";
-            this.pbBuscarProvidencia.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarProvidencia.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarProvidencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarProvidencia.TabIndex = 281;
             this.pbBuscarProvidencia.TabStop = false;
@@ -1666,10 +1722,10 @@
             // pbProvidencia
             // 
             this.pbProvidencia.Image = global::Apresentacao.Properties.Resources.providenciaImg;
-            this.pbProvidencia.Location = new System.Drawing.Point(299, 129);
-            this.pbProvidencia.Margin = new System.Windows.Forms.Padding(2);
+            this.pbProvidencia.Location = new System.Drawing.Point(399, 159);
+            this.pbProvidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbProvidencia.Name = "pbProvidencia";
-            this.pbProvidencia.Size = new System.Drawing.Size(26, 29);
+            this.pbProvidencia.Size = new System.Drawing.Size(35, 36);
             this.pbProvidencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProvidencia.TabIndex = 280;
             this.pbProvidencia.TabStop = false;
@@ -1677,21 +1733,22 @@
             // pbAdicionarTipo
             // 
             this.pbAdicionarTipo.Image = global::Apresentacao.Properties.Resources.DialogOK;
-            this.pbAdicionarTipo.Location = new System.Drawing.Point(269, 141);
-            this.pbAdicionarTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdicionarTipo.Location = new System.Drawing.Point(359, 174);
+            this.pbAdicionarTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbAdicionarTipo.Name = "pbAdicionarTipo";
-            this.pbAdicionarTipo.Size = new System.Drawing.Size(20, 22);
+            this.pbAdicionarTipo.Size = new System.Drawing.Size(27, 27);
             this.pbAdicionarTipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdicionarTipo.TabIndex = 276;
             this.pbAdicionarTipo.TabStop = false;
+            this.pbAdicionarTipo.Click += new System.EventHandler(this.pbAdicionarTipo_Click);
             // 
             // pbBuscarTipo
             // 
             this.pbBuscarTipo.Image = global::Apresentacao.Properties.Resources.Selecionar;
-            this.pbBuscarTipo.Location = new System.Drawing.Point(245, 141);
-            this.pbBuscarTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBuscarTipo.Location = new System.Drawing.Point(327, 174);
+            this.pbBuscarTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbBuscarTipo.Name = "pbBuscarTipo";
-            this.pbBuscarTipo.Size = new System.Drawing.Size(20, 22);
+            this.pbBuscarTipo.Size = new System.Drawing.Size(27, 27);
             this.pbBuscarTipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscarTipo.TabIndex = 275;
             this.pbBuscarTipo.TabStop = false;
@@ -1700,10 +1757,10 @@
             // pbTipo
             // 
             this.pbTipo.Image = global::Apresentacao.Properties.Resources.tipoImg;
-            this.pbTipo.Location = new System.Drawing.Point(12, 129);
-            this.pbTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbTipo.Location = new System.Drawing.Point(16, 159);
+            this.pbTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbTipo.Name = "pbTipo";
-            this.pbTipo.Size = new System.Drawing.Size(26, 29);
+            this.pbTipo.Size = new System.Drawing.Size(35, 36);
             this.pbTipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbTipo.TabIndex = 274;
             this.pbTipo.TabStop = false;
@@ -1711,10 +1768,10 @@
             // pbCliente
             // 
             this.pbCliente.Image = global::Apresentacao.Properties.Resources.ClienteAzul;
-            this.pbCliente.Location = new System.Drawing.Point(459, 20);
-            this.pbCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.pbCliente.Location = new System.Drawing.Point(612, 25);
+            this.pbCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbCliente.Name = "pbCliente";
-            this.pbCliente.Size = new System.Drawing.Size(26, 29);
+            this.pbCliente.Size = new System.Drawing.Size(35, 36);
             this.pbCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCliente.TabIndex = 269;
             this.pbCliente.TabStop = false;
@@ -1722,10 +1779,10 @@
             // pbFuncionario
             // 
             this.pbFuncionario.Image = global::Apresentacao.Properties.Resources.FuncionarioAzul;
-            this.pbFuncionario.Location = new System.Drawing.Point(148, 20);
-            this.pbFuncionario.Margin = new System.Windows.Forms.Padding(2);
+            this.pbFuncionario.Location = new System.Drawing.Point(197, 25);
+            this.pbFuncionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbFuncionario.Name = "pbFuncionario";
-            this.pbFuncionario.Size = new System.Drawing.Size(26, 29);
+            this.pbFuncionario.Size = new System.Drawing.Size(35, 36);
             this.pbFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFuncionario.TabIndex = 211;
             this.pbFuncionario.TabStop = false;
@@ -1733,11 +1790,11 @@
             // FrmMovimentoDiario
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1545, 790);
+            this.ClientSize = new System.Drawing.Size(1924, 972);
             this.Controls.Add(this.lbObservacao);
             this.Controls.Add(this.tbObservacao);
             this.Controls.Add(this.groupBox1);
@@ -1816,9 +1873,11 @@
             this.Controls.Add(this.tbBuscarFuncionario);
             this.Controls.Add(this.pbFuncionario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMovimentoDiario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMovimentoDiario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCriancas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAdolescente)).EndInit();

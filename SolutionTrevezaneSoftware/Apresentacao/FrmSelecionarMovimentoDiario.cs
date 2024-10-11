@@ -139,7 +139,7 @@ namespace Apresentacao
                 this.dgvSelecionar[4, indice].Value = mov.QuantidadeCriancas;
                 this.dgvSelecionar[5, indice].Value = mov.QuantidadeAdolescentes;
                 this.dgvSelecionar[6, indice].Value = mov.QuantidadeIdosos;
-                this.dgvSelecionar[7, indice].Value = mov.VisitaDomiciliar == true ?"Sim":"Não";
+                this.dgvSelecionar[7, indice].Value = mov.VisitaDomiciliar == true ? "Sim" : "Não";
                 this.dgvSelecionar[8, indice].Value = mov.Encaminhamento == true ? "Sim" : "Não"; ;
                 this.dgvSelecionar[9, indice].Value = mov.BeneficioConcedido == true ? "Sim" : "Não"; ;
                 this.dgvSelecionar[10, indice].Value = mov.InscritoPaif == true ? "Sim" : "Não"; ;
@@ -247,11 +247,11 @@ namespace Apresentacao
             {
                 if (funcionarioLogado != null)
                 {
-                    if(IsValidCPF(tbBuscar.Text)==true)
+                    if (IsValidCPF(tbBuscar.Text) == true)
                     {
 
 
-                        movimentos = nMovimento.BuscarMovimentoDiarioPorDataECPF(dtpDataInicial.Value, dtpDataFinal.Value, tbBuscar.Text.Replace(".","").Replace("-",""), funcionarioLogado.codigoFuncionario);
+                        movimentos = nMovimento.BuscarMovimentoDiarioPorDataECPF(dtpDataInicial.Value, dtpDataFinal.Value, tbBuscar.Text.Replace(".", "").Replace("-", ""), funcionarioLogado.codigoFuncionario);
                         AtualizarDataGrid();
                         if (movimentos.Count == 0)
                         {
@@ -261,7 +261,8 @@ namespace Apresentacao
                             }
                         }
 
-                    }else
+                    }
+                    else
                     {
 
                         if (tbBuscar.Text == "Digite o nome do Usuário ou CPF ..." || tbBuscar.Text == String.Empty)
@@ -269,6 +270,7 @@ namespace Apresentacao
                             strUsuario = "";
 
                         }
+                        else { strUsuario = tbBuscar.Text; }
                         movimentos = nMovimento.BuscarMovimentoDiarioPorDataUsuario(dtpDataInicial.Value, dtpDataFinal.Value, strUsuario, funcionarioLogado.codigoFuncionario);
                         AtualizarDataGrid();
                     }
@@ -276,9 +278,9 @@ namespace Apresentacao
                 else { MessageBox.Show("Selecione o Funcionário!", "Aviso Selecionar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
 
             }
-            
-            catch (Exception ex) { MessageBox.Show("Erro ao buscar movimento diaário: "+ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-            }
+
+            catch (Exception ex) { MessageBox.Show("Erro ao buscar movimento diaário: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
 
         private void tbBuscar_Leave(object sender, EventArgs e)
         {
@@ -360,7 +362,7 @@ namespace Apresentacao
                         movimentoSelecionado = mov;
                         nMovimento.PreencherListasMovimentoDiario(movimentoSelecionado);
                         break;
-                    }                  
+                    }
                 }
 
                 //Envia o movimendo diario para atualização ou exclusão
@@ -378,6 +380,12 @@ namespace Apresentacao
         private void dgvSelecionar_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             btAlterar.PerformClick();
+        }
+
+        private void btCadastrar_Click(object sender, EventArgs e)
+        {
+            FrmMovimentoDiario frmMovimentoDiario = new FrmMovimentoDiario(funcionarioLogado, null);
+            frmMovimentoDiario.ShowDialog();
         }
 
         //---------------------------------------------------------Final Form

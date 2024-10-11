@@ -101,6 +101,6 @@ C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\bin\Debug\ObjetoTransferencia.pdb
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\TestesConsole.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\TestesConsole.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\TestesConsole.csproj.CopyComplete
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\TestesCo.41764E8E.Up2Date
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\Console.exe
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Console\obj\Debug\Console.pdb

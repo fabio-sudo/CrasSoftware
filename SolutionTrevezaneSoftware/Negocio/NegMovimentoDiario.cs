@@ -350,6 +350,7 @@ namespace Negocio
         }
 
 
+        //Formulário de Selção
         public MovimentoDiarioLista BuscarMovimentoDiarioPorDataUsuario(DateTime dataInicial, DateTime dataFinal, string nomeUsuario, int idFuncionario)
         {
             try
@@ -556,6 +557,76 @@ namespace Negocio
                 }
 
                 return listaMovimentoDiario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao buscar movimentos diários. " + ex.Message);
+            }
+        }
+
+
+
+        public MovimentoDiario BuscarMovimentoDiarioUltimo(int idCliente)
+        {
+            try
+            {
+                // Limpa os parâmetros anteriores
+                sqlserver.LimparParametros();
+
+                // Adiciona os parâmetros necessários para a busca
+                sqlserver.AdicionarParametro(new SqlParameter("@idCliente", idCliente));
+
+                // Executa a consulta e obtém o resultado
+                DataTable tabelaResultado = sqlserver.ExecutarConsulta("uspBuscarMovimentoDiarioUltimo", CommandType.StoredProcedure);
+
+                // Verifica se há algum resultado retornado
+                if (tabelaResultado.Rows.Count == 0)
+                {
+                    return null; // Caso não haja registro, retorne null ou trate conforme necessário
+                }
+
+                // Pega o primeiro registro (último movimento)
+                DataRow registro = tabelaResultado.Rows[0];
+
+                // Cria um novo objeto MovimentoDiario com os dados retornados
+                MovimentoDiario movimento = new MovimentoDiario
+                {
+                    IdMovimentoDiario = Convert.ToInt32(registro[0]),
+                    Data = registro[1] != DBNull.Value ? Convert.ToDateTime(registro[1]) : (DateTime?)null,
+                    Prontuario = registro[2].ToString(),
+                    Nome = registro[3].ToString(),
+                    QuantidadeCriancas = registro[4] != DBNull.Value ? Convert.ToInt32(registro[4]) : (int?)null,
+                    QuantidadeAdolescentes = registro[5] != DBNull.Value ? Convert.ToInt32(registro[5]) : (int?)null,
+                    QuantidadeIdosos = registro[6] != DBNull.Value ? Convert.ToInt32(registro[6]) : (int?)null,
+                    VisitaDomiciliar = registro[7] != DBNull.Value ? Convert.ToBoolean(registro[7]) : (bool?)null,
+                    BeneficioConcedido = registro[8] != DBNull.Value ? Convert.ToBoolean(registro[8]) : (bool?)null,
+                    InscritoPaif = registro[9] != DBNull.Value ? Convert.ToBoolean(registro[9]) : (bool?)null,
+                    AcompanhamentoIndividual = registro[10] != DBNull.Value ? Convert.ToBoolean(registro[10]) : (bool?)null,
+                    Observacoes = registro[11].ToString(),
+                    IncluidoCad = registro[12] != DBNull.Value ? Convert.ToBoolean(registro[12]) : (bool?)null,
+                    AtualizacaoCad = registro[13] != DBNull.Value ? Convert.ToBoolean(registro[13]) : (bool?)null,
+                    Bpc = registro[14] != DBNull.Value ? Convert.ToBoolean(registro[14]) : (bool?)null,
+                    EncaminhadoCreas = registro[15] != DBNull.Value ? Convert.ToBoolean(registro[15]) : (bool?)null,
+                    AuxilioNatalidade = registro[16] != DBNull.Value ? Convert.ToBoolean(registro[16]) : (bool?)null,
+                    AuxilioFuneral = registro[17] != DBNull.Value ? Convert.ToBoolean(registro[17]) : (bool?)null,
+                    BeneficioEventual = registro[18] != DBNull.Value ? Convert.ToBoolean(registro[18]) : (bool?)null,
+                    Encaminhamento = registro[19] != DBNull.Value ? Convert.ToBoolean(registro[19]) : (bool?)null,
+                    idCliente = registro[20] != DBNull.Value ? new Cliente { codigoCliente = Convert.ToInt32(registro[20]) } : null,
+                    idCad = registro[21] != DBNull.Value ? new CadastroUnico { idCadastroUnico = Convert.ToInt32(registro[21]) } : null,
+                    idFuncionario = registro[22] != DBNull.Value ? new Funcionario { codigoFuncionario = Convert.ToInt32(registro[22]) } : null,
+
+                    // As listas permanecem vazias e serão preenchidas se necessário
+                    tipoAtendimentos = new TipoLista(),
+                    providencias = new ProvidenciaLista(),
+                    situacaoIdentificadas = new SituacaoIdentificadaLista(),
+                    beneficioGovernos = new BeneficioGovernoLista(),
+                    cadastroUnicos = new CadastroUnicoLista(),
+                    situacaoFamiliars = new SituacaoFamilizarLista(),
+                    atividadeLista = new AtividadeLista(),
+                    especificacaoLista = new EspecificacaoLista()
+                };
+
+                return movimento;
             }
             catch (Exception ex)
             {

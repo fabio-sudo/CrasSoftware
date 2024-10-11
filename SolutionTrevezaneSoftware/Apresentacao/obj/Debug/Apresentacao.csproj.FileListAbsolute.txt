@@ -313,6 +313,6 @@ C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\D
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.Relatorios.ViewRelatorioCliente.resources
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.cache
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.CopyComplete
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.exe
 C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Admin\Desktop\CrasSoftware\SolutionTrevezaneSoftware\Apresentacao\obj\Debug\Apresentacao.csproj.CopyComplete
